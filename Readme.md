@@ -81,7 +81,7 @@ categories:
 - I love Jekyll
 twitter_text: 'How to install and use this template'
 ---
-``
+```
 
 ## Running the blog in local
 
