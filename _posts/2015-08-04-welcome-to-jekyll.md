@@ -3,10 +3,13 @@ layout: post
 title: "Welcome to Jekyll"
 date: 2015-08-04 03:21:35
 image: '/assets/img/'
-description:
+description: 'Put your description here.'
 tags:
+- jekyll
+- web
 categories:
-twitter_text:
+- Jekyll is awesome
+twitter_text: 'Put your twitter description here.'
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
