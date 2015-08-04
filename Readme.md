@@ -67,6 +67,7 @@ The new file will be created at `_posts` with this format `date-title.md`.
 
 When you create a new post, you need to fill the post information in the front-matter, follow this example:
 
+```
 ---
 layout: post
 title: "How to use"
@@ -80,6 +81,7 @@ categories:
 - I love Jekyll
 twitter_text: 'How to install and use this template'
 ---
+``
 
 ## Running the blog in local
 
