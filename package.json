@@ -1,7 +1,7 @@
 {
-  "name": "willianjusten.github.io",
+  "name": "willjekylltemplate",
   "version": "1.0.0",
-  "description": "Um blog sobre desenvolvimento web focado em frontend.",
+  "description": "My jekyll blog template.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
