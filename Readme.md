@@ -12,6 +12,7 @@ The Theme features:
 - Live Search
 - Offcanvas Menu
 - SVG icons
+- Very very small and fast!
 - Shell Script to create posts
 - Tags page
 - Series page
