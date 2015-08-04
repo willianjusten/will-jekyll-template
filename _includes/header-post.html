@@ -1,0 +1,11 @@
+<header class="header-post" role="banner">
+    <div class="content">
+        {% if page.date %}
+            <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+        {% endif %}
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description" class="subtitle">{{ page.description }}</p>
+    </div>
+     <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
+     {% include menu-search.html %}
+</header>
