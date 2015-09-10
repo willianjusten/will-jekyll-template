@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Jekyll"
 date: 2015-08-04 03:21:35
 image: '/assets/img/'
-description: 'Put your description here.'
+description: 'Put your description here - Put it.‘
 tags:
 - jekyll
 - web
