@@ -1,39 +1,4 @@
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gingingin.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-# User settings
-username: gin
-user_description: gin Developer at CD
-user_title: gin Developer
-email: 9159346@qq.com
-twitter_username: none
-github_username:  gingingin
-gplus_username:  none
-disqus_username: none
-
-# Build settings
-markdown: kramdown
-highlighter: pygments
-permalink: /:title/
-
-
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
-
-# Links to include in menu navigation
-# For external links add external: true
-links:
-  - title: Home
-    url: /
-  - title: Series
-    url: /series
-  - title: Tags
     url: /tags
   - title: About Me
     url: /about
