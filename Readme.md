@@ -2,6 +2,8 @@
 
 ![Screenshot](screenshot.png)
 
+[Demo][http://willianjusten.com.br/will-jekyll-template]
+
 This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 
 The Theme features:
@@ -30,6 +32,7 @@ The Theme features:
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
 6. Read the documentation below for further customization pointers and documentation.
+7. **Remember to compile your assets files with Gulp.**
 
 ## Site and User Settings
 
