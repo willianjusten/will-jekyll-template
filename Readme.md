@@ -95,6 +95,10 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install` 
 - Run `gulp`
 
+## Windows 10 Step
+
+If you use Windows 10, change this line on [gulpfile.js](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/gulpfile.js#L23) to `spawn('jekyll.bat', ['build'])`.
+
 ## Questions
 
 Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@willian_justen](https://twitter.com/willian_justen) or file a [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
