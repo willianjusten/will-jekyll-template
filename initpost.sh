@@ -46,12 +46,12 @@ BINPATH=$(cd `dirname $0`; pwd)
 POSTPATH="${BINPATH}/_posts"
 DRAFTPATH="${BINPATH}/_drafts"
 
-if [ "${1}" == "-c" || "${1}" == "--create" ]; then
+if [[ "${1}" == "-c" || "${1}" == "--create" ]]; then
     DIST_FOLDER="$POSTPATH"
     FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
 fi
 
-if [ "${1}" == "-d" || "${1}" == "--draft" ]; then
+if [[ "${1}" == "-d" || "${1}" == "--draft" ]]; then
     DIST_FOLDER="$DRAFTPATH"
     FILE_NAME="${POST_NAME}.md"
 fi
