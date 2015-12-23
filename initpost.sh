@@ -4,6 +4,7 @@
 #
 # Program: initpost.sh
 # Author:  Vitor Britto
+# Modified by:  James Bowling
 # Description: script to create an initial structure for my posts.
 #
 # Usage: ./initpost.sh [options] <post name>
@@ -11,6 +12,7 @@
 # Options:
 #   -h, --help        output instructions
 #   -c, --create      create post
+#   -d, --draft       create draft post
 #
 # Alias: alias ipost="bash ~/path/to/script/initpost.sh"
 #
@@ -33,7 +35,6 @@ POST_TITLE="${@:2:$(($#-1))}"
 POST_NAME="$(echo ${@:2:$(($#-1))} | sed -e 's/ /-/g' | sed "y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/")"
 CURRENT_DATE="$(date +'%Y-%m-%d')"
 TIME=$(date +"%T")
-FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
 # ----------------------------------------------------------------
 
 
@@ -43,10 +44,20 @@ FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
 # Set your destination folder
 BINPATH=$(cd `dirname $0`; pwd)
 POSTPATH="${BINPATH}/_posts"
-DIST_FOLDER="$POSTPATH"
+DRAFTPATH="${BINPATH}/_drafts"
+
+if [ "${1}" == "-c" ]; then
+    DIST_FOLDER="$POSTPATH"
+    FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
+fi
+
+if [ "${1}" == "-d" ]; then
+    DIST_FOLDER="$DRAFTPATH"
+    FILE_NAME="${POST_NAME}.md"
+fi
 
 # Set your blog URL
-BLOG_URL="http://willianjusten.com.br"
+BLOG_URL="http://vsential.com"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
@@ -151,6 +162,12 @@ main() {
 
     # Create
     if [[ "${1}" == "-c" || "${1}" == "--create" ]]; then
+        initpost_file $*
+        exit
+    fi
+
+    # Draft
+    if [[ "${1}" == "-d" || "${1}" == "--draft" ]]; then
         initpost_file $*
         exit
     fi
