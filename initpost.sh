@@ -56,8 +56,13 @@ if [[ "${1}" == "-d" || "${1}" == "--draft" ]]; then
     FILE_NAME="${POST_NAME}.md"
 fi
 
+if [[ "${1}" == "-p" || "${1}" == "--publish" ]]; then
+    DIST_FOLDER="$POSTPATH"
+    FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
+fi
+
 # Set your blog URL
-BLOG_URL="http://yourblog.com"
+BLOG_URL="http://vsential.com"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
@@ -107,6 +112,8 @@ Options:
   -h, --help        output instructions
   -c, --create      create post
   -d, --draft       create draft post
+  -p, --publish     publish/promote a draft to a post
+
 Example:
   ./initpost.sh -c How to replace strings with sed
 Important Notes:
@@ -147,7 +154,18 @@ initpost_file() {
 
 }
 
-
+# Promote draft
+promote_draft() {
+    if [ ! -f "$FILE_NAME" ]; then
+        e_header "Promoting draft..."
+        if mv "${DRAFTPATH}/${POST_NAME}.md" "${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md"; then
+            e_success "Draft promoted successfully!"
+        else
+            e_warning "File already exists or draft promotion failed."
+            exit 1
+        fi
+    fi
+}
 
 # ------------------------------------------------------------------------------
 # | INITIALIZE PROGRAM                                                         |
@@ -170,6 +188,12 @@ main() {
     # Draft
     if [[ "${1}" == "-d" || "${1}" == "--draft" ]]; then
         initpost_file $*
+        exit
+    fi
+
+    # Promote
+    if [[ "${1}" == "-p" || "${1}" == "--promote" ]]; then
+        promote_draft $*
         exit
     fi
 
