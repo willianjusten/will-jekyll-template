@@ -62,7 +62,7 @@ if [[ "${1}" == "-p" || "${1}" == "--publish" ]]; then
 fi
 
 # Set your blog URL
-BLOG_URL="http://vsential.com"
+BLOG_URL="http://yourblog.com"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
