@@ -62,7 +62,7 @@ if [[ "${1}" == "-p" || "${1}" == "--publish" ]]; then
 fi
 
 # Set your blog URL
-BLOG_URL="http://yourblog.com"
+BLOG_URL="http://vsential.com"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
@@ -141,7 +141,7 @@ echo "---"
 
 }
 
-# Create file
+# Create post
 initpost_file() {
     if [ ! -f "$FILE_NAME" ]; then
         e_header "Creating template..."
@@ -154,11 +154,25 @@ initpost_file() {
 
 }
 
+# Create draft
+initdraft_file() {
+    if [ ! -f "$FILE_NAME" ]; then
+        e_header "Creating draft template..."
+        initpost_content > "${DIST_FOLDER}/${FILE_NAME}"
+        e_success "Initial draft successfully created!"
+    else
+        e_warning "File already exist."
+        exit 1
+    fi
+
+}
+
 # Promote draft
 promote_draft() {
     if [ ! -f "$FILE_NAME" ]; then
         e_header "Promoting draft..."
         if mv "${DRAFTPATH}/${POST_NAME}.md" "${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md"; then
+            sed -i -e "s/date: .*/c\date: ${CURRENT_DATE} ${TIME}/" ${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md
             e_success "Draft promoted successfully!"
         else
             e_warning "File already exists or draft promotion failed."
@@ -187,7 +201,7 @@ main() {
 
     # Draft
     if [[ "${1}" == "-d" || "${1}" == "--draft" ]]; then
-        initpost_file $*
+        initdraft_file $*
         exit
     fi
 
