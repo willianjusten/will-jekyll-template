@@ -172,7 +172,7 @@ promote_draft() {
     if [ ! -f "$FILE_NAME" ]; then
         e_header "Promoting draft..."
         if mv "${DRAFTPATH}/${POST_NAME}.md" "${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md"; then
-            sed -i -e "s/date: .*/c\date: ${CURRENT_DATE} ${TIME}/" ${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md
+            sed -i -e "s/date: .*/date: ${CURRENT_DATE} ${TIME}/" ${POSTPATH}/${CURRENT_DATE}-${POST_NAME}.md
             e_success "Draft promoted successfully!"
         else
             e_warning "File already exists or draft promotion failed."
