@@ -3,8 +3,12 @@
 # ------------------------------------------------------------------------------
 #
 # Program: initpost.sh
+<<<<<<< HEAD
 # Author:  Vitor Britto
 # Modified by:  James Bowling
+=======
+# Author:  Vitor Britto (edited by Will)
+>>>>>>> gh-pages
 # Description: script to create an initial structure for my posts.
 #
 # Usage: ./initpost.sh [options] <post name>
@@ -62,7 +66,11 @@ if [[ "${1}" == "-p" || "${1}" == "--publish" ]]; then
 fi
 
 # Set your blog URL
+<<<<<<< HEAD
 BLOG_URL="http://vsential.com"
+=======
+BLOG_URL="your_site"
+>>>>>>> gh-pages
 
 # Set your assets URL
 ASSETS_URL="assets/img/"

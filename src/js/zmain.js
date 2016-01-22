@@ -23,7 +23,7 @@
   };
 
   bs.dothis.on('click', function() {
-    $('.search-wrapper').css({ transform: "translateY(0)" });
+    $('.search-wrapper').toggleClass('active');
     bs.searchform.toggleClass('active');
     bs.searchform.find('input').focus();
     bs.canvas.toggleClass('search-overlay');
@@ -31,7 +31,7 @@
   });
 
   bs.close.on('click', function() {
-    $('.search-wrapper').removeAttr( 'style' );
+    $('.search-wrapper').toggleClass('active');
     bs.searchform.toggleClass('active');
     bs.canvas.removeClass('search-overlay');
   });
