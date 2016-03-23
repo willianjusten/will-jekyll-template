@@ -1,0 +1,115 @@
+---
+title: "Centering and Scaling Data in R"
+author: "Karandeep Singh, MD, MMSc"
+date: "February 16, 2016"
+output: html_document
+---
+
+Here's a brief demo of centering and scaling. While there are a number of ways to do this, I prefer to do this using the caret package.
+
+
+{% highlight r %}
+library(caret)
+library(magrittr)
+set.seed(1000)
+race_options <- c('Caucasian','African American','Hispanic','Asian','Other')
+
+# Note: it's almost always better to explicitly define a factor as opposed to using as.factor when you expect to input new values because ALL OF THE LEVELS for the new and existing data set will need to match
+test_data <- data.frame(age=rnorm(n=100,mean=55,sd=12),
+                        PSA=rnorm(n=100,mean=5,sd=15),
+                        race=sample(factor(race_options,levels=race_options),100,replace=TRUE))
+{% endhighlight %}
+
+Let's take a look at the data.
+
+
+{% highlight r %}
+knitr::kable(head(test_data))
+{% endhighlight %}
+
+
+
+|      age|        PSA|race             |
+|--------:|----------:|:----------------|
+| 49.65066| -15.541183|Other            |
+| 40.52972|   7.445253|African American |
+| 55.49352|   3.301607|Asian            |
+| 62.67266|  17.896329|Asian            |
+| 45.56135|   6.929982|Caucasian        |
+| 50.37413|   7.894569|Asian            |
+
+Let's center and scale the values.
+
+
+{% highlight r %}
+# Note that the default settings for preProcess are to center and scale the data
+processed_parameters <- preProcess(test_data)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in preProcess.default(test_data): all columns of x must be numeric
+{% endhighlight %}
+
+Why the error?
+
+In order to process variables, they need to all be numeric. For categorical variables, it's not enough that they be coded numerically. If "Caucasian" were coded as 1, "African American" as 2, and "Hispanic" as 3, this wouldn't make any sense because this implies that "Hispanic" is twice as different from "Caucasian" as is "African American." Categorical variables need to be coded as dummy variables. When you use the `model.matrix` command in R, this happens automatically as long as the class of the categorical variable is `factor`, which we assigned when declaring the race column in the `data.frame`.
+
+
+{% highlight r %}
+# the [,-1] gets rid of the intercept term
+test_data <- model.matrix(~.,test_data) %>% .[,-1]
+
+# Let's view the data with the race turned into separate dummy variables
+knitr::kable(head(test_data))
+{% endhighlight %}
+
+
+
+|      age|        PSA| raceAfrican American| raceHispanic| raceAsian| raceOther|
+|--------:|----------:|--------------------:|------------:|---------:|---------:|
+| 49.65066| -15.541183|                    0|            0|         0|         1|
+| 40.52972|   7.445253|                    1|            0|         0|         0|
+| 55.49352|   3.301607|                    0|            0|         1|         0|
+| 62.67266|  17.896329|                    0|            0|         1|         0|
+| 45.56135|   6.929982|                    0|            0|         0|         0|
+| 50.37413|   7.894569|                    0|            0|         1|         0|
+
+Let's try to center the values again now that race has been separated into separate dummy variables.
+
+
+{% highlight r %}
+processed_parameters <- preProcess(test_data)
+processed_data <- predict(processed_parameters,newdata=test_data)
+knitr::kable(head(processed_data))
+{% endhighlight %}
+
+
+
+|        age|        PSA| raceAfrican American| raceHispanic|  raceAsian| raceOther|
+|----------:|----------:|--------------------:|------------:|----------:|---------:|
+| -0.4591300| -1.6270189|           -0.5129957|   -0.4014509| -0.5897778|  2.573982|
+| -1.2142292|  0.0692855|            1.9298409|   -0.4014509| -0.5897778| -0.384618|
+|  0.0245850| -0.2364984|           -0.5129957|   -0.4014509|  1.6785983| -0.384618|
+|  0.6189280|  0.8405320|           -0.5129957|   -0.4014509|  1.6785983| -0.384618|
+| -0.7976737|  0.0312607|           -0.5129957|   -0.4014509| -0.5897778| -0.384618|
+| -0.3992360|  0.1024432|           -0.5129957|   -0.4014509|  1.6785983| -0.384618|
+
+How would we center and scale the values for a new person?
+
+
+{% highlight r %}
+# drop=FALSE ensures that in the case where a matrix only has 1 dimension that it does not turn into a vector. It remains as a matrix. By retaining its 2-dimensional shape, the model.matrix output can be converted back to a data.frame using the as.data.frame command.
+# Also note that if we had used as.factor here, it would have resulted in an error since the levels for this person's race would not have matched the levels for the original race variable
+new_person <- data.frame(age=70,PSA=40,race=factor('Asian',levels=race_options)) %>% model.matrix(~.,data=.) %>% .[,-1,drop=FALSE] %>% as.data.frame
+
+new_person_data <- predict(processed_parameters,newdata=new_person)
+knitr::kable(new_person_data)
+{% endhighlight %}
+
+
+
+|     age|      PSA| raceAfrican American| raceHispanic| raceAsian| raceOther|
+|-------:|--------:|--------------------:|------------:|---------:|---------:|
+| 1.22554| 2.471692|           -0.5129957|   -0.4014509|  1.678598| -0.384618|
