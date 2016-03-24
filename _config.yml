@@ -15,7 +15,7 @@ disqus_username: lorem_ipsum
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 
