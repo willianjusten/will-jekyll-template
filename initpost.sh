@@ -3,12 +3,9 @@
 # ------------------------------------------------------------------------------
 #
 # Program: initpost.sh
-<<<<<<< HEAD
 # Author:  Vitor Britto
 # Modified by:  James Bowling
-=======
 # Author:  Vitor Britto (edited by Will)
->>>>>>> gh-pages
 # Description: script to create an initial structure for my posts.
 #
 # Usage: ./initpost.sh [options] <post name>
