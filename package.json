@@ -29,7 +29,7 @@
     "gulp-uglify": "^1.0.2"
   },
   "dependencies": {
-    "jeet": "^6.1.4",
+    "jeet": "6.1.2",
     "kouto-swiss": "^0.11.14",
     "rupture": "^0.6.1"
   }
