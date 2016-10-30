@@ -2,76 +2,77 @@
 
 ![Screenshot](screenshot.png)
 
-This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+Αυτό είναι ένα απλό και μινιμαλιστικό πρότυπο για Jekyll που σχεδιάστηκε για προγραμματιστές που θέλουν να δημοσιεύουν σε blog αλλά δεν τους ενδιαφέρει και πολύ το frontend.
 
-The Theme features:
+Χαρακτηριστικά του θέματος:
 
 - Gulp
 - Stylus (Jeet, Rupture, Kouto Swiss)
 - Smoothscroll
 - Live Search
 - Offcanvas Menu
-- SVG icons
-- Very very small and fast!
-- Shell Script to create posts
-- Tags page
-- Series page
-- About Me page
+- Εικονίδια SVG
+- Πολύ πολύ μικρό και γρήγορο!
+- Shell Script για δημιουργία δημοσιεύσεων
+- Σελίδα Tags (ετικετών)
+- Σελίδα Series
+- Σελιδα About Me (Λίγα λόγια για εμένα)
 - Feed RSS
 - Sitemap.xml
-- Color Customization
-- Info Customization
+- Προαρμογή χρωμάτων
+- Προσαρογή πληροφοριών
 
-## Basic Setup
+## Βασική εγκατάσταση
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Will Jekyll Template](https://github.com/willianjusten/will-jekyll-template/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-7. **Remember to compile your assets files with Gulp.**
+1. [Εγκαταστήστε το Jekyll](http://jekyllrb.com) (gem install jekyll bundle)
+2. Κάντε Fork την σελίδα [Will Jekyll Template](https://github.com/willianjusten/will-jekyll-template/fork)
+3. Μετονομάστε το αποθετήριο από Wll Jekyll Template στην διεύθυνση που θέλετε για την σελίδα σας, πχ **USERNAME.github.io**.
+4. Κλωνοποιήστε τοπικά το αποθετήριο που δημιουργήσατε.
+5. Επεξεργαστείτε το αρχείο `_config.yml` με τα προσωπικά σας στοιχεία.
+6. Ελέγξτε τις δημοσιεύσεις δείγματα στον φάκελο `_posts` για να δείτε παραδείγματα πως εισάγετε κατηγορίες και ετικέτες, και άλλα δεδομένα YAML.
+7. Διαβάστε την τεκμηρίωση παρακάτω για επιπλέον προσαρμογή της ιστοσελίδας σας.
+8. **Θυμηθείτε να μεταγλωττίσετε τα αρχεία με την εντολή Gulp.** Σε περίπτωση που δεν υπάρχει, εγκαταστήστε την.
 
-## Site and User Settings
+## Ρυθμίσεις ιστοσελίδας και χρήστη
 
-You have to fill some informations on `_config.yml` to customize your site.
+Πρέπει να συμπληρώσετε κάποιες πηροφορίες στο αρχείο `_config.yml` για να προσαρμόσετε την ιστοσελίδα.
 
 ```
-# Site settings
+# Ρυθμίσεις ιστοσελίδας
 description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site 
+baseurl: "" # ο υποφάκελος της σελίδας σας, π.χ. /blog/. Εάν θέλετε να είναι στο ριζικό κατάλογο, αφήστε το κενό 
+url: "http://USERNAME.github.io" # Η βασική διεύθυνση της σελίδας σας 
 
 # User settings
 username: Lorem Ipsum
 user_description: Anon Developer at Lorem Ipsum Dolor
 user_title: Anon Developer
 email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+twitter_username: eiosifidis
+github_username:  iosifidis
+gplus_username:  +EfstathiosIosifidis
+disqus_username: efstathiosiosifidis
 ```
 
-**Don't forget to change your baseurl before build your site!**
+**Μην ξεχάσετε να αλλάξετε την βασική διεύθυνση (baseurl) πριν "χτίσετε" την ιστοσείδα σας!**
 
-## Color customization
+## Προσαρμογή χρωμάτων
 
-All color variables are in `src/styl/variable`. To change the main color, just set the new value at `main` assignment. Another colors are for texts and the code background color.
+Όλες οι μεταβλητές των χρωμάτων είναι στο `src/styl/variable`. Για να αλλάξετε το κυρίως χρώμα, απλά αλλάξτε την τιμή στην μεταβλητή `main` (το δικό μου είναι #3b5998). Τα υπόλοιπα χρώματα αφορούν τα κείμενα και το χρώμα φόντου.
 
-## Creating posts
+## Δημιουργία δημοσιεύσεων
 
-You can use the `initpost.sh` to create your new posts. Just follow the command:
+Μπορείτε να χρησιμοποιήσετε την εντολή `initpost.sh` για να δημιουργήσετε νέες δημοσιεύσεις. Ολοκληρωμένη η εντολή είναι:
 
 ```
 ./initpost.sh -c Post Title
 ```
 
-The new file will be created at `_posts` with this format `date-title.md`.
+Αυτό θα δημιουργήσει μια δημοσίευση στο `_posts` με την διαμόρφωση `date-title.md`. Η ολοκληρωμένη διεύθυνση θα είναι http://USERNAME.github.io/title. Οπότε προσέξτε τι τίτλο γράφετε.
 
-## Front-matter 
+## Εμφάνιση δημοσίευσης 
 
-When you create a new post, you need to fill the post information in the front-matter, follow this example:
+Όταν δημιουργήσετε νέα δημοσίευση, θα χρειαστεί να συμπληρώσετε πληροφορίες για την εμφάνιση. Ακολουθήστε το παράδειγμα:
 
 ```
 ---
@@ -89,25 +90,20 @@ twitter_text: 'How to install and use this template'
 ---
 ```
 
-## Running the blog in local
+## Εκτέλεση της σελίδας τοπικά
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+Για να μεταγλωττίσετε την σελίδα και να δείτε το αποτέλεσμα πρέπει να ακολουθήσετε τα παρακάτω βήματα:
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install` 
-- Run `gulp`
+- Εγκαταστήστε το [NodeJS](https://nodejs.org/)
+- Μέσα στον φάκελο που δουλεύετε, εκτελέστε `npm install` 
+- Μέσα στον φάκελο που δουλεύετε, εκτελέστε `gulp`. Σε περίπτωση που δεν υπάρχει, εγκαταστήστε την.
+- Ανεβάστε την σελίδα στο github.
 
-## Questions
+## Ερωτήσεις
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@willian_justen](https://twitter.com/willian_justen) or file a [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
+Έχετε πρόβλημα να δουλέψει κάτι ή ερώτηση γατί έχω συντάξει κάτι με αυτόν τρόπο; Βρείτε με στο Twitter [@willian_justen](https://twitter.com/willian_justen) ή στείλτε ένα [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
 
-## Donation
-
-If you liked my work, buy me a coffee <3
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UTMFZUHX6EUGE)
-
-## License
+## Άδεια χρήσης
 
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
 

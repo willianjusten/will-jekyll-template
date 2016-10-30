@@ -5,14 +5,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: iosifidis
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Efstathios Iosifidis
+username: Efstathios Iosifidis
+user_description: openSUSE member, GNOME Foundation member
+user_title: iBlog
 email: iefstathios@gmail.com
 twitter_username: eiosifidis
 github_username:  iosifidis
 gplus_username:  +EfstathiosIosifidis
-#disqus_username: lorem_ipsum
+disqus_username: efstathiosiosifidis
 
 # Build settings
 markdown: kramdown
