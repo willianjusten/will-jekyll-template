@@ -39,14 +39,14 @@
 
 ```
 # Ρυθμίσεις ιστοσελίδας
-description: A blog about lorem ipsum dolor sit amet
+description: iBlog Efstathios Iosifidis
 baseurl: "" # ο υποφάκελος της σελίδας σας, π.χ. /blog/. Εάν θέλετε να είναι στο ριζικό κατάλογο, αφήστε το κενό 
 url: "http://USERNAME.github.io" # Η βασική διεύθυνση της σελίδας σας 
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
+username: Efstathios Iosifidis
+user_description: iBlog Efstathios Iosifidis
+user_title: iBlog
 email: anon@anon.com
 twitter_username: eiosifidis
 github_username:  iosifidis
