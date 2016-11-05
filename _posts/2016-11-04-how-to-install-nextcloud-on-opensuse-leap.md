@@ -8,7 +8,8 @@ tags:
 - openSUSE
 - Leap
 categories:
-- Nextcloud tutorials
+- Nextcloud tips and tricks
+- openSUSE tips and tricks
 twitter_text: 'Tutorial how to install Nextcloud on openSUSE Leap'
 ---
 
@@ -138,9 +139,9 @@ Now open your browser to the server IP/nextcloud
 Set your administrator username and password.
 Your data directory is: /mnt/nextcloud_data
 Regarding database, use the following.
-Database user: **ncuser**
-Database name: **nextcloudb**
-Database user password: **dbpass**
+Database user: ncuser
+Database name: nextcloudb
+Database user password: dbpass
 {% endhighlight %}
 
 Wait until it ends the installation. The page you'll see is the following.
