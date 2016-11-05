@@ -154,4 +154,4 @@ For more information about ownCloud on openSUSE, check [openSUSE wiki](https://e
 
 Original post was at [my github](https://github.com/iosifidis/owncloud-opensuse-leap).
 
-For more configuration, you can follow the [official documentation] (https://doc.owncloud.org/). This was the basic installation on openSUSE Leap.
+For more configuration, you can follow the [official documentation](https://doc.owncloud.org/). This was the basic installation on openSUSE Leap.
