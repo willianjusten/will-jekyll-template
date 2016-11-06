@@ -51,7 +51,7 @@ email: anon@anon.com
 twitter_username: eiosifidis
 github_username:  iosifidis
 gplus_username:  +EfstathiosIosifidis
-disqus_username: efstathiosiosifidis
+disqus_username: iblog-eiosifidis #Θα δηλώσετε το site σας στο https://disqus.com/features/.Πρέπει να βάλετε ως όνομα χρήστη, το όνομα του disqus που δημιουργήσατε.
 ```
 
 **Μην ξεχάσετε να αλλάξετε την βασική διεύθυνση (baseurl) πριν "χτίσετε" την ιστοσείδα σας!**
