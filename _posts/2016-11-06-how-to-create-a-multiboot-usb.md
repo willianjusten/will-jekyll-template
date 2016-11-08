@@ -19,10 +19,9 @@ What is a [multiboot](https://en.wikipedia.org/wiki/Multi-booting) USB? It's a U
 
 There are plenty of tools to create a multiboot USB. 
 
-* [Multiboot](http://liveusb.info/): It works well on Debian and Debian based distros. You can add a windows ISO.
-
-* [YUMI](http://www.pendrivelinux.com/yumi-multiboot-usb-creator/): It works on Windows.
-
+1. [Multiboot](http://liveusb.info/): It works well on Debian and Debian based distros. You can add a windows ISO.
+2. [YUMI](http://www.pendrivelinux.com/yumi-multiboot-usb-creator/): It works on Windows.
+3. [MultiWriter](https://wiki.gnome.org/Apps/MultiWriter): It's a GNOME software. Never used it.
 
 The best way to create a multiboot USB is by terminal. Everytime there is new version of the distro, all you have to do is to change the ISO file using copy>paste and change the name in the grub.cfg file.
 This tutorial is based on [Arch wiki](https://wiki.archlinux.org/index.php/Multiboot_USB_drive).
@@ -64,13 +63,13 @@ sudo mkfs.ext4 -L MULTIBOOT /dev/sdX1
 
 The first will have the nessesary files to boot and the second the ISO files of the distributions.
 
-For Debian/Ubuntu
+*For Debian/Ubuntu*
 
 {% highlight ruby %}
 sudo mkdir /media/USERNAME/MULTIBOOT/{boot,iso}
 {% endhighlight %}
 
-For Arch Linud/openSUSE
+*For Arch Linud/openSUSE*
 
 {% highlight ruby %}
 sudo mkdir /run/media/USERNAME/MULTIBOOT/{boot,iso}
@@ -81,19 +80,19 @@ Where USERNAME is the username you have to enter your system. If the above are c
 
 #### Install grub.
 
-For Debian/Ubuntu
+*For Debian/Ubuntu*
 
 {% highlight ruby %}
 sudo grub-install --force --no-floppy --root-directory=/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
 
-For Arch Linux
+*For Arch Linux*
 
 {% highlight ruby %}
 sudo grub-install --target=i386-pc --recheck --boot-directory=/run/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
 
-For openSUSE
+*For openSUSE*
 
 {% highlight ruby %}sudo grub2-install --target=i386-pc --recheck --boot-directory=/run/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
@@ -106,19 +105,19 @@ Where USERNAME is the username you have to enter your system.
 
 You can copy mine from the github. You can add # to each menuentry you don't need.
 
-For Debian/Ubuntu
+*For Debian/Ubuntu*
 
 {% highlight ruby %}
 sudo nano /media/USERNAME/MULTIBOOT/boot/grub/grub.cfg
 {% endhighlight %}
 
-For Arch Linux
+*For Arch Linux*
 
 {% highlight ruby %}
 sudo nano /run/media/USERNAME/MULTIBOOT/boot/grub/grub.cfg
 {% endhighlight %}
 
-For openSUSE
+*For openSUSE*
 
 {% highlight ruby %}
 sudo nano /run/media/USERNAME/MULTIBOOT/boot/grub2/grub.cfg
@@ -126,7 +125,7 @@ sudo nano /run/media/USERNAME/MULTIBOOT/boot/grub2/grub.cfg
 
 Where USERNAME is the username you have to enter your system.
 
-For openSUSE Add the following text
+For *openSUSE* add the following text
 
 {% highlight ruby %}
 # Config for GNU GRand Unified Bootloader (GRUB)
@@ -209,36 +208,29 @@ I pointed where the **initrd.gz** file is.
 
 This is complicated.
 
-- Download the cd
+* Download the cd
 
 {% highlight ruby %}
 wget http://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip 
 {% endhighlight %}
 
-
-- Unzip the file **Hirens.BootCD.15.2.zip**
-
-- Open the ISO with the unzip program and unzip the folder **HBCD**.
+* Unzip the file **Hirens.BootCD.15.2.zip**
+* Open the ISO with the unzip program and unzip the folder **HBCD**.
 
 ![Unzip HBCD](/post_images/multiboot/1.jpg)
 
-
-- Copy the folder **HBCD** to the **root** of your **USB**. Be careful, your **USB** has to be **FAT32 or NTFS** to work. The openSUSE ISOs don't work with NTFS. So you have to decide what to use.
-
-
-- Move to the folder **HBCD/Dos/** and decompress the file **dos.gz**. You'll have the file **dos.img**
+* Copy the folder **HBCD** to the **root** of your **USB**. Be careful, your **USB** has to be **FAT32 or NTFS** to work. The openSUSE ISOs don't work with NTFS. So you have to decide what to use.
+* Move to the folder **HBCD/Dos/** and decompress the file **dos.gz**. You'll have the file **dos.img**
 
 ![Unzip dos.gz](/post_images/multiboot/2.jpg)
 
-
-- Mount the file **dos.img** (use **Disk Image Mounter**) and copy the file **grub.exe** to your **root** of the **USB**.
+* Mount the file **dos.img** (use **Disk Image Mounter**) and copy the file **grub.exe** to your **root** of the **USB**.
 
 ![Mount dos.img](/post_images/multiboot/3.jpg)
 
 
-- Copy the file **menu.lst** to the root of the USB (optional).
-
-- Your USB has the following folders and files:
+* Copy the file **menu.lst** to the root of the USB (optional).
+* Your USB has the following folders and files:
 
 {% highlight ruby %}
 boot
@@ -251,7 +243,7 @@ grub.exe
 ![USB contents](/post_images/multiboot/4.jpg)
 
 
-- Finally add the menuentry to **grub.cfg**.
+*  Finally add the menuentry to **grub.cfg**.
 
 {% highlight ruby %}
 menuentry "HIRENS TOOLS" { 
