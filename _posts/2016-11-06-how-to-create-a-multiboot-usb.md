@@ -27,41 +27,51 @@ There are plenty of tools to create a multiboot USB.
 The best way to create a multiboot USB is by terminal. Everytime there is new version of the distro, all you have to do is to change the ISO file using copy>paste and change the name in the grub.cfg file.
 This tutorial is based on [Arch wiki](https://wiki.archlinux.org/index.php/Multiboot_USB_drive).
 
-1. Create a FAT32 partition. I choose ext4 because I want to use DVDs.
+#### Create a FAT32 partition. I choose ext4 because I want to use DVDs.
 
 Find where the usb is mounted.
+
 {% highlight ruby %}
 cat /proc/partitions
 {% endhighlight %}
 
 or
+
 {% highlight ruby %}
 lsblk
 {% endhighlight %}
 
 Unmount your USB.
+
 {% highlight ruby %}
 sudo umount /dev/sd
 {% endhighlight %}
 
 For FAT32 use the command
+
 {% highlight ruby %}
 sudo mkfs.vfat -n MULTIBOOT /dev/sdX1
 {% endhighlight %}
 
 For ext4 use the command (be careful. When you copy the iso to the folder, you need to have to be administrator)
+
 {% highlight ruby %}
 sudo mkfs.ext4 -L MULTIBOOT /dev/sdX1
 {% endhighlight %}
 
-1. Mount the USB and create 2 folders, boot and iso. The first will have the nessesary files to boot and the second the ISO files of the distributions.
+
+#### Mount the USB and create 2 folders, boot and iso. 
+
+The first will have the nessesary files to boot and the second the ISO files of the distributions.
 
 For Debian/Ubuntu
+
 {% highlight ruby %}
 sudo mkdir /media/USERNAME/MULTIBOOT/{boot,iso}
 {% endhighlight %}
 
 For Arch Linud/openSUSE
+
 {% highlight ruby %}
 sudo mkdir /run/media/USERNAME/MULTIBOOT/{boot,iso}
 {% endhighlight %}
@@ -69,41 +79,47 @@ sudo mkdir /run/media/USERNAME/MULTIBOOT/{boot,iso}
 Where USERNAME is the username you have to enter your system. If the above are confusing, just go to your USB and add the two directories using nautilus (if it's ext4 as superuser).
 
 
-1. Install grub.
+#### Install grub.
 
 For Debian/Ubuntu
+
 {% highlight ruby %}
 sudo grub-install --force --no-floppy --root-directory=/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
 
 For Arch Linux
+
 {% highlight ruby %}
 sudo grub-install --target=i386-pc --recheck --boot-directory=/run/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
 
 For openSUSE
+
 {% highlight ruby %}sudo grub2-install --target=i386-pc --recheck --boot-directory=/run/media/USERNAME/MULTIBOOT/boot /dev/sdX
 {% endhighlight %}
 
 Where USERNAME is the username you have to enter your system.
 
+#### Now copy the ISOs inside the iso folder. 
 
-1. Now copy the ISOs inside the iso folder. 
+#### You have to create the grub.cfg (/boot/grub). 
 
-1. You have to create the grub.cfg (/boot/grub). You can copy mine from the github.
-You can add # to each menuentry you don't need.
+You can copy mine from the github. You can add # to each menuentry you don't need.
 
 For Debian/Ubuntu
+
 {% highlight ruby %}
 sudo nano /media/USERNAME/MULTIBOOT/boot/grub/grub.cfg
 {% endhighlight %}
 
 For Arch Linux
+
 {% highlight ruby %}
 sudo nano /run/media/USERNAME/MULTIBOOT/boot/grub/grub.cfg
 {% endhighlight %}
 
 For openSUSE
+
 {% highlight ruby %}
 sudo nano /run/media/USERNAME/MULTIBOOT/boot/grub2/grub.cfg
 {% endhighlight %}
@@ -153,13 +169,16 @@ If you want more, you can check the [Arch Wiki](https://wiki.archlinux.org/index
 
 I will describe 2 examples here that need attention.
 
-1. Debian: Download **firmware-8.6.0-amd64-i386-netinst.iso** and put it in the iso folder.
+### Debian 
+
+Download **firmware-8.6.0-amd64-i386-netinst.iso** and put it in the iso folder.
 
 I had to download [initrd.gz for 64bit](https://mirrors.kernel.org/debian/dists/stable/main/installer-amd64/current/images/hd-media/initrd.gz) and 
 [initrd.gz for 32bit](https://mirrors.kernel.org/debian/dists/stable/main/installer-i386/current/images/hd-media/initrd.gz)
 
 Rename them accordingly and copy them to **iso** folder.<br>
 As menuentry I used for 64bit
+
 {% highlight ruby %}
 menuentry "Debian 8.6 64bit" {
 	set isofile='/iso/firmware-8.6.0-amd64-i386-netinst.iso'
@@ -171,6 +190,7 @@ menuentry "Debian 8.6 64bit" {
 {% endhighlight %}
 
 and
+
 {% highlight ruby %}
 menuentry "Debian 8.6 32bit" {
 	set isofile='/iso/firmware-8.6.0-amd64-i386-netinst.iso'
@@ -184,7 +204,10 @@ menuentry "Debian 8.6 32bit" {
 
 I pointed where the **initrd.gz** file is.
 
- [Hirens Boot CD](http://www.hirensbootcd.org/): This is complicated.
+
+### [Hirens Boot CD](http://www.hirensbootcd.org/)
+
+This is complicated.
 
 - Download the cd
 
