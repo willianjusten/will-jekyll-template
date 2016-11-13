@@ -255,7 +255,9 @@ More info
 * [Arch wiki](https://wiki.archlinux.org/index.php/Multiboot_USB_drive)<br>
 * [vancepym/MULTIBOOT](https://github.com/vancepym/MULTIBOOT/tree/master/grub2)<br>
 * [USB Multiboot con GRUB](http://gnulinuxvagos.es/topic/4586-usb-multiboot-con-grub/)<br>
-* [Boot iso images from hdd (Grub2)](http://stressat.blogspot.gr/2014/04/boot-iso-images-from-hdd-grub2.html)
+* [Boot iso images from hdd (Grub2)](http://stressat.blogspot.gr/2014/04/boot-iso-images-from-hdd-grub2.html)<br>
+* [github/aguslr/multibootusb](https://github.com/aguslr/multibootusb)<br>
+* [github/hias/glim](https://github.com/thias/glim)
 
 Here are the tutorials in Greek:
 * [Δημιουργία multi liveUSB με openSUSE](http://eiosifidis.blogspot.gr/2015/05/script-multi-liveusb-opensuse.html)<br>
