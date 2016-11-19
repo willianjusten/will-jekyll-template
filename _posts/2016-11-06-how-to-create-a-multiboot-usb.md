@@ -251,7 +251,7 @@ linux16 /grub.exe —config-file="find —set-root /HBCD/menu.lst; configfile /H
 } 
 {% endhighlight %}
 
-More info
+More info<br>
 * [Arch wiki](https://wiki.archlinux.org/index.php/Multiboot_USB_drive)<br>
 * [vancepym/MULTIBOOT](https://github.com/vancepym/MULTIBOOT/tree/master/grub2)<br>
 * [USB Multiboot con GRUB](http://gnulinuxvagos.es/topic/4586-usb-multiboot-con-grub/)<br>
@@ -259,6 +259,6 @@ More info
 * [github/aguslr/multibootusb](https://github.com/aguslr/multibootusb)<br>
 * [github/hias/glim](https://github.com/thias/glim)
 
-Here are the tutorials in Greek:
+Here are the tutorials in Greek:<br>
 * [Δημιουργία multi liveUSB με openSUSE](http://eiosifidis.blogspot.gr/2015/05/script-multi-liveusb-opensuse.html)<br>
 * [Δημιουργία Multiboot USB, συνέχεια--> Προσθήκη Hirens](http://eiosifidis.blogspot.gr/2016/10/multiboot-usb-hirens.html)
