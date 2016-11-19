@@ -123,9 +123,9 @@ chown wwwrun /mnt/nextcloud_data
 Now download [Nextloud](https://nextcloud.com/install/). Then unzip and move the folder to the server directory.
 
 {% highlight ruby %}
-wget https://download.nextcloud.com/server/releases/nextcloud-10.0.0.zip
-unzip nextcloud-10.0.0.zip
-cp -r netcloud /srv/www/
+wget https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip
+unzip nextcloud-10.0.1.zip
+cp -r nextcloud /srv/www/htdocs
 chown -R wwwrun /srv/www/htdocs/nextcloud/
 {% endhighlight %}
 
