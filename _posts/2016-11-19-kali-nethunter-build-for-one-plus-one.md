@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Πως να κάνετε build το Kali Nethunter για το τηλέφωνο One Plus One"
+title: "Πως να κανετε build το Kali Nethunter για το τηλεφωνο One Plus One"
 date: 2016-11-19 16:09:34
 description: 
 tags:
@@ -10,7 +10,7 @@ tags:
 - 1 + 1
 - build
 categories:
-- Build Kali Nethunter for One Plus One
+- Build Kali Nethunter
 twitter_text: 'Πως να κάνετε build το Kali Nethunter για το τηλέφωνο One Plus One'
 ---
 
