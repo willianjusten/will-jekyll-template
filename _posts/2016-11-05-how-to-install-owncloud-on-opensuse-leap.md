@@ -6,10 +6,12 @@ description: Official documentation describes installation on Red Hat/CentOS and
 tags:
 - ownCloud
 - openSUSE
-- Leap
+- leap
+- cloud
 categories:
 - ownCloud tips and tricks
 - openSUSE tips and tricks
+- Cloud solutions
 twitter_text: 'Tutorial how to install Nextcloud on openSUSE Leap'
 ---
 
