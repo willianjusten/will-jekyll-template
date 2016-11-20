@@ -363,6 +363,6 @@ cloud.opensuse.gr{% endhighlight %}
 Στην ιστοσελίδα των [λήψεων](https://www.seafile.com/en/download/) θα βρείτε και clients για υπολογιστές και κινητά.
 
 ΠΗΓΕΣ:<br>
-[http://manual.seafile.com/deploy/](http://manual.seafile.com/deploy/)
-[https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile/](https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile)
+[http://manual.seafile.com/deploy/](http://manual.seafile.com/deploy/)<br>
+[https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile/](https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile)<br>
 [http://manual.seafile.com/deploy/https_with_nginx.html](http://manual.seafile.com/deploy/https_with_nginx.html)
