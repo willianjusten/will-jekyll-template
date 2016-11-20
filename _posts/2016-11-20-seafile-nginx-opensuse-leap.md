@@ -42,10 +42,10 @@ nano /etc/hosts{% endhighlight %}
 
 Στα παραπάνω:
 
-**192.168.1.100** = η IP του διακομιστή
-**cloud** = το όνομα του διακομιστή
+**192.168.1.100** = η IP του διακομιστή<br>
+**cloud** = το όνομα του διακομιστή<br>
 **opensuse.gr** = το domain name του διακομιστή
-
+<br>
 Επιβεβαιώστε το όνομα που δώσατε με τα παρακάτω:
 
 {% highlight ruby %}
@@ -68,9 +68,9 @@ zypper in python python-imaging python-MySQL-python python-setuptools mariadb ma
 
 Πριν ξεκινήσουμε με τις βάσεις δεδομένων, το seafile απαιτεί την ύπαρξη 3 βάσεων:
 
-* ccnet database
-* seafile database
-* seahub database
+* ccnet database<br>
+* seafile database<br>
+* seahub database<br>
 
 Στο προηγούμενο βήμα εγκαταστάθηκε ο διακομιστής MySQL/MariaDB, και τώρα θα εκκινήσει με την εντολή:
 
@@ -203,8 +203,7 @@ seahub database = την βάση δεδομένων - seahub_db.{% endhighlight
 zypper in nginx{% endhighlight %}
 
 
-{% highlight ruby %}
-Δημιουργία πιστοποιητικού SSL{% endhighlight %}
+**Δημιουργία πιστοποιητικού SSL**
 
 Μετακίνηση στο φάκελο του nginx και δημιουργία νέου φακέλου για το πιστοποιητικό SSL. Δημιουργήστε το αρχείο με την εντολή **OpenSSL**. Εάν προτιμάτε το Let's Encrypt, θα βρείτε [οδηγίες εδώ](https://certbot.eff.org/all-instructions/#other-unix-nginx) και πρέπει να συνδυάσετε τις οδηγίες.
 
@@ -360,10 +359,10 @@ cloud.opensuse.gr{% endhighlight %}
 
 Εισάγετε το όνομα διαχειριστή και συνθηματικό που εισάγατε παραπάνω.
 Μπορείτε να χρησιμοποιήσετε τον διακομιστή σας.
-
+<br><br>
 Στην ιστοσελίδα των [λήψεων](https://www.seafile.com/en/download/) θα βρείτε και clients για υπολογιστές και κινητά.
 
-ΠΗΓΕΣ:
+ΠΗΓΕΣ:<br>
 [http://manual.seafile.com/deploy/](http://manual.seafile.com/deploy/)
 [https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile/](https://www.howtoforge.com/tutorial/ubuntu-15-04-seafile)
 [http://manual.seafile.com/deploy/https_with_nginx.html](http://manual.seafile.com/deploy/https_with_nginx.html)
