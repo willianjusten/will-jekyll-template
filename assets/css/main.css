@@ -1,6 +1,6 @@
 html {
-/*     font-family: sans-serif;
- */    -ms-text-size-adjust: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
 body {
@@ -96,8 +96,8 @@ code,
 kbd,
 pre,
 samp {
-/*     font-family: monospace, monospace;
- */    font-size: 1em
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em
 }
 button,
 input,
@@ -178,14 +178,14 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 @font-face {
-/*     font-family: 'Open Sans';
- */    font-style: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
     font-weight: 300;
     src: local('Open Sans Light'), local('OpenSans-Light'), url("https://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2") format('woff2')
 }
 @font-face {
-/*     font-family: 'Open Sans';
- */    font-style: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
     font-weight: 800;
     src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url("https://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hiYtBUPDK3WL7KRKS_3q7OE.woff2") format('woff2')
 }
@@ -193,8 +193,8 @@ h1,
 h2,
 h3,
 h4 {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
     font-style: normal
 }
 @-webkit-keyframes pulse {
@@ -356,8 +356,8 @@ aside {
 aside h2 {
     text-align: center;
     margin: 0 0 .625rem;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
     font-style: normal;
     font-size: 1.25rem;
     color: #fff
@@ -374,8 +374,8 @@ aside nav li a {
     display: block;
     padding: 1.25rem;
     text-decoration: none;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #b3b3b1;
     border-top: 1px solid #797979;
@@ -444,8 +444,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .search-form .search-field {
     width: 100%;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.625rem;
     color: #fff;
@@ -497,8 +497,8 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-form .search-list {
     position: absolute;
     width: 100%;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal
 }
 .search-form h4,
@@ -684,8 +684,8 @@ body {
     }
 }
 .header-post .date {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1rem
 }
@@ -700,8 +700,8 @@ body {
     }
 }
 .header-post .subtitle {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.25rem
 }
@@ -714,8 +714,8 @@ body {
 .header-post p {
     color: #fff;
     text-decoration: none;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.125rem
 }
@@ -786,8 +786,8 @@ body {
     }
 }
 .post-item .datetime .day {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
     font-style: normal;
     color: #0562dc;
     font-size: 5rem;
@@ -866,8 +866,8 @@ body {
 }
 .post-item .content .description {
     color: #333;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.25rem;
 }
@@ -903,8 +903,8 @@ body {
     padding-right: 0;
     padding: 0 1.25rem;
     margin: 0 auto 1.875rem;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 1.125rem;
     line-height: 2;
@@ -964,8 +964,8 @@ body {
     color: #3085f4
 }
 .post-content a {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #0562dc;
     text-decoration: none;
@@ -983,8 +983,8 @@ body {
 .post-content h3,
 .post-content h4,
 .post-content h5 {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
     font-style: normal
 }
 .post-content h1 {
@@ -1132,8 +1132,8 @@ table td {
     padding: .313rem
 }
 .tag-title {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     font-size: 2.25rem;
     margin-top: 3.75rem;
@@ -1232,8 +1232,8 @@ pre code:after {
 }
 pre span {
     line-height: 1.5rem;
-/*     font-family: 'Monaco', 'Consolas', 'Menlo', monospace
- */}
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .highlight {
     margin: 0;
 }
@@ -1362,8 +1362,8 @@ pre span {
 .author .def {
     color: #808080;
     font-size: 1.125rem;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     margin: .625rem;
 }
@@ -1377,8 +1377,8 @@ pre span {
     margin: 0;
 }
 .author .name a {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
     font-style: normal;
     text-decoration: none;
     color: #000;
@@ -1393,8 +1393,8 @@ pre span {
     }
 }
 .author .desc {
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     margin: .625rem;
     font-size: 1rem;
@@ -1440,8 +1440,8 @@ footer {
 footer p,
 footer a {
     text-decoration: none;
-/*     font-family: 'Open Sans', sans-serif;
- */    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #fff;
     text-align: center;
