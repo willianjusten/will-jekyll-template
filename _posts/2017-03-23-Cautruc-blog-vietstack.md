@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cấu trúc blog VietStack"
-date: 2015-03-24 9:21:35
+date: 2017-03-24 9:21:35
 image: '/assets/img/'
 description: 'Mô tả về cấu trúc blog của VietStack.'
 tags:

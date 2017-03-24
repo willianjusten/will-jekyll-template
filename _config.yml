@@ -4,6 +4,8 @@ description: Trang blog của nhóm VietStack
 #baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
 baseurl: ""
 url: "https://blog.vietstack.vn" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+enforce_ssl: blog.vietstack.vn
+
 
 # User settings
 username: VietStack
