@@ -3,7 +3,7 @@ layout: post
 title: "Blog chính thức của VietStack Team"
 date: 2017-03-24 10:32:44
 image: '/assets/img/'
-description: 'First steps to use this template'
+description: 'Giới thiệu về blog chính thức của nhóm'
 tags:
 - vietstack
 - news
