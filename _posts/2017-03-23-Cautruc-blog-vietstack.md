@@ -16,7 +16,7 @@ Blog của VietStack được xây dựng trên nền tảng `JEKYLL` và host t
 
 - Các bài viết được đặt trong thư mục `_post` trong repos.
 - Mỗi bài viết được đặt tên theo dạng `year_month_day_Tieudebaiviet`
-- Trong mỗi bài viết đều phải chứa phần mở đầu như mẫu bên dưới
+- Trong mỗi bài viết gồm 2 phần chính: Phần `mở đầu` và phần `nội dung chính`
 
 {% highlight ruby %}
 ---
@@ -33,6 +33,13 @@ categories:
 twitter_text: 'Put your twitter description here.'
 ---
 {% endhighlight %}
+
+
+Tiếp theo là phần nội dung chính của blog, phần nội dung này được soạn theo cú pháp của markdown
+
+```
+đặt cú pháp markdown vào đây
+```
 
 Trong đó: 
 
