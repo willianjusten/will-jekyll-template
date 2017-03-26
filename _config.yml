@@ -1,6 +1,6 @@
 # Site settings
-title: BlogVietStack
-description: Trang blog của nhóm VietStack
+title: Blog VietOpenStack
+description: Trang blog của cộng đồng VietOpenStack - quản lý bởi VietStack Team
 #baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
 baseurl: ""
 url: "https://blog.vietstack.vn" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
@@ -8,8 +8,8 @@ enforce_ssl: blog.vietstack.vn
 
 # User settings
 username: VietStack
-user_description: VietStack team
-user_title: Blog của cộng đồng VietOpenStack
+user_description: VietStack 
+user_title: Blog của cộng đồng VietOpenStack - quản lý bởi VietStack Team
 email: contact@vietstack.vn
 twitter_username: vietstack
 github_username:  vietstack
