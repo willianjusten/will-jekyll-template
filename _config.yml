@@ -1,5 +1,5 @@
 # Site settings
-title: Blog VietOpenStack
+title: VietOpenStack Blog 
 description: Trang blog của cộng đồng VietOpenStack - quản lý bởi VietStack Team
 #baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
 baseurl: ""
