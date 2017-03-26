@@ -22,14 +22,21 @@ Blog dùng để:
 
 ## Đặc điểm của blog
 
-- Được xây dựng trên nền tảng github page
+- Được xây dựng trên nền Jekyll
+- Được host trên gihub page
 - Sử dụng cú pháp markdown để soạn bài.
 - Áp dụng hình hình push, pull, merge của git để kiểm duyệt nội dung.
 
 ## Các tham gia viết bài
 
 1. Fork report từ link https://github.com/vietstacker/vietstacker.github.io/fork
-2. Clone về máy local và commit
+2. Clone về máy local và commit.
 3. Gửi pull request tới nhánh master.
-4. Chờ approve
+4. Chờ approve.
 
+## Quản lý nội dung và kỹ thuật
+- Quản lý kỹ thuật: VietStack Team.
+- Quản lý nội dung: VietStack team.
+
+## Lưu ý: 
+- Blog hiện đang tìm hướng dẫn xin cấp phép nếu yêu cầu bắt buộc.
