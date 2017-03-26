@@ -6,7 +6,6 @@ baseurl: ""
 url: "https://blog.vietstack.vn" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 enforce_ssl: blog.vietstack.vn
 
-
 # User settings
 username: VietStack
 user_description: VietStack team
