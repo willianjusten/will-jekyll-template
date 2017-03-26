@@ -9,7 +9,7 @@ enforce_ssl: blog.vietstack.vn
 # User settings
 username: VietStack
 user_description: VietStack team
-user_title: VietStack
+user_title: Blog của cộng đồng VietOpenStack
 email: contact@vietstack.vn
 twitter_username: vietstack
 github_username:  vietstack
