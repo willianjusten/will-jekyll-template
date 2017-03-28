@@ -36,7 +36,7 @@ class CustomClass(base.Action):
 
 Besides, if we would like we can re-write an action base to be not dependent on that base of Mistral. The below is such an example:
 
-```sh
+{% highlight python %}
 from abc import ABCMeta, abstractmethod
 from six import add_metaclass
  
@@ -57,13 +57,13 @@ class VietStackAction():
     @abstractmethod
     def _run(self):
         pass
-```
+{% endhighlight %}
 
 I created a folder call ‘openstack_access’ to put the method get_client() into which is the way to connect to Nova client. The below is get_client()
 
 For the action, we can create something very basic as below. Here I do not want to depend on the base class of mistral (actually, we have to depend on the run() and test() methods if we use mistral action base), therefore I use my own action base class as VietStackAction() and create other actions Action1 and Action2 as below:
 
-```sh
+{% highlight python %}
 from openstack_access import get_client
  
 class Action1(VietStackAction):
@@ -112,7 +112,7 @@ class Action2(VietStackAction):
         host = "vagrant-ubuntu-trusty-64.localdomain"
         status_active = "ACTIVE"
         return self.get_vms_id(host=host, status_active)
-```
+{% endhighlight %}
 
 And now, we can write our own workflow which is actually a yaml file. After finishing our own workflow, put it into the mistral/resources/workflows and re-run mistral db-manage (check it on Internet) to store its information in to db. (db-manage is also needed after finishing the action). The below is a simple example of workflow. Note that in the workflow (especially in inputs of actions) we can use yaql to filter or access to the value of inputs.
 
