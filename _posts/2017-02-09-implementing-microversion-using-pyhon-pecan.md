@@ -118,12 +118,14 @@ https://github.com/vietstacker/Pecan_Microversioning
 
 ```sh
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
+
 ```
 
-his method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
+- this method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
 
 ```sh
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.11" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
+
 ```
 
 <img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1024" height="432" />
