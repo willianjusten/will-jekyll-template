@@ -103,7 +103,7 @@ https://github.com/vietstacker/Pecan_Microversioning
 
 <ul>
 <li>We can test this demo inside virtualenv to not affect to the local working environment. In my virtualenv, i use port 8085.</p></li>
-<li><p>Execute command “pecan serve config.py” to run a webserver using apache mod_wsgi. For more information about basic pecan and apache mod_wsgi webserver, check the below blog:</p></li>
+<li>Execute command “pecan serve config.py” to run a webserver using apache mod_wsgi. For more information about basic pecan and apache mod_wsgi webserver, check the below blog:</li>
 </ul>
 
 <p>https://vietstack.wordpress.com/2016/11/11/openstackcloudappwebserver-using-apache-mod_wsgi-and-pecan-in-publisher-subcriber/
