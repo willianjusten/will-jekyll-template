@@ -30,12 +30,15 @@ Các bạn có thể tham khảo các thông tin về CNA theo website dưới �
 
 https://www.cncf.io/
 Tuy nhiên, như ở trên đã đề cập, đây là một “buzz word”, tôi cũng không muốn lặp lại những quy tắc trên cho nên trong giới hạn bài viết này ta sẽ đi tìm/định nghĩa khái niệm này thông qua một cái nhìn khác - cái nhìn của microservice và mở rộng hơn là microservice trong môi trường cloud và hệ sinh thái cloud.
+
 <strong>I. CNA dưới góc nhìn của microservice</strong>
+
 <span style="text-decoration:underline;">Tại sao lại liên quan đến microservice ở đây?</span>
 Trong thời điểm hiện tại của quá trình phát triển phần mềm, xét về mặt “cảm tính” thì thiết kế các app theo kiến trúc microservice là xu hướng “thời thượng” vì đơn giản rất nhiều sản phẩm của các hãng lớn đã và đang theo con đường này. Đứng dưới góc độ kỹ thuật thì quả thực microservice đem lại rất nhiều lợi ích (các bạn có thể dễ dàng tìm thấy thông tin về lợi/hại về microservice trên Internet).
 Một app dưới góc nhìn tổng quát chính là sự tổng hòa của một hoặc nhiều component. CNA cũng không ngoại lệ. Như góc nhìn high-level về CNA ở trên, để nó phù hợp với môi trường cloud thì kiến trúc microservice là điều không thể tránh khỏi khi thiết kế CNA. Việc cần làm hiện nay với CNA chính là tách rời các component đó và tái thiết kế chúng theo kiến trúc microservice.
 
 <span style="text-decoration:underline;">Vậy, microservice là gì?</span>
+
 Theo một nguồn tin không chính thống mà tôi có được (tôi thử search google nhưng không tìm thấy thông tin :)), Vodafone định nghĩa thế này:
 “A microservice is a small application implementing an atomic capability (e.g. authorisation or a single node feature) that communicates with other microservices using open, web-type APIs (e.g. HTTP, REST) remotely accessible over IP".
 Tuy nhiên, một góc nhìn khác thì nó lại là thế này:D:
