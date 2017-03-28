@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blog chính thức của VietStack Team"
-date: 2017-03-24 10:32:44
+date: 2017-03-28 10:32:44
 image: '/assets/img/'
 description: 'Giới thiệu về blog chính thức của nhóm'
 tags:
