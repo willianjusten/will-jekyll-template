@@ -99,7 +99,7 @@ sudo a2enmod wsgi
 
 To activate the new configuration, you need to run:
 
-```
+```sh 
 service apache2 restart
 ```
 
