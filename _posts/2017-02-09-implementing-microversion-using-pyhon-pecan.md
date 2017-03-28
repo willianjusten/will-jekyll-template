@@ -18,22 +18,21 @@ In a nut shell, when we send a request to a routed method, an API version object
 
 This object will get the mis_version, max_version from headers provided in API.
 
-[sourcecode language="python" wraplines="false" collapse="false"]
-
+```sh
 Class Version(object):
-
-	def __init__(self, headers, min_ver, max_ver):
-		raise NotImplementedError
-	def __eq__(self, other):
-		pass
-	def __lt__(self, other):
-		pass
-	def __gt__(self, other):
-		pass
-	....
- 	def matches(self, start_version, end_version):
-		pass
-[/sourcecode]
+ 
+    def __init__(self, headers, min_ver, max_ver):
+        raise NotImplementedError
+    def __eq__(self, other):
+        pass
+    def __lt__(self, other):
+        pass
+    def __gt__(self, other):
+        pass
+    ....
+    def matches(self, start_version, end_version):
+        pass
+```
 
 <ul>
 <li>The methods of each controller that are versioned (so called VersionedMethod) will be implemented as VerisonedMethod() instance. It will take the value of each function of controller as well as its start/end_version. Later on we will collect each version of the function and compare its version with the version provided in header.</li>
@@ -41,8 +40,8 @@ Class Version(object):
 
 ```sh
 Class VersionedMethod(object):
-	def __init__(self, name, start_version, end_version, function):
-		raise NotImplementedError
+    def __init__(self, name, start_version, end_version, function):
+        raise NotImplementedError
 ```
 
 <ul>
@@ -50,33 +49,32 @@ Class VersionedMethod(object):
 </ul>
 
 ```sh
-
 class Controller():
-	…..
-	@classmethod
-	def api_version(cls, min_ver, max_ver=None):
-		def decorator(f):
-			….
-			return f
-		return decorator
+    …..
+    @classmethod
+    def api_version(cls, min_ver, max_ver=None):
+        def decorator(f):
+            ….
+            return f
+        return decorator
 ```
 
 In the routed controller, for each method, we need to put the decorator of api_version() at the most outer as showed as below example:
 
 ```sh
-
 from pecan import expose
-
+ 
 class RoutedController(Controller):
-	@Controller.api_version(‘1.1’, ‘1.10’)
-	@expose()
-	def post():
-		return “This method supports version from 1.1 to 1.10”
+    @Controller.api_version('1.1', '1.10')
+    @expose()
+    def post():
+        return “This method supports version from 1.1 to 1.10"
+ 
+    @Controller.api_version('1.11')
+    @expose()
+    def post():
+        return "This method only supports version 1.11"
 
-	@Controller.api_version(‘1.11’)
-	@expose()
-	def post():
-		return “This method only supports version 1.11”
 ```
 
 <ul>
@@ -117,15 +115,13 @@ https://github.com/vietstacker/Pecan_Microversioning
 <p style="padding-left:30px;">This method uses version 1.6 of API, It will return the result: “This method supports version from 1.1 to 1.10”</p>
 
 ```sh
-curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
-
+curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
 ```
 
 - this method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
 
 ```sh
-curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.11" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
-
+curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.1" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
 ```
 
 <img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1024" height="432" />
