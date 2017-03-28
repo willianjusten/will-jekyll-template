@@ -54,9 +54,9 @@ class InstanceExtra(BASE, NovaBase, models.SoftDeleteMixin):
     vcpu_model = orm.deferred(Column(Text))
     migration_context = orm.deferred(Column(Text))
     VietStack_request = orm.deferred(Column(Text))
+{% endhighlight %}
 
 In this table, I am going to create another column called “VietStack_request” that stores the information of VietStack_request in InstanceExtra table in nova database.
-
 
 <h3>2. Changes in nova/objects</h3>
 
