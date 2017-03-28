@@ -2,12 +2,11 @@
 title: Tại sao "tôi" (VIETSTACK) theo đuổi OpenStack
 date: 2014-03-07 16:42
 comments: true
-categories: 
-  - Blog
-tags: 
-  - Chia sẻ
-  - Kinh nghiệm
-  - VietStack
+tags:
+- news
+categories:
+- news
+- vietstack
 ---
 Tóm tắt: Chủ đề nói về lý do mà tôi theo đuổi OpenStack và dành nhiều quan tâm đến nó trong thời gian này. Đây là những quan điểm mang tính rất riêng và cũng để trao đổi cùng với những fan hâm mộ "OpenStack", để xem xem các bạn có những cảm nghĩ và nhận định giống như tôi hay không.<!--more-->
 Chào các bạn, tiếp tục các chuỗi bài viết trên blog của VietStack, chủ đề lần này tôi muốn chia sẻ cùng mọi người một vài lý do khiến tôi quan tâm nhiều đến OpenStack, viết đến đây thì tôi không hề phản đối ý kiến nhiều bạn bè và đồng nghiệp cho rằng "Tôi đang cuồng OpenStack quá mức" - xin thừa nhận với anh em rằng "Đúng, đó là sự thật" và hơn thế nữa tôi muốn nói rằng "TÔI LUÔN ĐAM MÊ NHỮNG GÌ MÀ TÔI THEO ĐUỔI". Không có đam mê tôi tin rằng tôi và mọi người không thể làm tốt việc đó được.

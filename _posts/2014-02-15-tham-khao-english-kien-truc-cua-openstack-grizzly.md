@@ -1,13 +1,12 @@
 ---
 title: [Tham khảo - English] Kiến trúc của OpenStack Grizzly
 comments: true
-categories:
-  - Tech
+date: 2014-02-15 4:21:35
 tags:
-  - Chia sẻ
-  - Hướng dẫn
-  - Kinh nghiệm
-  - openstack
+- news
+categories:
+- news
+- vietstack
 ---
 Tuy phiên bản hiện tại của OpenStack đang là Havana nhưng bài viết dưới của tác giả cuốn sách <a href="http://ken.pepple.info/openstack/2013/11/06/the-tenrec-rises%3A-deploying-openstack%2C-havana-edition/">Deploying OpenStack</a>  - <a href="http://ken.pepple.info/about/">Ken.pepple.info</a> đã tổng hợp lại một cách cô đọng và súc tích nhất về kiến trúc của OpenStack.  Tài liệu này rất thích hợp với các bạn đang tìm hiểu và muốn tìm hiểu chuyên sâu về OpenStack. Hiện chưa tìm được bản Việt Hóa - dịch của bài này nên xin phép gửi link tới các bạn tham khảo.<!--more-->
 

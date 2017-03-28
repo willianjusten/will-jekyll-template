@@ -2,12 +2,11 @@
 title: Tôi, bạn và OpenStack
 date: 2014-02-22 09:37
 comments: true
-categories: 
-  - Blog
-tags: 
-  - Chia sẻ
-  - Kinh nghiệm
-  - VietStack
+tags:
+- news
+categories:
+- news
+- vietstack
 ---
 <em><strong>Tóm tắt nội dung</strong></em>: <em>Bài viết này nhằm mục đích gửi đến những người đang quan tâm về OpenStack có thể hình dung được "Với OpenStack thì tôi, bạn sẽ đóng vai trò gì và  chúng ta có thể làm được gì với OpenStack. Ngoài ra tôi mong muốn phần nào giúp các bạn lựa chọn được hướng đi khi xác định tìm hiểu về OpenStack và sẽ ứng dụng nó vào trong thực tế. Bài viết chỉ là một góc nhìn từ quan điểm cá nhân, do vậy mong các bạn đóng góp ý kiến.</em>
 
