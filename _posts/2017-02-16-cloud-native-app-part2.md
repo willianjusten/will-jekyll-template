@@ -35,10 +35,10 @@ Các CNA sử dụng dữ liệu CM như những dữ liệu ngoài (external da
 Để ứng dụng CM, ta cần phải sử dụng một số template để định nghĩa các model của configuration. YANG và TOSCA là 2 templates phổ biến hiện nay. OpenDayLight là project ứng dụng YANG cho việc định nghĩa các network configuration của các ứng dụng trong khi TOSCA vô cùng phổ biến trong NFV. Một ví dụ cụ thể dưới đây cho việc sử dụng CM (e.g Redis) với YANG như sau:
 
 <ul>
-<li>Ta dùng YANG để định nghĩa các model của network configuration.</p></li>
-<li><p>Khởi tạo các model thành các file XML/Json, etc..</p></li>
-<li><p>Transfer và Serialize XML/Json file vào trong Redis sử dụng các protocols, e.g. NETCONF.</p></li>
-<li><p>Các ứng dụng đọc các data của nó từ redis và thực thi các tác vụ liên quan đến các data đó.</p></li>
+<li>Ta dùng YANG để định nghĩa các model của network configuration.</li>
+<li>Khởi tạo các model thành các file XML/Json, etc..</li>
+<li>Transfer và Serialize XML/Json file vào trong Redis sử dụng các protocols, e.g. NETCONF.</li>
+<li>Các ứng dụng đọc các data của nó từ redis và thực thi các tác vụ liên quan đến các data đó.</li>
 </ul>
 
 <p>Quá trình CM model được serialized và lưu trong Redis sẽ thuận tiện cho việc rolling back khi ta upgrade fails vì các new version và old version đều có thể sử dụng CM model.
