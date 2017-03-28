@@ -17,7 +17,7 @@ The below picture is the high-level architect of NFVO. It contains fundamental a
 In this picture, we can see that all the service is connected through API (mostly REST API). Some of them need communication channel AMQP such as OpenStack services. Others can be implemented as individual services.
 
 
-<img class="alignnone size-full wp-image-1104" src="https://vietstack.files.wordpress.com/2017/01/dsc_0029.jpg" alt="dsc_0029" width="4096" height="2304" />
+<img class="alignnone size-full wp-image-1104" src="https://vietstack.files.wordpress.com/2017/01/dsc_0029.jpg" alt="dsc_0029" width="1024" height="768" />
 
 <b>LCM: Life Cycle Management:</b>
 
