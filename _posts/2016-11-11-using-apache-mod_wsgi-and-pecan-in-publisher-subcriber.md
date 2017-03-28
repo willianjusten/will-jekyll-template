@@ -29,10 +29,12 @@ Note that, in Debian-base distros like Ubuntu, It is called Apache, in Redhat-ba
 
 <ul>
 <li>In my example, I use ubuntu 16.04 Xenial Xerus and create virtualenv for running this test bed.</p></li>
-<li><p>Firstly, you should install mod_wsgi:</p></li>
+<li>Firstly, you should install mod_wsgi:</li>
 </ul>
 
-<p><span style="color:#ff0000;">apt-get install libapache2-mod-wsgi</span>
+{% highlight python %}
+apt-get install libapache2-mod-wsgi
+{% endhighlight %}
 
 <ul>
 <li>Then, using the Apache virtual host to host the domain where Python pecan application runs. I create my own file called pecan_test.conf, you can change it as whatever name you would like</li>
@@ -40,7 +42,7 @@ Note that, in Debian-base distros like Ubuntu, It is called Apache, in Redhat-ba
 
 `/etc/apache2/sites-available/pecan_test.conf`
 
-```sh
+{% highlight python %}
 Listen 127.0.0.1:8080
 ServerName pecan_test
 
@@ -51,7 +53,7 @@ WSGIProcessgroup pecan_test
 WSGIApplicationgroup %{GLOBAL}
 Order deny,allow
 Allow from all
-```
+{% endhighlight %}
 
 You can see that, the WSGIScriptAlias will point to the app.wsgi that points to the config file of a python pecan application. To understand the pecan usage, it is your homework:)
 
@@ -65,7 +67,7 @@ application = deploy('/var/www/pecan_test/config.py')
 
 `/var/www/pecan_test/config.py`
 
-```sh
+{% highlight python %}
 #Server Specific Configurations
 server = {
 'port': '8080',
@@ -84,7 +86,8 @@ app = {
 '<strong>force_dict</strong>': True
 }
 }
-```
+{% endhighlight %}
+
 
 You can see that, in the ‘root’ keyword, the code where pecan python app uses in under pecanrest/controllers/root folder. You can follow the below link to see how to use pecan in a simple example:
 
@@ -109,7 +112,7 @@ Then restarting apache2:
 
 Now, checking the result:
 
-<img class="alignnone size-full wp-image-1063" src="https://vietstack.files.wordpress.com/2016/11/result.png" alt="result" width="8900" height="640" />
+<img class="alignnone size-full wp-image-1063" src="https://vietstack.files.wordpress.com/2016/11/result.png" alt="result" width="890" height="640" />
 
 You can see the result of each action of GET/POST/PUT
 Have fun!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
