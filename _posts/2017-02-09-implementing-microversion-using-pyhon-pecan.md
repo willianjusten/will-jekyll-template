@@ -118,16 +118,16 @@ https://github.com/vietstacker/Pecan_Microversioning
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
 {% endhighlight %}
 
-- this method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
+This method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
 
 {% highlight ruby %}
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.1" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
 {% endhighlight %}
 
-<img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1024" height="432" />
+<img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="800" height="432" />
 
 <ul>
-<li>The header of microversion is MANDATORY. The form of header is “X-Vietstack-Api-Version: Microversion ”. The error of HttpNotAcceptable is raised if the header is not provided or the key of header (X-Vietstack-Api-Version) is not True.</li>
+<li>The header of microversion is MANDATORY. The form of header is "X-Vietstack-Api-Version: Microversion ". The error of HttpNotAcceptable is raised if the header is not provided or the key of header (X-Vietstack-Api-Version) is not True.</li>
 </ul>
 
 VietStack team
