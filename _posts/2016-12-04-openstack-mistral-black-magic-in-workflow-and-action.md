@@ -9,9 +9,10 @@ categories:
 ---
 In Mistral, we have keywords that should be taken care of such as action, workflow, yaql. In fact, we can easily create customized actions, workflows to execute processes we want and use yaql language to filter, process or access to some data. We also have documentation to describe it as below:
 
-- YAQL: https://wiki.openstack.org/wiki/Mistral/UsingYAQL
-
-- ACTION PLUGIN: http://docs.openstack.org/developer/mistral/developer/creating_custom_action.html
+<ul>
+    <li> YAQL: https://wiki.openstack.org/wiki/Mistral/UsingYAQL </li>
+    <li> ACTION PLUGIN: http://docs.openstack.org/developer/mistral/developer/creating_custom_action.html</li>
+<ul>
 
 In this blog, what we can go through is nothing else just getting familiar with customizing/developing your own actions, workflows to fulfill the purpose of your requirements. In the source code of mistral, there is a base class that define action which is mistral/actions/base.py. If we want to write a new action plugin, based on the documentation of mistral, we should subclass it. However, this class is nothing else just a class that built on top of metaclass and it defines some abstract methods such as “run”, “test” that should be re-define in a action plugin, therefore we can rewrite another base class for action if we would like to have.  Note that, the action will be triggered to run through the executor. Check the file of mistral/engine/default_executor.py to see the action.run() triggered.
 
