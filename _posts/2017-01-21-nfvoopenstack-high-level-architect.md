@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [NFVO][OpenStack] High-Level Architect
+title: NFVO OpenStack High-Level Architect
 date: 2017-01-21 00:01
 tags:
 - OpenStack
@@ -10,7 +10,7 @@ categories:
 - Tech
 ---
 
-<a name="__DdeLink__165_1211754000"></a>The most significant difference between NFVO and VNFM is VNFO is responsible for Network Service (NS) meanwhile VNFM is responsible for VNF. NS is a collection of multiple VNFs, each VNF can be deployed as multiple virtual server on top of VIM.
+The most significant difference between NFVO and VNFM is VNFO is responsible for Network Service (NS) meanwhile VNFM is responsible for VNF. NS is a collection of multiple VNFs, each VNF can be deployed as multiple virtual server on top of VIM.
 
 The below picture is the high-level architect of NFVO. It contains fundamental and mandatory elements based on the proposal of ETSI. We will go along with each of them and discuss about the general usage of each element.
 
