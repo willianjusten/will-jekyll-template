@@ -103,7 +103,7 @@ https://github.com/vietstacker/Pecan_Microversioning
 
 <ul>
 <li>We can test this demo inside virtualenv to not affect to the local working environment. In my virtualenv, i use port 8085.</p></li>
-<li><p>Execute command “pecan serve config.py” to run a webserver using apache mod_wsgi. For more information about basic pecan and apache mod_wsgi webserver, check the below blog:</p></li>
+<li>Execute command “pecan serve config.py” to run a webserver using apache mod_wsgi. For more information about basic pecan and apache mod_wsgi webserver, check the below blog:</li>
 </ul>
 
 <p>https://vietstack.wordpress.com/2016/11/11/openstackcloudappwebserver-using-apache-mod_wsgi-and-pecan-in-publisher-subcriber/
@@ -114,15 +114,15 @@ https://github.com/vietstacker/Pecan_Microversioning
 
 <p style="padding-left:30px;">This method uses version 1.6 of API, It will return the result: “This method supports version from 1.1 to 1.10”</p>
 
-{% highlight bash %}
+{% highlight ruby %}
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
 {% endhighlight %}
 
 - this method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
 
-```sh
+{% highlight ruby %}
 curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.1" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ''
-```
+{% endhighlight %}
 
 <img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1024" height="432" />
 
