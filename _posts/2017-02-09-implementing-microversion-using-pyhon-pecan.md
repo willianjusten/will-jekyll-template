@@ -39,18 +39,17 @@ Class Version(object):
 <li>The methods of each controller that are versioned (so called VersionedMethod) will be implemented as VerisonedMethod() instance. It will take the value of each function of controller as well as its start/end_version. Later on we will collect each version of the function and compare its version with the version provided in header.</li>
 </ul>
 
-[sourcecode language="python" wraplines="false" collapse="false"]
-
+```sh
 Class VersionedMethod(object):
 	def __init__(self, name, start_version, end_version, function):
 		raise NotImplementedError
-[/sourcecode]
+```
 
 <ul>
 <li>Each controller will be inherited from a base controller that will handle all the processes related to the microversion such as checking versions, collecting versioned methods, etc. This base controller includes the method of api_version() that will be used as decorator in routed controller. For instance:</li>
 </ul>
 
-[sourcecode language="python" wraplines="false" collapse="false"]
+```sh
 
 class Controller():
 	…..
@@ -60,11 +59,11 @@ class Controller():
 			….
 			return f
 		return decorator
-[/sourcecode]
+```
 
 In the routed controller, for each method, we need to put the decorator of api_version() at the most outer as showed as below example:
 
-[sourcecode language="python" wraplines="false" collapse="false"]
+```sh
 
 from pecan import expose
 
@@ -78,7 +77,7 @@ class RoutedController(Controller):
 	@expose()
 	def post():
 		return “This method only supports version 1.11”
-[/sourcecode]
+```
 
 <ul>
 <li>The base controller design:</li>
@@ -117,17 +116,17 @@ https://github.com/vietstacker/Pecan_Microversioning
 
 <p style="padding-left:30px;">This method uses version 1.6 of API, It will return the result: “This method supports version from 1.1 to 1.10”</p>
 
-<span style="color:#ff0000;">curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’</span>
+```sh
+curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.6" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
+```
 
-<p style="padding-left:30px;">This method uses version 1.11 of API, It will return the result: “This method only supports version 1.11”</p>
+his method uses version 1.11 of API, It will return the result: "This method only supports version 1.11"
 
-<span style="color:#ff0000;">curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.11" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’</span>
+```sh
+curl -i -H "Accept:application/json" -H "X-Vietstack-Api-Version: Microversion 1.11" -X POST http://127.0.0.1:8085/api/v1 -H "Content-Type: application/json" -d ‘’
+```
 
-&nbsp;
-
-<img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1855" height="432" />
-
-&nbsp;
+<img class="alignnone size-full wp-image-1134" src="https://vietstack.files.wordpress.com/2017/02/pecan_microversion.png" alt="pecan_microversion" width="1024" height="432" />
 
 <ul>
 <li>The header of microversion is MANDATORY. The form of header is “X-Vietstack-Api-Version: Microversion ”. The error of HttpNotAcceptable is raised if the header is not provided or the key of header (X-Vietstack-Api-Version) is not True.</li>
