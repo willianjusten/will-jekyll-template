@@ -1,14 +1,12 @@
 ---
 title: Hướng dẫn cài đặt python 2.7.x trên windows 7
-date: 2014-02-17 15:50
 comments: true
-categories:
-  - Tech
+date: 2014-02-17 15:50
 tags:
-  - Chia sẻ
-  - Hướng dẫn
-  - Kinh nghiệm
-  - openstack
+- news
+categories:
+- news
+- vietstack
 ---
 Tài liệu hướng dẫn cài đặt python 2.7.x trên windows 7 dành cho người mới bắt đầu tìm hiểu.
 

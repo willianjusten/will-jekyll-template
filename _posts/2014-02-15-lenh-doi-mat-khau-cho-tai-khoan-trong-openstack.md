@@ -1,11 +1,12 @@
 ---
 title: Lệnh đổi mật khẩu cho tài khoản trong OpenStack
 comments: true
-categories: 
-  - Tech
+date: 2014-02-15 8:21:35
 tags:
-  - Hướng dẫn
-  - OpenStack
+- news
+categories:
+- news
+- vietstack
 ---
 Trong khi cái đặt OpenStack theo cách thủ công, devstack, RDO ... thường thường sẽ có ít nhất 2 tài khoản được tạo ra, đó là admin và demo.  Và tùy vào hướng dẫn mà tác giả  hoặc kịch bản sẽ khai báo mật khẩu trước hoặc sinh ra mật khẩu ngẫu nhiên. Do vậy muốn thay đổi mật khẩu ta có thể sử dụng lênh sau: (tài khoản này được tạo khi cài keystone)<!--more-->
 

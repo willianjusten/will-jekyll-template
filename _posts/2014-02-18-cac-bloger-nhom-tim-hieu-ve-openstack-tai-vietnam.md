@@ -2,13 +2,11 @@
 title: Các bloger, nhóm tìm hiểu về OpenStack tại VIETNAM
 date: 2014-02-18 12:42
 comments: true
-categories:
-  - News
 tags:
-  - Chia sẻ
-  - Hướng dẫn
-  - Kinh nghiệm
-  - openstack
+- news
+categories:
+- news
+- vietstack
 ---
 CÁC BLOGER TẠI VIỆT NAM về OPENSTACK và CLOUD COMPUTING
 

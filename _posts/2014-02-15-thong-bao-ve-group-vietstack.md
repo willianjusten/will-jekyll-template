@@ -2,13 +2,11 @@
 title: Thông báo về group VIETSTACK
 date: 2014-02-15 09:50
 comments: true
-categories:
-  - Tin tức
 tags:
-  - Chia sẻ
-  - Hướng dẫn
-  - Kinh nghiệm
-  - openstack
+- news
+categories:
+- news
+- vietstack
 ---
 Chào các bạn !
 
