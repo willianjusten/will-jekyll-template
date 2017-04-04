@@ -8,7 +8,9 @@ status: publish
 categories:
 - Tin tức
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- VietStack
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -31,7 +33,7 @@ author:
 <p><strong> </strong></p>
 <h2>I. Báo cáo trên FB của nhóm sau 2 tháng</h2>
 <p><em>1. Tổng số thành viên 230 (tính đến thời điểm viết bài này)</em></p>
-<p>[caption id="attachment_260" align="aligncenter" width="275"]<a href="http://vietstack.files.wordpress.com/2014/04/2014-04-13_225018.png"><img class="size-full wp-image-260" src="{{ site.baseurl }}/assets/2014-04-13_225018.png" alt="Tổng số thành viên sau 2 tháng" width="275" height="209" /></a> Tổng số thành viên sau 2 tháng[/caption]</p>
+<p>[caption id="attachment_260" align="aligncenter" width="275"]<a href="http://vietstack.files.wordpress.com/2014/04/2014-04-13_225018.png"><img class="size-full wp-image-260" src="{{ site.baseurl }}/pictures/2014-04-13_225018.png" alt="Tổng số thành viên sau 2 tháng" width="275" height="209" /></a> Tổng số thành viên sau 2 tháng[/caption]</p>
 <p>&nbsp;</p>
 <p><em>2. Các thành viên đến từ các công ty chủ yếu tại VN bao gồm: (thông tin tổng hợp từ FB các nhân của các thành viên)</em></p>
 <ul>
@@ -47,13 +49,13 @@ author:
 <p><strong> </strong></p>
 <h2>II. Báo cáo tại Blog của nhóm</h2>
 <p><em>1. Tống số lượt truy cập sau 2 tháng 2591 lượt</em></p>
-<p>[caption id="attachment_258" align="aligncenter" width="945"]<a href="http://vietstack.files.wordpress.com/2014/04/baocaothang04-011.png"><img class="wp-image-258 size-full" src="{{ site.baseurl }}/assets/baocaothang04-011.png" alt="Tổng số lượt truy cấp trong 2 tháng" width="945" height="386" /></a> Tổng số lượt truy cấp trong 2 tháng[/caption]</p>
+<p>[caption id="attachment_258" align="aligncenter" width="945"]<a href="http://vietstack.files.wordpress.com/2014/04/baocaothang04-011.png"><img class="wp-image-258 size-full" src="{{ site.baseurl }}/pictures/baocaothang04-011.png" alt="Tổng số lượt truy cấp trong 2 tháng" width="945" height="386" /></a> Tổng số lượt truy cấp trong 2 tháng[/caption]</p>
 <p>&nbsp;</p>
 <p><em>2. Số lượt xem cho từng chủ đề hiện có trên blog, chủ đề nhiều theo dõi nhất là "OpenStack là gì và để làm gì ? " 688 lượt xem</em></p>
-<p>[caption id="attachment_259" align="aligncenter" width="630"]<em><a href="http://vietstack.files.wordpress.com/2014/04/baocaothang04-02.png"><img class="size-full wp-image-259" src="{{ site.baseurl }}/assets/baocaothang04-02.png" alt="Số truy cập vào từng chủ đề trên blog" width="630" height="354" /></a></em> Số truy cập vào từng chủ đề trên blog[/caption]</p>
+<p>[caption id="attachment_259" align="aligncenter" width="630"]<em><a href="http://vietstack.files.wordpress.com/2014/04/baocaothang04-02.png"><img class="size-full wp-image-259" src="{{ site.baseurl }}/pictures/baocaothang04-02.png" alt="Số truy cập vào từng chủ đề trên blog" width="630" height="354" /></a></em> Số truy cập vào từng chủ đề trên blog[/caption]</p>
 <p><em> 3. Tổng số bài viết trên blog là 13 chủ đề</em></p>
 <p><em>4. Số lượt truy cập từ các nước tới blog, nhiều nhất vẫn là VN :)</em></p>
-<p>[caption id="attachment_261" align="aligncenter" width="630"]<a href="http://vietstack.files.wordpress.com/2014/04/2014-04-13_225303.png"><img class="size-full wp-image-261" src="{{ site.baseurl }}/assets/2014-04-13_225303.png" alt="Các nước truy cập vào blog" width="630" height="389" /></a> Các nước truy cập vào blog[/caption]</p>
+<p>[caption id="attachment_261" align="aligncenter" width="630"]<a href="http://vietstack.files.wordpress.com/2014/04/2014-04-13_225303.png"><img class="size-full wp-image-261" src="{{ site.baseurl }}/pictures/2014-04-13_225303.png" alt="Các nước truy cập vào blog" width="630" height="389" /></a> Các nước truy cập vào blog[/caption]</p>
 <p>&nbsp;</p>
 <p><strong>Tự đánh giá sau 02 tháng:</strong></p>
 <ul>

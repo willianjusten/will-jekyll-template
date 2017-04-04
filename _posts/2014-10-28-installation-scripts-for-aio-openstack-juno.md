@@ -5,8 +5,12 @@ date: 2014-10-28 22:44:05.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Juno
+- AIO
 meta:
   _publicize_pending: '1'
   _edit_last: '61498925'

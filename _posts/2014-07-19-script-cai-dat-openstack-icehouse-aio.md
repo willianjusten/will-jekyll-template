@@ -8,7 +8,12 @@ status: publish
 categories:
 - Hướng dẫn - Kinh Nghiệm
 - Hướng dẫn cài đặt
-tags: []
+- Tech
+- News
+tags:
+- Icehouse
+- LAB
+- AIO
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -28,7 +33,7 @@ author:
   last_name: Stack
 ---
 <p><strong>Hướng dẫn cài đặt OpenStack Icehouse trên Ubuntu 12.04 do anh em trong vietstacker thực hiện:</strong></p>
-<p><a href="https://vietstack.files.wordpress.com/2014/07/1.png"><img class="aligncenter  wp-image-296" src="{{ site.baseurl }}/assets/1.png" alt="1" width="469" height="321" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/07/1.png"><img class="aligncenter  wp-image-296" src="{{ site.baseurl }}/pictures/1.png" alt="1" width="469" height="321" /></a></p>
 <p>&nbsp;</p>
 <p>Link hướng dẫn chi tiết</p>
 <p>https://github.com/vietstacker/icehouse-aio-ubuntu/blob/master/hd-caidat-openstack-icehouse-aio.md</p>

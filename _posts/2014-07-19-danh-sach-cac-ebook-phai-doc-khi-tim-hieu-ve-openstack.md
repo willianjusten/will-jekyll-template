@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
 - Bài dịch - Tài liệu
-tags: []
+- News
+tags:
+- News
+- Ebooks
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -25,7 +28,7 @@ author:
 ---
 <p>Tóm tắt: Để tổng hợp tốt các tài liệu tham khảo khi các bạn tìm hiểu về OpenStack, mình xin tổng hợp các ebook "bắt buộc phải đọc" khi một ai đó có ý định tìm hiểu về OpenStack.</p>
 <p>Một số cuốn mình sẽ đưa link vì là miễn phí. Các cuốn mất phí mình sẽ gửi qua email hoặc share các bản photo.<br />
-<a href="http://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="aligncenter size-medium wp-image-290" src="{{ site.baseurl }}/assets/logo-vietstack-800x600.png?w=300" alt="VietStack logo" width="300" height="225" /></a></p>
+<a href="http://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="aligncenter size-medium wp-image-290" src="{{ site.baseurl }}/pictures/logo-vietstack-800x600.png?w=300" alt="VietStack logo" width="300" height="225" /></a></p>
 <p>&nbsp;</p>
 <p><strong>Dưới là danh sách các cuốn sách này: </strong><!--more--></p>
 <ol>

@@ -8,7 +8,10 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Hướng dẫn - Kinh Nghiệm
-tags: []
+- Tech
+tags:
+- Hybrid
+- Cloud
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

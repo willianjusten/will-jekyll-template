@@ -5,8 +5,12 @@ date: 2015-05-09 03:01:53.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- News
+- Cloud
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

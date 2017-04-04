@@ -9,7 +9,9 @@ categories:
 - Hướng dẫn - Kinh Nghiệm
 - OpenStack
 - Tài liệu tham khảo
-tags: []
+- Tech
+tags:
+- Tooz
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'
@@ -70,7 +72,7 @@ author:
 <ul>
 <li>bin/zkCli.sh -server 127.0.0.1:2181</li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2015/08/zookeeper.png"><img class="aligncenter size-full wp-image-553" src="{{ site.baseurl }}/assets/zookeeper.png" alt="zookeeper" width="630" height="200" /></a></p></blockquote>
+<p><a href="https://vietstack.files.wordpress.com/2015/08/zookeeper.png"><img class="aligncenter size-full wp-image-553" src="{{ site.baseurl }}/pictures/zookeeper.png" alt="zookeeper" width="630" height="200" /></a></p></blockquote>
 <p>&nbsp;</p>
 <blockquote><p>6. Install Tooz:</p>
 <ul>
@@ -103,7 +105,7 @@ author:
 <ul>
 <li>bin/zkCli.sh -server 127.0.0.1:2181</li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2015/08/zk_tooz.png"><img class="aligncenter size-full wp-image-552" src="{{ site.baseurl }}/assets/zk_tooz.png" alt="zk_tooz" width="630" height="245" /></a></p></blockquote>
+<p><a href="https://vietstack.files.wordpress.com/2015/08/zk_tooz.png"><img class="aligncenter size-full wp-image-552" src="{{ site.baseurl }}/pictures/zk_tooz.png" alt="zk_tooz" width="630" height="245" /></a></p></blockquote>
 <p>&nbsp;</p>
 <p>You can extend this example by using this below instruction:</p>
 <p><a href="http://docs.openstack.org/developer/tooz/tutorial/index.html">http://docs.openstack.org/developer/tooz/tutorial/index.html</a></p>

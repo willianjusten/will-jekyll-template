@@ -9,7 +9,9 @@ categories:
 - Bài dịch - Tài liệu
 - Chia sẻ kinh nghiệm
 - Tài liệu tham khảo
-tags: []
+- Tech
+tags:
+- Rally
 meta:
   _edit_last: '61498925'
   geo_public: '0'

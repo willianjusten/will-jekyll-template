@@ -5,8 +5,13 @@ date: 2014-07-19 03:37:49.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Icehouse
+- LAB
+- Multinode
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -32,7 +37,7 @@ author:
 ---
 <p>Để đáp ứng các nhu cầu của cộng đồng, vietstack community đóng góp thêm các script dùng để triển khai OpenStack Icehouse trên 3 nodes. Với các script này các bạn có thể triển khai thực nghiệm các project core trong OpenStack một cách nhanh chóng và thuận tiện.</p>
 <p>Lưu ý: đọc kỹ các hướng dẫn và y/c đã tìm hiểu openstack trên 3 tháng trở lên.</p>
-<p><a href="https://vietstack.files.wordpress.com/2014/07/openstack-icehouse-inside-vmware.png"><img class="aligncenter size-large wp-image-305" src="{{ site.baseurl }}/assets/openstack-icehouse-inside-vmware.png?w=630" alt="openstack-icehouse-inside-vmware" width="630" height="465" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/07/openstack-icehouse-inside-vmware.png"><img class="aligncenter size-large wp-image-305" src="{{ site.baseurl }}/pictures/openstack-icehouse-inside-vmware.png?w=630" alt="openstack-icehouse-inside-vmware" width="630" height="465" /></a></p>
 <p>Link hướng dẫn:<br />
 https://github.com/vietstacker/openstack-icehouse-multinode-ubuntu-v1/blob/master/hd-caidat-openstack-multi-node-u1204.md</p>
 <p>&nbsp;</p>

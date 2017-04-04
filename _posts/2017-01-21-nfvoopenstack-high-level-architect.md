@@ -27,7 +27,7 @@ author:
 <p>The below picture is the high-level architect of NFVO. It contains fundamental and mandatory elements based on the proposal of ETSI. We will go along with each of them and discuss about the general usage of each element.</p>
 <p>In this picture, we can see that all the service is connected through API (mostly REST API). Some of them need communication channel AMQP such as OpenStack services. Others can be implemented as individual services.</p>
 <p>&nbsp;</p>
-<p><img class="alignnone size-full wp-image-1104" src="{{ site.baseurl }}/assets/dsc_0029.jpg" alt="dsc_0029" width="4096" height="2304" /></p>
+<p><img class="alignnone size-full wp-image-1104" src="{{ site.baseurl }}/pictures/dsc_0029.jpg" alt="dsc_0029" width="4096" height="2304" /></p>
 <p><b>LCM: Life Cycle Management:</b></p>
 <p>It manages the life cycle of NS that are NS INITIATE, NS TERMINATE, NS SCALE, etc. It will interact with catalog where NS Description (NSD) is stored to get the description. Then it will talk to workflow and configuration service to execute actions of NS. Since NSD contains information of both of underlaying element such as network, SDN resources, etc. and VNF Description (VNFD) so that the workflow in NFVO will interact with VNFM to deloy VNF, configuration tool in NFVO will configure the underlaying elements by talk to VIM.</p>
 <p>Besides, it also gets information from policy engine about NS usage policy as well as the monitoring/alarms of root analysis. Based on this information, LCM will trigger the appropriate actions such as TERMINATE, SCALE, etc.</p>

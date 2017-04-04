@@ -7,7 +7,9 @@ published: true
 status: publish
 categories:
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- VietStack
 meta:
   _edit_last: '53965886'
   _publicize_pending: '1'

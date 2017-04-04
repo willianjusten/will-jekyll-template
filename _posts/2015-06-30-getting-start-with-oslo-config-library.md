@@ -5,8 +5,10 @@ date: 2015-06-30 12:39:03.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- Oslo
 meta:
   _edit_last: '61498925'
   geo_public: '0'

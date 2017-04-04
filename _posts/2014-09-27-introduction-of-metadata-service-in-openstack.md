@@ -8,7 +8,10 @@ status: publish
 categories:
 - Bài dịch - Tài liệu
 - Cloud Computing
-tags: []
+- Tech
+- News
+tags:
+- Metadata
 meta:
   _rest_api_published: '1'
   _rest_api_client_id: "-1"
@@ -51,9 +54,9 @@ author:
 </ul>
 <p>Those are reasons for the existing of metadata service. This service will handle such above requests of client.</p>
 <p><strong>Overview of metadata service:</strong></p>
-<p><a href="https://tuantuluong.files.wordpress.com/2014/09/neutron-metadata-dhcp-agent.png"><img class="alignnone size-medium wp-image-108" src="{{ site.baseurl }}/assets/neutron-metadata-dhcp-agent.png?w=204&amp;h=300" alt="Neutron-metadata-dhcp-agent" width="204" height="300" /></a></p>
+<p><a href="https://tuantuluong.files.wordpress.com/2014/09/neutron-metadata-dhcp-agent.png"><img class="alignnone size-medium wp-image-108" src="{{ site.baseurl }}/pictures/neutron-metadata-dhcp-agent.png?w=204&amp;h=300" alt="Neutron-metadata-dhcp-agent" width="204" height="300" /></a></p>
 <p>Pic 1. Metadata service operation diagram with neutron-dhcp-agent (Source: bence.romsics@ericsson.com)</p>
-<p><a href="https://tuantuluong.files.wordpress.com/2014/09/neutron-metadata-l3-agent.png"><img class="alignnone size-medium wp-image-109" src="{{ site.baseurl }}/assets/neutron-metadata-l3-agent.png?w=184&amp;h=300" alt="Neutron-metadata-l3-agent" width="184" height="300" /></a></p>
+<p><a href="https://tuantuluong.files.wordpress.com/2014/09/neutron-metadata-l3-agent.png"><img class="alignnone size-medium wp-image-109" src="{{ site.baseurl }}/pictures/neutron-metadata-l3-agent.png?w=184&amp;h=300" alt="Neutron-metadata-l3-agent" width="184" height="300" /></a></p>
 <p>Pic 2.  Metadata service operation diagram with neutron-L3-agent <span style="line-height:1.7;">(Source: bence.romsics@ericsson.com)</span></p>
 <p>Theoretically, Openstack provides metadata service through nova-api on controller node (up-to-now), by default listening at: nova-api-IP:8775. This IP is specified to metadata service differently to other nova-api-IPs. Neutron proxies the metadata requests of client in Openstack instance to nova metadata service. Inside an Openstack instance, the  HTTP client sends the requests to a link-local address (169.254.169.254:80) which is allocated for metadata service without any authenticating or identifying. From now on, it is the work of neutron.</p>
 <p>Inside neutron node, because the requests sent to it without neither authenticating nor identifying, neutron has to do something to identify the source of those requests. There are two elements responsible for that. The first one is Neutron-metadata-proxy laying in Neutron dhcp namespace, another one is neutron-metadata-agent. They are running on the same host and connected by unix socket.</p>

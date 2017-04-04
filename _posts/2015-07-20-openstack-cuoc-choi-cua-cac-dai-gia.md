@@ -5,8 +5,10 @@ date: 2015-07-20 15:08:03.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- OpenStack
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'

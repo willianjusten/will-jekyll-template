@@ -5,8 +5,11 @@ date: 2014-12-11 18:57:39.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- DevStack
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

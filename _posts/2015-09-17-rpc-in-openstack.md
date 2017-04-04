@@ -8,7 +8,9 @@ status: publish
 categories:
 - Hướng dẫn - Kinh Nghiệm
 - OpenStack
-tags: []
+- Tech
+tags:
+- RPC
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'
@@ -32,7 +34,7 @@ author:
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;"><b>Short overview of RPC over RabbitMQ</b></span></span></p>
 <p>“ <span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">According to the AMQP spec there’s a direct exchange with no public name to which every queue must be bound by default using the queue name as routing key. Our server has to use this exchange to reply to its clients, publishing the messages with said routing key. The next piece in our puzzle is the “</span></span><em><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">reply-to” </span></span></em><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">property from AMQP messages. When our client publishes a request, it will send the queue name via the ”</span></span><em><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">reply-to” </span></span></em><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">property. Once the request is published it will wait and listen into its own anonymous queue. Once the RPC server gets the reply ready, it will send it to the exchange and it will finally arrive to our client. Easy…</span></span></p>
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">Here’s an image to further illustrate the point”:</span></span></p>
-<p><a href="https://vietstack.files.wordpress.com/2015/09/rpc-overrmq.png"><img class="aligncenter size-full wp-image-592" src="{{ site.baseurl }}/assets/rpc-overrmq.png" alt="RPC-OverRMQ" width="598" height="241" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2015/09/rpc-overrmq.png"><img class="aligncenter size-full wp-image-592" src="{{ site.baseurl }}/pictures/rpc-overrmq.png" alt="RPC-OverRMQ" width="598" height="241" /></a></p>
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">                                                                Source: <a href="http://videlalvaro.github.io/2010/10/rpc-over-rabbitmq.html">http://videlalvaro.github.io/2010/10/rpc-over-rabbitmq.html</a></span></span></p>
 <p>&nbsp;</p>
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;"><b>OpenStack Nova and RPC</b></span></span></p>
@@ -61,8 +63,8 @@ author:
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">Then take a coffee, run test_server.py, test_client.py and enjoy RPC.</span></span></p>
 <p>test_client.py:</p>
 <p><a href="https://vietstack.files.wordpress.com/2015/09/run.png"><br />
-</a> <a href="https://vietstack.files.wordpress.com/2015/09/test_client.png"><img class="aligncenter size-full wp-image-589" src="{{ site.baseurl }}/assets/test_client.png" alt="test_client" width="630" height="458" /></a></p>
+</a> <a href="https://vietstack.files.wordpress.com/2015/09/test_client.png"><img class="aligncenter size-full wp-image-589" src="{{ site.baseurl }}/pictures/test_client.png" alt="test_client" width="630" height="458" /></a></p>
 <p>test_server.py:</p>
-<p><a href="https://vietstack.files.wordpress.com/2015/09/test_server.png"><img class="aligncenter size-full wp-image-590" src="{{ site.baseurl }}/assets/test_server.png" alt="test_server" width="630" height="415" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2015/09/test_server.png"><img class="aligncenter size-full wp-image-590" src="{{ site.baseurl }}/pictures/test_server.png" alt="test_server" width="630" height="415" /></a></p>
 <p>Result:</p>
-<p><img class="aligncenter size-full wp-image-588" src="{{ site.baseurl }}/assets/run.png" alt="run" width="630" height="76" /></p>
+<p><img class="aligncenter size-full wp-image-588" src="{{ site.baseurl }}/pictures/run.png" alt="run" width="630" height="76" /></p>

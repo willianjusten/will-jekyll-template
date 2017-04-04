@@ -8,7 +8,9 @@ status: publish
 categories:
 - Hướng dẫn - Kinh Nghiệm
 - OpenStack
-tags: []
+- Tech
+tags:
+- Eventlet
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'

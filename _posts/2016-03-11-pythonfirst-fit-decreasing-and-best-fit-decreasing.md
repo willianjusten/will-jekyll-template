@@ -5,8 +5,10 @@ date: 2016-03-11 16:42:30.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- Algorithm
 meta:
   _wpcom_is_markdown: '1'
   _oembed_d65b04ef154b0ea0a5915e5711d1edbc: "{{unknown}}"

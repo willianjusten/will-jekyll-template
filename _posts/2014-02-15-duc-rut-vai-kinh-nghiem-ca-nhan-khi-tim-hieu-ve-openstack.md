@@ -7,7 +7,9 @@ published: true
 status: publish
 categories:
 - Chia sẻ kinh nghiệm
-tags: []
+- News
+tags:
+- VietStack
 meta:
   _edit_last: '53965886'
   _publicize_pending: '1'

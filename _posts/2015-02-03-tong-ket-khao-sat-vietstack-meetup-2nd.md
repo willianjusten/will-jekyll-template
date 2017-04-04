@@ -8,7 +8,9 @@ status: publish
 categories:
 - Tin tức
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- Meetup
 meta:
   _edit_last: '61498925'
   geo_public: '0'
@@ -26,7 +28,7 @@ author:
   first_name: Viet
   last_name: Stack
 ---
-<p>Tổng kết khảo sát vietstack meetup 2nd <a href="https://vietstack.files.wordpress.com/2015/02/10438383_10203034296692506_6724393396606072336_n.jpg"><img class="aligncenter size-medium wp-image-448" src="{{ site.baseurl }}/assets/10438383_10203034296692506_6724393396606072336_n.jpg?w=300" alt="10438383_10203034296692506_6724393396606072336_n" width="300" height="169" /></a> Tóm tắt: Nội dung:</p>
+<p>Tổng kết khảo sát vietstack meetup 2nd <a href="https://vietstack.files.wordpress.com/2015/02/10438383_10203034296692506_6724393396606072336_n.jpg"><img class="aligncenter size-medium wp-image-448" src="{{ site.baseurl }}/pictures/10438383_10203034296692506_6724393396606072336_n.jpg?w=300" alt="10438383_10203034296692506_6724393396606072336_n" width="300" height="169" /></a> Tóm tắt: Nội dung:</p>
 <p><span class="text_exposed_show"> <a href="http://www.slideshare.net/vietstack/viet-stack-2nd-meetup-tong-ket-tinh-hinh-sau-1st-meetup">Tổng kết tình hình sau 1st meetup. [1]</a></span></p>
 <p><span class="text_exposed_show"> <a href="http://www.slideshare.net/vietstack/aohoa-slide-vietstackv2">Ảo hóa và Nova trong OpenStack. [2]</a></span></p>
 <p><span class="text_exposed_show"> <a href="http://www.slideshare.net/microlife/bigdata-cloudcomputingvietstack">BigData trong Cloud Computing [3]</a></span></p>
