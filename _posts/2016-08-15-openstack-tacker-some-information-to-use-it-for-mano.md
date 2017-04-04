@@ -28,12 +28,8 @@ author:
 <ul>
 <li>CloudBand Management System of Alcatel-Lucent</li>
 <li>Nokia Cloud Application Manager</li>
-<li>
-<p>Ericsson Cloud Manager</p>
-</li>
-<li>
-<p>HP NFV Director</p>
-</li>
+<li>Ericsson Cloud Manager</li>
+<li>HP NFV Director</li>
 </ul>
 <p>Besides, there are some open source MANO projects that are orginally initiated by telco cloud providers. They are OpenMANO of Telefonica – Spain, OpenO under the driving of China Mobile. In addition, there are also some products/projects that are seemed as a part and supports MANO such as Cloudify, Ubuntu Juju, etc. One of them is OpenStack Tacker.</p>
 <p>In order to test Tacker, we can try it with Devstack by adding the below line in local.conf:</p>
