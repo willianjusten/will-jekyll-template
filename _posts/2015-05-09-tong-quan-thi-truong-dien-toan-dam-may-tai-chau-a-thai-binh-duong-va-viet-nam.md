@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Tổng quan thị trường điện toán đám mây tại Châu Á - Thái Bình Dương và Việt
-  Nam
+title: Tổng quan thị trường điện toán đám mây tại Châu Á - Thái Bình Dương và Việt Nam
 date: 2015-05-09 02:56:57.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- News
+tags:
+- News
+- Cloud
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

@@ -5,8 +5,10 @@ date: 2015-08-22 08:45:48.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- Neutron
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'
@@ -26,7 +28,7 @@ author:
 <ul>
 <li> In the folder plugins, i create a "myplugin" tree as below:</li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2015/08/screenshot-from-2015-08-22-101943.png"><img class=" wp-image-567 alignleft" src="{{ site.baseurl }}/assets/screenshot-from-2015-08-22-101943.png" alt="Screenshot from 2015-08-22 10:19:43" width="510" height="252" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2015/08/screenshot-from-2015-08-22-101943.png"><img class=" wp-image-567 alignleft" src="{{ site.baseurl }}/pictures/screenshot-from-2015-08-22-101943.png" alt="Screenshot from 2015-08-22 10:19:43" width="510" height="252" /></a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -37,7 +39,7 @@ author:
 <ul>
 <li>In myextension.py, we need to define two things: a RESOURCE_ATTRIBUTE_MAP dictionary and a class called Myextension called. RESOURCE_ATTRIBUTE_MAP what we put inside this new extended attributes, myextension.py seems like below:</li>
 </ul>
-<blockquote><p><a href="https://vietstack.files.wordpress.com/2015/08/screenshot-from-2015-08-22-103515.png"><img class="aligncenter wp-image-569" src="{{ site.baseurl }}/assets/screenshot-from-2015-08-22-103515.png" alt="Screenshot from 2015-08-22 10:35:15" width="1000" height="1084" /></a></p></blockquote>
+<blockquote><p><a href="https://vietstack.files.wordpress.com/2015/08/screenshot-from-2015-08-22-103515.png"><img class="aligncenter wp-image-569" src="{{ site.baseurl }}/pictures/screenshot-from-2015-08-22-103515.png" alt="Screenshot from 2015-08-22 10:35:15" width="1000" height="1084" /></a></p></blockquote>
 <p>&nbsp;</p>
 <ul>
 <li>After create the myextension file, we need to tell Neutron the path of extension file. In /etc/neutron/neutron.conf, inside the section DEFAULT:</li>

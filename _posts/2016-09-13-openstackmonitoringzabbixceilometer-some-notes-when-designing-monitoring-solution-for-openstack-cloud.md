@@ -6,8 +6,13 @@ date: 2016-09-13 10:12:00.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Zabbix
+- Ceilometer
+- Monitoring
 meta:
   _wpcom_is_markdown: '1'
   _rest_api_published: '1'

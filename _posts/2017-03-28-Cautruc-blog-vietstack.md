@@ -2,7 +2,7 @@
 layout: post
 title: "Cấu trúc blog VietStack"
 date: 2017-03-28 9:21:35
-image: '/assets/img/'
+image: '/pictures/img/'
 description: 'Mô tả về cấu trúc blog của VietStack.'
 tags:
 - news
@@ -23,7 +23,7 @@ Blog của VietStack được xây dựng trên nền tảng `JEKYLL` và host t
 layout: post
 title: "Cấu trúc blog VietStack"
 date: 2017-03-24 9:21:35
-image: '/assets/img/'
+image: '/pictures/img/'
 description: 'Mô tả về cấu trúc blog của VietStack.'
 tags:
 - news

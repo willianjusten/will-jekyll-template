@@ -8,7 +8,9 @@ status: publish
 categories:
 - Tin tức
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- Meetup
 meta:
   _edit_last: '61498925'
   geo_public: '0'

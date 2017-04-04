@@ -8,7 +8,10 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Hướng dẫn - Kinh Nghiệm
-tags: []
+- Tech
+- News
+tags:
+- Tools
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

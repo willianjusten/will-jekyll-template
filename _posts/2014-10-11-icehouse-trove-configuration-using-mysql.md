@@ -5,8 +5,12 @@ date: 2014-10-11 13:07:33.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Icehouse
+- Trove
 meta:
   _publicize_pending: '1'
   _oembed_ec6ecc3490de9b1592d20960a4d0bc99: "{{unknown}}"

@@ -5,8 +5,12 @@ date: 2016-08-10 15:49:48.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Migrate
+- CloudApp
 meta:
   _wpcom_is_markdown: '1'
   _rest_api_published: '1'

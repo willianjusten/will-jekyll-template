@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
 - Python
-tags: []
+- Tech
+tags:
+- Python
+- Windows
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -24,6 +27,4 @@ author:
   last_name: Stack
 ---
 <p>Tài liệu hướng dẫn cài đặt python 2.7.x trên windows 7 dành cho người mới bắt đầu tìm hiểu.</p>
-<p>https://dl.dropboxusercontent.com/u/76793585/HuongDanCaiDat-Python%20-%20v1.0.pdf</p>
-<p>hoặc tại đây</p>
-<p><a href="http://vietstack.files.wordpress.com/2014/02/huongdancaidat-python-v1-0.pdf">HuongDanCaiDat-Python - v1.0</a></p>
+<p><a href="{{ site.baseurl }}/attachments/huongdancaidat-python-v1-0.pdf">HuongDanCaiDat-Python - v1.0</a></p>

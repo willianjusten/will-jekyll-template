@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
 - Lệnh trong OpenStack
-tags: []
+- Tech
+tags:
+- OpenStack
+- Password
 meta:
   _publicize_pending: '1'
   _edit_last: '53965886'

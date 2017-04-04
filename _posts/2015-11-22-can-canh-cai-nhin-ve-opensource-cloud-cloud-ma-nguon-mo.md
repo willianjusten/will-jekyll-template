@@ -5,8 +5,11 @@ date: 2015-11-22 11:17:30.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- News
+tags:
+- OSS
+- Cloud
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'

@@ -5,8 +5,10 @@ date: 2015-06-08 20:11:07.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- News
+tags:
+- CEE
 meta:
   _edit_last: '61498925'
   geo_public: '0'

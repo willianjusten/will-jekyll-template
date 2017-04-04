@@ -5,8 +5,11 @@ date: 2016-09-06 17:34:57.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- Neutron
+- Alembic
 meta:
   _oembed_1d780e72c8f245cce2b0779cc56ca996: "{{unknown}}"
   _wpcom_is_markdown: '1'

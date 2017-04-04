@@ -5,8 +5,10 @@ date: 2015-06-24 15:45:24.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- IPV6
 meta:
   _edit_last: '61498925'
   geo_public: '0'
@@ -139,7 +141,7 @@ author:
 </tbody>
 </table>
 <p class="western">- Mô hình triển khai SLAAC:</p>
-<p class="western"><a href="https://vietstack.files.wordpress.com/2015/06/slaac.png"><img class="aligncenter size-full wp-image-496" src="{{ site.baseurl }}/assets/slaac.png" alt="slaac" width="288" height="151" /></a></p>
+<p class="western"><a href="https://vietstack.files.wordpress.com/2015/06/slaac.png"><img class="aligncenter size-full wp-image-496" src="{{ site.baseurl }}/pictures/slaac.png" alt="slaac" width="288" height="151" /></a></p>
 <p class="western" style="text-align:center;">Source: Cisco</p>
 <p class="western">Ngoài ra việc sử dụng SLAAC sẽ tác động đến radvd agent trong việc gửi RA. Thiết lập giá trị cho address configuration flag trong RA sẽ cho phép các phương thức gửi RA thông qua Neutron router.</p>
 <p class="western"><span style="text-decoration:underline;">Cách thức hoạt động của DHCPv6:</span></p>
@@ -201,7 +203,7 @@ author:
 </tr>
 </tbody>
 </table>
-<p class="western" style="padding-left:30px;">Mô hình triển khai DHCPv6 stateless<a href="https://vietstack.files.wordpress.com/2015/06/stateless.png"><img class="aligncenter  wp-image-497" src="{{ site.baseurl }}/assets/stateless.png" alt="stateless" width="571" height="156" /></a></p>
+<p class="western" style="padding-left:30px;">Mô hình triển khai DHCPv6 stateless<a href="https://vietstack.files.wordpress.com/2015/06/stateless.png"><img class="aligncenter  wp-image-497" src="{{ site.baseurl }}/pictures/stateless.png" alt="stateless" width="571" height="156" /></a></p>
 <p class="western" style="text-align:center;">Source: Cisco</p>
 <p style="padding-left:30px;"><span lang="en-US">Tương tự như SLAAC trong việc thiết lập address configuration flag.</span></p>
 <ul>

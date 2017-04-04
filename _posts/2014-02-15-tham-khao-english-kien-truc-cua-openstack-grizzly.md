@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
 - Giới thiệu OpenStack
-tags: []
+- Tech
+- News
+tags:
+- Grizzly
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -25,9 +28,9 @@ author:
 <p>Link: http://www.solinea.com/blog/openstack-grizzly-architecture-revisited</p>
 <p>Tác giả này cũng chính là người vẽ  hình kiến trúc khái niệm và kiến trúc logic trong OpenStack</p>
 <p><strong>Conceptual Architecture</strong></p>
-<p style="text-align:center;"><img class="aligncenter" alt="" src="{{ site.baseurl }}/assets/openstack-arch-grizzly-conceptual-v2.jpg?t=1389271912000" width="819" height="498" /></p>
+<p style="text-align:center;"><img class="aligncenter" alt="" src="{{ site.baseurl }}/pictures/openstack-arch-grizzly-conceptual-v2.jpg?t=1389271912000" width="819" height="498" /></p>
 <p><strong>Logical Architecture</strong></p>
-<p style="text-align:center;"><img class="aligncenter" alt="" src="{{ site.baseurl }}/assets/openstack-arch-grizzly-logical-v2.jpg?t=1389271912000" width="922" height="656" /></p>
+<p style="text-align:center;"><img class="aligncenter" alt="" src="{{ site.baseurl }}/pictures/openstack-arch-grizzly-logical-v2.jpg?t=1389271912000" width="922" height="656" /></p>
 <p><em>Nguồn:</em></p>
 <p><em>http://www.solinea.com/blog</em><br />
 <em> http://ken.pepple.info/</em></p>

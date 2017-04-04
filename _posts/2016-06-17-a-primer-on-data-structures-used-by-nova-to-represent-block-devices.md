@@ -5,8 +5,11 @@ date: 2016-06-17 01:17:43.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Nova
 meta:
   _wpcom_is_markdown: '1'
   _rest_api_published: '1'

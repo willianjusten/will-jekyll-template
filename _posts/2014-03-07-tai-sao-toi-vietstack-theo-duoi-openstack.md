@@ -9,11 +9,10 @@ categories:
 - Chia sẻ kinh nghiệm
 - Giới thiệu OpenStack
 - Hướng dẫn - Kinh Nghiệm
+- VietStack
+- News
 tags:
-- news
-categories:
-- news
-- vietstack
+- VietStack
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'

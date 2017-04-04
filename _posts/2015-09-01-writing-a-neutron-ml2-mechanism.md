@@ -8,7 +8,10 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Devstack
-tags: []
+- Tech
+tags:
+- Neutron
+- ML2
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'
@@ -40,7 +43,7 @@ author:
 </ul>
 <p><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;"><span style="color:#222222;">One of the key objectives of ML2 is to support multiple mechanism drivers under one plugin. It was previously not possible with a monolithic plugin. Hence if you see in ML2 plugin.py file, it calmly receives the request how any other plugin does. It then performs all the internal operations that it needs to do like updating database entries, setting up the internal services, etc. After doing all that it dispatches the request to all the mechanism drivers you have registered in </span><span style="color:#ff0000;">/etc/neutron/plugins/ml2/ml2_conf.ini </span><span style="color:#222222;">in the following section:</span></span></span></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;"><b>/neutron/plugins/ml2/plugin.py</b></span></span></span></p>
-<p align="left"><a href="https://vietstack.files.wordpress.com/2015/09/screenshot-from-2015-09-01-130903.png"><img class="wp-image-581 aligncenter" src="{{ site.baseurl }}/assets/screenshot-from-2015-09-01-130903.png" alt="Screenshot from 2015-09-01 13:09:03" width="885" height="153" /></a></p>
+<p align="left"><a href="https://vietstack.files.wordpress.com/2015/09/screenshot-from-2015-09-01-130903.png"><img class="wp-image-581 aligncenter" src="{{ site.baseurl }}/pictures/screenshot-from-2015-09-01-130903.png" alt="Screenshot from 2015-09-01 13:09:03" width="885" height="153" /></a></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Georgia, Utopia, 'Palatino Linotype', Palatino, serif;"><span style="font-size:medium;">(Source: <a href="http://control-that-vm.blogspot.hu/2014/08/writing-your-own-mechanism-driver-for.html">http://control-that-vm.blogspot.hu/2014/08/writing-your-own-mechanism-driver-for.html</a>)</span></span></span></p>
 <h3 class="western"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">/neutron/plugins/ml2/driver_api:</span></span></span></h3>
 <p><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">Includes the definitions of all the methods used in ML2 mechanism drivers. In this file, there are methods that will called the specific methods defined in each ML2 mechanism driver, for example, the method create_network() in driver_api will refer to create_network_precommit(), create_network_commit() methods. The way those methods are defined is specified in each mechanism driver. See the example of mech_vietstack as an easy definition of those methods.</span></span></span></p>
@@ -58,7 +61,7 @@ author:
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">vietstack = neutron.plugins.ml2.drivers.mech_vietstack:VietstackMechanismDriver</span></span></span></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">The name “vietstack” here will be passed to the mechanism_drivers in ml2_conf and it specifies the path to the mentioned mechanism driver. VietstackMechanismDriver is the class inside the mech_vietstack mechanism driver.</span></span></span></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">******************</span></span></span></p>
-<p align="left"><a href="https://vietstack.files.wordpress.com/2015/09/screenshot-from-2015-09-01-130754.png"><img class="aligncenter wp-image-580" src="{{ site.baseurl }}/assets/screenshot-from-2015-09-01-130754.png" alt="Screenshot from 2015-09-01 13:07:54" width="1148" height="535" /></a></p>
+<p align="left"><a href="https://vietstack.files.wordpress.com/2015/09/screenshot-from-2015-09-01-130754.png"><img class="aligncenter wp-image-580" src="{{ site.baseurl }}/pictures/screenshot-from-2015-09-01-130754.png" alt="Screenshot from 2015-09-01 13:07:54" width="1148" height="535" /></a></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">*****************</span></span></span></p>
 <p align="left"><span style="color:#222222;"><span style="font-family:Arial, sans-serif;"><span style="font-size:medium;">Now, restart neutron-server then boot a network called “vietstack1”</span></span></span></p>
 <p align="left">**************</p>

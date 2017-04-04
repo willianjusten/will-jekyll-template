@@ -8,7 +8,9 @@ status: publish
 categories:
 - Hướng dẫn - Kinh Nghiệm
 - Hướng dẫn cài đặt
-tags: []
+- Tech
+tags:
+- DevStack
 meta:
   _edit_last: '61498925'
   geo_public: '0'

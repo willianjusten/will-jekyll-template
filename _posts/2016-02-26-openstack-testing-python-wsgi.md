@@ -5,8 +5,10 @@ date: 2016-02-26 14:19:14.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- WSGI
 meta:
   _wpcom_is_markdown: '1'
   _oembed_3174af0ba813a1af8bc70dca60303843: "{{unknown}}"

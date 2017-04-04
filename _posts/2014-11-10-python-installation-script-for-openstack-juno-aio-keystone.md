@@ -5,8 +5,13 @@ date: 2014-11-10 09:54:04.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Python
+- Juno
+- AIO
 meta:
   _edit_last: '61498925'
   geo_public: '0'

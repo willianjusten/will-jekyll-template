@@ -8,7 +8,10 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Giới thiệu OpenStack
-tags: []
+- Tech
+- News
+tags:
+- Microversion
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'

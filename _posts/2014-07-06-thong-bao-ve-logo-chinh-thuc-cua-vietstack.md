@@ -8,7 +8,9 @@ status: publish
 categories:
 - Tin tức
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- Logo
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
@@ -21,7 +23,7 @@ author:
   last_name: Stack
 ---
 <p>Sau nhiều ngày lên ý tưởng và tham khảo logo chính chủ, logo của các cộng đồng bạn - cuối cùng VIETSTACK cũng release được logo dành cho nhóm. Nhân dịp sinh nhật OpenStack và chào mừng thành viên thứ 500, thay mặt anh em xin thông báo tới toàn thể vietstack về sự kiện này.</p>
-<p><a href="https://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="aligncenter size-full wp-image-290" src="{{ site.baseurl }}/assets/logo-vietstack-800x600.png" alt="VietStack logo" width="630" height="472" /></a><!--more--></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="aligncenter size-full wp-image-290" src="{{ site.baseurl }}/pictures/logo-vietstack-800x600.png" alt="VietStack logo" width="630" height="472" /></a><!--more--></p>
 <p><strong>Tác giả:</strong></p>
 <ul>
 <li>Người đưa ý tưởng: VietStack | vietstack@gmail.com | https://www.facebook.com/vietstack</li>

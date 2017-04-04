@@ -8,12 +8,13 @@ status: publish
 categories:
 - Bài dịch - Tài liệu
 - Hướng dẫn cài đặt
+- News
 tags:
 - cài đặt
 - github
 - havana
 - vietsi
-- vietstack
+- VietStack
 meta:
   _edit_last: '61498925'
   _wpas_skip_6397889: '1'

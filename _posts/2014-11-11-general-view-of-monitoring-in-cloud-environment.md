@@ -8,7 +8,9 @@ status: publish
 categories:
 - Bài dịch - Tài liệu
 - Chia sẻ kinh nghiệm
-tags: []
+- Tech
+tags:
+- Monitoring
 meta:
   _edit_last: '61498925'
   geo_public: '0'

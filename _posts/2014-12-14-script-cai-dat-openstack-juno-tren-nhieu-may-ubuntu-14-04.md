@@ -7,7 +7,11 @@ published: true
 status: publish
 categories:
 - Hướng dẫn cài đặt
-tags: []
+- Tech
+tags:
+- LAB
+- Juno
+- OpenStack
 meta:
   _edit_last: '61498925'
   geo_public: '0'
@@ -35,7 +39,7 @@ author:
   first_name: Viet
   last_name: Stack
 ---
-<h3><a href="https://vietstack.files.wordpress.com/2014/12/hduiww1.png"><img class="aligncenter size-medium wp-image-423" src="{{ site.baseurl }}/assets/hduiww1.png?w=300" alt="hdUIWw1" width="300" height="201" /></a></h3>
+<h3><a href="https://vietstack.files.wordpress.com/2014/12/hduiww1.png"><img class="aligncenter size-medium wp-image-423" src="{{ site.baseurl }}/pictures/hduiww1.png?w=300" alt="hdUIWw1" width="300" height="201" /></a></h3>
 <p>Openstack Juno installation guide on multinode<br />
 Link:</p>
 <p><a title="Openstack Juno installation guide on multinode" href="https://github.com/vietstacker/openstack-juno-multinode-U14.04-v1/blob/master/Installation_Userguide.md" target="_blank">https://github.com/vietstacker/openstack-juno-multinode-U14.04-v1/blob/master/Installation_Userguide.md</a></p>

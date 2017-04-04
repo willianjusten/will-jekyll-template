@@ -175,39 +175,39 @@ class Instance(base.NovaPersistentObject, base.NovaObject,
 <p>&nbsp;</p>
 <p><strong>2.4 VietStackStat object</strong></p>
 <p>We should create a new object for reprentation of VietStack of compute host. This object called VietStackStat in the new file of node_VietStack.py. The below is a sample of VietStackStat.</p>
-<p>{% highlight python %}</p>
-<p>@base.NovaObjectRegistry.register<br />
-class VietStackStat(base.NovaObject):<br />
-    # Version 1.0: Initial version<br />
-    VERSION = '1.0'<br />
-    fields = {<br />
-        'nics': fields.ListOfObjectsField('VietStackPerNic', nullable=True)<br />
-        }</p>
-<p>@base.NovaObjectRegistry.register<br />
-class VietStackPerNic(base.NovaObject):<br />
-     # Version 1.0: Initial version<br />
-    VERSION = '1.0'</p>
-<p>	fields = {<br />
-		'rate': fields.IntegerField(default=0)<br />
-		'size': fields.IntegerField(default=0)<br />
-		…….<br />
-	}</p>
-<p>{% endhighlight %}</p>
+{% highlight python %}
+@base.NovaObjectRegistry.register
+class VietStackStat(base.NovaObject):
+    # Version 1.0: Initial version
+    VERSION = '1.0'
+    fields = {
+        'nics': fields.ListOfObjectsField('VietStackPerNic', nullable=True)
+        }
+@base.NovaObjectRegistry.register
+class VietStackPerNic(base.NovaObject):
+     # Version 1.0: Initial version
+    VERSION = '1.0'
+	fields = {
+		'rate': fields.IntegerField(default=0)
+		'size': fields.IntegerField(default=0)
+		…….
+	}
+{% endhighlight %}
 <p>&nbsp;</p>
 <p><strong>2.5 Change of ComputeNode</strong><br />
 In compute_node.py, we need to add a new field inside ComputeNode to point to VietStackStat object:</p>
-<p>{% highlight python %}</p>
-<p>@base.NovaObjectRegistry.register<br />
-class ComputeNode(base.NovaPersistentObject, base.NovaObject,<br />
-                  base.NovaObjectDictCompat):<br />
-    fields = {<br />
-        'id': fields.IntegerField(read_only=True),<br />
-        'uuid': fields.UUIDField(read_only=True),<br />
-        'service_id': fields.IntegerField(nullable=True),<br />
-        'host': fields.StringField(nullable=True),<br />
-		…....<br />
-        'VietStack_stat': fields.ObjectField('VietStackStat', nullable=True)</p>
-<p>{% endhighlight %}</p>
+{% highlight python %}
+@base.NovaObjectRegistry.register
+class ComputeNode(base.NovaPersistentObject, base.NovaObject,
+                  base.NovaObjectDictCompat):
+    fields = {
+        'id': fields.IntegerField(read_only=True),
+        'uuid': fields.UUIDField(read_only=True),
+        'service_id': fields.IntegerField(nullable=True),
+        'host': fields.StringField(nullable=True),
+		…....
+        'VietStack_stat': fields.ObjectField('VietStackStat', nullable=True)
+{% endhighlight %}
 <p>&nbsp;</p>
 <p>Besides, we need to modify the methods inside Compute_Node object to deal with “VietStackStat” value. See the usage of “numa_topology” and “pci_device_pools” for reference.</p>
 <p><strong>2.6 Migration_Context</strong><br />
@@ -238,13 +238,13 @@ class MigrationContext(base.NovaPersistentObject, base.NovaObject):
 <p>We need to update the information of VietStack of physical nics that are defined in nova.conf. These information we could not get from hypervisor itself like other values such as memory, disk, numa_topology, etc.<br />
 Assume that in nova.conf, we have an option [VietStack] as in nova.conf. The resource update should be like below:</p>
 <p>&nbsp;</p>
-<p>{% highlight python %}<br />
-def update_available_resource(self, context):</p>
-<p>	….<br />
-	resource['value1'] = CONF.VietStack.val1<br />
-	resource['value2'] = CONF.VietStack.val2<br />
-	resource['value3'] = CONF.VietStack.val3</p>
-<p>{% endhighlight %}</p>
+{% highlight python %}
+def update_available_resource(self, context):
+	….
+	resource['value1'] = CONF.VietStack.val1
+	resource['value2'] = CONF.VietStack.val2
+	resource['value3'] = CONF.VietStack.val3
+{% endhighlight %}
 <p>&nbsp;</p>
 <p>The method _verify_resources() is used for verifying the resources. If we would like to make sure about the appearance of VietStack_stat, we can put it in to resource_keys in _verfify_resource()<br />
 We need to update the method _update_usage_from_instance() that will calculate the usage of resouces of each instance on compute node. The calcualation of usage of VietStack of each instance should be calculated in method of _update_usage() that is triggered inside _update_usage_from_instance(). The method of _update_usage_from_instance() include the calcualtion of compute host usage based on the usage of each instance. The VietStack_stat usage of compute host should be also calculated here.<br />

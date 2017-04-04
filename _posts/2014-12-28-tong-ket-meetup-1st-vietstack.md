@@ -5,8 +5,10 @@ date: 2014-12-28 15:47:26.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- News
+tags:
+- Meetup
 meta:
   _edit_last: '61498925'
   geo_public: '0'

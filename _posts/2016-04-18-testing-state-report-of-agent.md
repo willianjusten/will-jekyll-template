@@ -5,8 +5,11 @@ date: 2016-04-18 15:35:25.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- Agent
 meta:
   _wpcom_is_markdown: '1'
   _oembed_5525fca2bce7fc13458a6807d2945bcf: "{{unknown}}"

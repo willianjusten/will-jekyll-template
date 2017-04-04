@@ -5,8 +5,11 @@ date: 2015-07-18 05:26:25.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+- News
+tags:
+- DVR
 meta:
   _wpcom_is_markdown: '1'
   _edit_last: '61498925'

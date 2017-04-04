@@ -8,7 +8,9 @@ status: publish
 categories:
 - Tin tức
 - Tin tức VIETSTACK
-tags: []
+- News
+tags:
+- VietStack
 meta:
   _edit_last: '61498925'
   geo_public: '0'
@@ -20,7 +22,7 @@ author:
   first_name: Viet
   last_name: Stack
 ---
-<p><em><a href="https://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="size-thumbnail wp-image-290 alignleft" src="{{ site.baseurl }}/assets/logo-vietstack-800x600.png?w=150" alt="VietStack logo" width="150" height="112" /></a>Tóm lược: Sau thời gian hoạt động đến nay VietStack đã có đủ các điều kiện để làm thêm các việc cụ thể hơn &amp;  sâu sắc hơn đối với những người đang theo đuổi OpenStack nói riêng &amp; Cloud Computing nói chung. Đây là những ý kiến, trao đổi được chắt lọc &amp; thảo luận từ rất nhiều cố vấn, những người làm việc trực tiếp với OpenStack trong và ngoài nước. Hôm nay, VietStack rất vinh dự xin được gửi bài viết này tới các thành viên và xin thông báo các kế hoạch tiếp theo của chúng tôi.</em><!--more--></p>
+<p><em><a href="https://vietstack.files.wordpress.com/2014/07/logo-vietstack-800x600.png"><img class="size-thumbnail wp-image-290 alignleft" src="{{ site.baseurl }}/pictures/logo-vietstack-800x600.png?w=150" alt="VietStack logo" width="150" height="112" /></a>Tóm lược: Sau thời gian hoạt động đến nay VietStack đã có đủ các điều kiện để làm thêm các việc cụ thể hơn &amp;  sâu sắc hơn đối với những người đang theo đuổi OpenStack nói riêng &amp; Cloud Computing nói chung. Đây là những ý kiến, trao đổi được chắt lọc &amp; thảo luận từ rất nhiều cố vấn, những người làm việc trực tiếp với OpenStack trong và ngoài nước. Hôm nay, VietStack rất vinh dự xin được gửi bài viết này tới các thành viên và xin thông báo các kế hoạch tiếp theo của chúng tôi.</em><!--more--></p>
 <p><strong>Ý tưởng &amp; nhu cầu</strong><br />
 Với nhu cầu thực tế là tìm hiểu, trao đổi và cùng thảo luận về OpenStack, ban đầu VietStack là một đơn vị nhỏ lẻ và rất non trẻ. Các thành viên đã tìm đến nhau bằng mọi cách và tạo ra một groups nhỏ trên FB. Ngoài công việc hàng ngày ở từng đơn vị, họ tranh thủ hỏi han nhau về kinh nghiệm tìm hiểu, trao đổi với nhau những khúc mắc cá nhân .... dần dần có một VietStack ở thời điểm hiện tại, tính đến 15/11/2014 con số này là trên 700 thành viên. Số liệu này cũng chưa thể nói hết về VietStack bây giờ và trong tương lai được, điều này cũng được các bạn trẻ VietStack Core kỳ vọng.</p>
 <p><strong>Gặp gỡ &amp; thảo luận</strong><br />

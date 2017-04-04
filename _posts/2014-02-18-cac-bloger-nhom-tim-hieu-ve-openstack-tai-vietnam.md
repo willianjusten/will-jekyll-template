@@ -7,7 +7,9 @@ published: true
 status: publish
 categories:
 - Bài dịch - Tài liệu
-tags: []
+- News
+tags:
+- VietStack
 meta:
   _edit_last: '53965886'
   _publicize_pending: '1'

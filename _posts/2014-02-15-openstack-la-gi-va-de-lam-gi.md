@@ -8,7 +8,10 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Giới thiệu OpenStack
-tags: []
+- News
+tags:
+- OpenStack
+- VietStack
 meta:
   _edit_last: '53965886'
   _publicize_pending: '1'
@@ -67,7 +70,7 @@ author:
 <p><em></em>Giới thiệu bằng tiếng Anh tại trang chủ:</p>
 <blockquote><p>OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed through a dashboard that gives administrators control while empowering their users to provision resources through a web interface.</p></blockquote>
 <p>Hình minh họa nó rất rõ vị trí của OpenStack trong tực tế, nôm na như sau:</p>
-<p><img class="aligncenter size-large wp-image-169" alt="openstack-software-diagram" src="{{ site.baseurl }}/assets/openstack-software-diagram.png?w=630" width="630" height="261" /></p>
+<p><img class="aligncenter size-large wp-image-169" alt="openstack-software-diagram" src="{{ site.baseurl }}/pictures/openstack-software-diagram.png?w=630" width="630" height="261" /></p>
 <ul>
 <li>Phía dưới là phần cứng của, đã được ảo hóa để chia sẻ cho ứng dụng, người dùng</li>
 <li>Trên cùng là các ứng dụng của bạn, tức là các phần mềm mà bạn sử dụng</li>

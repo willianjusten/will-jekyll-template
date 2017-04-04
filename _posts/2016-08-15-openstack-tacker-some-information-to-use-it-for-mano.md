@@ -5,8 +5,11 @@ date: 2016-08-15 10:47:22.000000000 +07:00
 type: post
 published: true
 status: publish
-categories: []
-tags: []
+categories:
+- Tech
+tags:
+- Tacker
+- MANO
 meta:
   _wpcom_is_markdown: '1'
   _rest_api_published: '1'

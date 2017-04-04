@@ -7,11 +7,12 @@ published: true
 status: publish
 categories:
 - Hướng dẫn cài đặt
+- News
 tags:
 - devstack
 - openstack
 - vietsi
-- vietstack
+- VietStack
 meta:
   _edit_last: '53965886'
   _publicize_pending: '1'
@@ -52,7 +53,7 @@ $ su - stack</p>
 <p>- Tải gói git bằng lệnh:<br />
 $ sudo apt-get install git -y</p>
 <p>- Tải devstack từ github bằng lệnh:<br />
-git clone <a href="https://www.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2Fopenstack-dev%2Fdevstack.git&amp;h=qAQF8cv-w&amp;enc=AZNXGeBl-Ng8CFMuuq-mh-myf1LSHSwxHEpXs0U4WG34zX2zks9QPHqrHaz1q50D6bnOR2y-brzYXrG5YNzZU5F8qMlkF8kv38fg7rYiwww-y0TQ1lmsvbWH_aw2ZweOaDNH5EaLmUyEeU40RrItgphGl1y2OlC-EZJOMdDqI5JwwQ&amp;s=1" target="_blank" rel="nofollow">https://github.com/openstack-dev/devstack.git</a></p>
+git clone <a href="https://github.com/openstack-dev/devstack.git" target="_blank" rel="nofollow">https://github.com/openstack-dev/devstack.git</a></p>
 <p>- Di chuyển vào thư mục devstack<br />
 cd devstack</p>
 <p>Bước 4: Copy file localrc từ /devstack/samples/localrc ra thư mục hiện tại và sửa đổi file localrc cho phù hợp.</p>

@@ -8,7 +8,9 @@ status: publish
 categories:
 - Chia sẻ kinh nghiệm
 - Hướng dẫn - Kinh Nghiệm
-tags: []
+- Tech
+tags:
+- Ansible
 meta:
   _edit_last: '61498925'
   geo_public: '0'
@@ -33,7 +35,7 @@ author:
 <p>It is equivalent of “apt-get update”. But what if we want to issue a module that is not recently supported by ansible, let's say “install_nova_compute”. What we need to do is write a python script named "install_nova_compute.py" and put it in the library folder.</p>
 <p>I am going to show you an example of new module called “userinfo.py”. This module will check the existence of a user in node and create that user if the its state is 'absent'. Sorry for my bad wordpress skill of posting python code. It seems easier to me by taking a screenshot:). Notify that this example is only for demonstration of using module, not for production.</p>
 <p>&nbsp;</p>
-<p><a href="https://vietstack.files.wordpress.com/2015/07/screenshot-from-2015-07-15-164903.png"><img class="aligncenter size-full wp-image-531" src="{{ site.baseurl }}/assets/screenshot-from-2015-07-15-164903.png" alt="Screenshot from 2015-07-15 16:49:03" width="630" height="295" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2015/07/screenshot-from-2015-07-15-164903.png"><img class="aligncenter size-full wp-image-531" src="{{ site.baseurl }}/pictures/screenshot-from-2015-07-15-164903.png" alt="Screenshot from 2015-07-15 16:49:03" width="630" height="295" /></a></p>
 <pre>
 So, what i have done in this small experiment is below:
 

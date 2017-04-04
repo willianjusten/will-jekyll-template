@@ -8,8 +8,10 @@ status: publish
 categories:
 - Bài dịch - Tài liệu
 - Tài liệu tham khảo
+- Tech
 tags:
-- xen
+- Xen
+- Virtualization
 meta:
   _wpas_skip_facebook: '1'
   _wpas_skip_google_plus: '1'
@@ -25,7 +27,7 @@ meta:
   _oembed_df5ba52c706fd740e568ed4769018412: "{{unknown}}"
   _publicize_pending: '1'
   enclosure: |
-    https://xen-orchestra.com/assets/videos/adjust.mp4
+    https://xen-orchestra.com/pictures/videos/adjust.mp4
     248644
     video/mp4
   _oembed_0f2056e8076d14228eaddb835b283f5c: "{{unknown}}"
@@ -44,11 +46,11 @@ author:
 </ul>
 <p style="text-align:justify;" align="justify">Bài viết này sẽ giới thiệu tổng quan về Xen Server - một distro sử dụng Xen Hypervisor và các thành phần bên trong module Storage cùng một chút overview về Virtualization Driver của Xen. Các module khác như Network, Resource Compute &amp; Monitor của Xen sẽ được nhắc đến trong các post sau.</p>
 <p style="text-align:justify;" align="justify">Dưới đây là video demo nói về một trong những tính năng khá đặc biệt của Xen Server, thay đổi cấu hình máy ảo trong khi máy vẫn đang ở trạng thái running. Video chỉ mang tính chất gợi mở về các tính năng khá hay của Xen Server.</p>
-<p style="text-align:justify;" align="justify">[embed]https://xen-orchestra.com/assets/videos/adjust.mp4[/embed]</p>
+<p style="text-align:justify;" align="justify">[embed]https://xen-orchestra.com/pictures/videos/adjust.mp4[/embed]</p>
 <p style="text-align:justify;" align="justify"><b>1. Giới thiệu:</b></p>
 <p style="text-align:justify;" align="justify">Xen Server là distro sử dụng Xen hypervisor, trong đó Xen hypervisor là hypervisor kiểu I dạng microkernel (xem lại bài về virtualization), hỗ trợ hai chế độ ảo hoá full virtualization và para-virtualization. Toàn bộ thao tác điều khiển của Xen Server thông qua một máy ảo chính được gọi là Domain 0. Bản thân máy ảo Domain 0 có chứa toàn bộ driver tương tác với hạ tầng vật lý bên dưới và các service, thư viện hỗ trợ quản lý, tương tác với máy ảo (VM). Các máy ảo tạo ra trên nền tảng của Xen hypervisor có tên chung là domain U (dom U).</p>
 <p style="text-align:justify;" align="justify">Kiến trúc của Xen Server như sau:</p>
-<p style="text-align:justify;" align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/1.png"><img class=" wp-image-382 aligncenter" src="{{ site.baseurl }}/assets/1.png?w=300" alt="1" width="408" height="305" /></a></p>
+<p style="text-align:justify;" align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/1.png"><img class=" wp-image-382 aligncenter" src="{{ site.baseurl }}/pictures/1.png?w=300" alt="1" width="408" height="305" /></a></p>
 <p style="text-align:justify;" align="justify">
 <p style="text-align:center;" align="justify">Hình 1. Kiến trúc Xen Server (nguồn: xenserver.org)</p>
 <p style="text-align:left;" align="justify"><b>2. Chức năng chính:</b></p>
@@ -222,7 +224,7 @@ author:
 </li>
 </ul>
 <p align="justify"><b> </b>Được cài đặt ở dom 0, nhận các thao tác đọc ghi từ dom U và chuyển xuống hạ tầng storage phần cứng bên dưới thông qua giao thức xen blkif. Sau đó, blkback sẽ thực hiện các thao tác đọc ghi trên các device driver.</p>
-<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/2.png"><img class=" wp-image-388 aligncenter" src="{{ site.baseurl }}/assets/2.png?w=300" alt="2" width="615" height="203" /></a></p>
+<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/2.png"><img class=" wp-image-388 aligncenter" src="{{ site.baseurl }}/pictures/2.png?w=300" alt="2" width="615" height="203" /></a></p>
 <p align="justify">
 <p style="text-align:center;" align="justify">Hình 2: Flow BlkBack (nguồn: Citrix Xen Project - Felipe Franciosi)</p>
 <ul>
@@ -234,7 +236,7 @@ author:
 <p align="justify">Tham khảo: http://wiki.xenproject.org/wiki/Blktap</p>
 </li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2014/11/3.png"><img class=" wp-image-389 aligncenter" src="{{ site.baseurl }}/assets/3.png?w=300" alt="3" width="609" height="206" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/11/3.png"><img class=" wp-image-389 aligncenter" src="{{ site.baseurl }}/pictures/3.png?w=300" alt="3" width="609" height="206" /></a></p>
 <p>&nbsp;</p>
 <p style="text-align:center;">Hình 3: Flow với BlkTap Hình 2: Flow BlkBack (nguồn: Citrix Xen Project - Felipe Franciosi)</p>
 <ul>
@@ -244,11 +246,11 @@ author:
 </ul>
 <p align="justify">BlkTap3 là phiên bản nâng cấp từ blktap2, hiện chưa được implement trong Xen. BlkTap3 đưa tapdisk process lên hoàn toàn nằm trong user space và connect trực tiếp vào blkfront của DomU.</p>
 <p align="justify">Tham khảo <a href="http://wiki.xenproject.org/wiki/Blktap3"> http://wiki.xenproject.org/wiki/Blktap3 </a></p>
-<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/4.png"><img class=" wp-image-390 aligncenter" src="{{ site.baseurl }}/assets/4.png?w=300" alt="4" width="617" height="198" /></a></p>
+<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/4.png"><img class=" wp-image-390 aligncenter" src="{{ site.baseurl }}/pictures/4.png?w=300" alt="4" width="617" height="198" /></a></p>
 <p align="justify">
 <p style="text-align:center;" align="justify">Hình 4. Flow với BlkTap3 Hình 2: Flow BlkBack (nguồn: Citrix Xen Project - Felipe Franciosi)</p>
 <p align="justify"><b>3. Virtualization mode và performance - PV Driver trong Xen:</b></p>
-<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/10.png"><img class="aligncenter  wp-image-407" src="{{ site.baseurl }}/assets/10.png?w=150" alt="10" width="543" height="304" /></a></p>
+<p align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/10.png"><img class="aligncenter  wp-image-407" src="{{ site.baseurl }}/pictures/10.png?w=150" alt="10" width="543" height="304" /></a></p>
 <p align="justify">
 <p style="text-align:center;" align="justify">Hình 5: Các chế độ virtualization của Xen. (nguồn: xen.org)</p>
 <ul>
@@ -275,11 +277,11 @@ author:
 <p align="justify">Mô hình tổng quan của Xen PV driver trên Windows</p>
 </li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2014/11/5.png"><img class=" wp-image-391 aligncenter" src="{{ site.baseurl }}/assets/5.png?w=300" alt="5" width="626" height="275" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/11/5.png"><img class=" wp-image-391 aligncenter" src="{{ site.baseurl }}/pictures/5.png?w=300" alt="5" width="626" height="275" /></a></p>
 <p>&nbsp;</p>
 <p style="text-align:center;">Hình 6. Xen PV Driver trên Windows (nguồn: xen.org)</p>
 <p style="padding-left:30px;" align="justify">PV driver trên Xen 6.1</p>
-<p style="padding-left:30px;" align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/6.png"><img class=" wp-image-392 aligncenter" src="{{ site.baseurl }}/assets/6.png?w=300" alt="6" width="627" height="373" /></a></p>
+<p style="padding-left:30px;" align="justify"><a href="https://vietstack.files.wordpress.com/2014/11/6.png"><img class=" wp-image-392 aligncenter" src="{{ site.baseurl }}/pictures/6.png?w=300" alt="6" width="627" height="373" /></a></p>
 <p style="padding-left:30px;" align="justify">
 <p style="padding-left:30px;text-align:center;" align="justify">Hình 7. Kiến trúc PV Driver trên Xen Server 6.1 (nguồn: xen.org)</p>
 <ul>
@@ -287,7 +289,7 @@ author:
 <p align="justify">Event channel giao tiếp giữa các Dom.</p>
 </li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2014/11/7.png"><img class=" wp-image-393 aligncenter" src="{{ site.baseurl }}/assets/7.png?w=300" alt="7" width="513" height="324" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/11/7.png"><img class=" wp-image-393 aligncenter" src="{{ site.baseurl }}/pictures/7.png?w=300" alt="7" width="513" height="324" /></a></p>
 <p>&nbsp;</p>
 <p style="text-align:center;">Hình 8. Event Channel trong Xen (nguồn: xen.org)</p>
 <ul>
@@ -295,7 +297,7 @@ author:
 <p align="justify">Xend/XAPI</p>
 </li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2014/11/8.png"><img class=" wp-image-394 aligncenter" src="{{ site.baseurl }}/assets/8.png?w=300" alt="8" width="509" height="289" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/11/8.png"><img class=" wp-image-394 aligncenter" src="{{ site.baseurl }}/pictures/8.png?w=300" alt="8" width="509" height="289" /></a></p>
 <p>&nbsp;</p>
 <p style="text-align:center;">Hình 9. Xend trong Xen hypervisor (nguồn: xen.org)</p>
 <p style="padding-left:30px;" align="justify">Daemon (viết bằng python) nắm nhiệm vụ quản lý chung cho toàn hệ thống Xen, giao tiếp trực tiếp với Xen Hypervisor thông qua thư viện C libxenctrl. Toàn bộ các giao tiếp giữa Xend thông qua giao thức XML RPC và sử dụng các CLI như xm hoặc xe.</p>
@@ -305,7 +307,7 @@ author:
 <p align="justify">Thư viện C giúp Xend có thể giao tiếp với hypervisor trong Dom 0 thông qua một driver đặc biệt là privcmd.</p>
 </li>
 </ul>
-<p><a href="https://vietstack.files.wordpress.com/2014/11/9.png"><img class=" wp-image-395 aligncenter" src="{{ site.baseurl }}/assets/9.png?w=300" alt="9" width="500" height="285" /></a></p>
+<p><a href="https://vietstack.files.wordpress.com/2014/11/9.png"><img class=" wp-image-395 aligncenter" src="{{ site.baseurl }}/pictures/9.png?w=300" alt="9" width="500" height="285" /></a></p>
 <p>&nbsp;</p>
 <p style="text-align:center;">Hình 10. Thư viện libxenctrl (nguồn: xen.org)</p>
 <ul>

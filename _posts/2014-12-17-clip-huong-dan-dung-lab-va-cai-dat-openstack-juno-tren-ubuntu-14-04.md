@@ -7,7 +7,12 @@ published: true
 status: publish
 categories:
 - Hướng dẫn cài đặt
-tags: []
+- Tech
+- News
+tags:
+- LAB
+- OpenStack
+- Juno
 meta:
   _edit_last: '61498925'
   _publicize_pending: '1'
