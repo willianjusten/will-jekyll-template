@@ -1,4 +1,4 @@
-## Will Jekyll Template - [Demo](http://willianjusten.com.br/will-jekyll-template)
+## Will Jekyll Template - [Demo](https://willianjusten.github.io/will-jekyll-template)
 
 ![Screenshot](screenshot.png)
 
