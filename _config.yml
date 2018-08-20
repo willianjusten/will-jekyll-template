@@ -1,7 +1,7 @@
 # Site settings
 title: A blog about lorem ipsum dolor sit amet
 description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/huzujun.github.io" # the subpath of your site, e.g. /blog
 url: "https://huzujun.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
