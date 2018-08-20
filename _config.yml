@@ -16,6 +16,7 @@ disqus_username: lorem_ipsum
 
 # Build settings
 markdown: kramdown
+theme: jekyll-theme-leap-day
 highlighter: rouge
 permalink: /:title/
 
