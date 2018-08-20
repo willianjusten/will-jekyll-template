@@ -1,13 +1,13 @@
 # Site settings
-title: Master's Road
-description: A blog about tech
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://huzujun.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: A blog about lorem ipsum dolor sit amet
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Hu Zujun
 user_description: ACMer,Student in BJTU
-user_title: 技术/acm/心得
+user_title: Huzujun's Road
 email: huzujun_001@163.com
 twitter_username: huzujun
 github_username:  huzujun
