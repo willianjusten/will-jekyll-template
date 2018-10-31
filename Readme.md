@@ -99,6 +99,10 @@ twitter_text: 'How to install and use this template'
 - Μέσα στον φάκελο που δουλεύετε, εκτελέστε `gulp`. Σε περίπτωση που δεν υπάρχει, εγκαταστήστε την.
 - Ανεβάστε την σελίδα στο github.
 
+
+## Markdown-Cheatsheet
+[Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ## Ερωτήσεις
 
 Έχετε πρόβλημα να δουλέψει κάτι ή ερώτηση γατί έχω συντάξει κάτι με αυτόν τρόπο; Βρείτε με στο Twitter [@willian_justen](https://twitter.com/willian_justen) ή στείλτε ένα [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
