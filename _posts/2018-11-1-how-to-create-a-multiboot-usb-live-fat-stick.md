@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Δημιουργία multiboot USB με τη χρήση του live-fat-stick"
+title: "Δημιουργια multiboot USB με τη χρηση του live-fat-stick"
 date: 2018-11-01 00:50:00
 description: Φτιάξτε ένα Live USB με πολλές διανομές με τη χρήση του live-fat-stick στο τερματικό
 tags:
@@ -26,21 +26,21 @@ twitter_text: 'Φτιάξτε ένα Live USB με πολλές διανομές
 
 Το πρόγραμμα αποτελείται από 3 αρχεία:
 
-* live-fat-stick
-* live-grub-stick
-* live-usb-gui
+1. live-fat-stick
+2. live-grub-stick
+3. live-usb-gui
 
 <hr>
 
 ## ΕΓΚΑΤΑΣΤΑΣΗ
 
-1. Kατεβάστε τα αρχεία από το Git.
+* Kατεβάστε τα αρχεία από το Git.
 
-2. Αποσυμπιέστε τα. Θα δημιουργηθεί ένας φάκελος με τα παραπάνω αρχεία.
+* Αποσυμπιέστε τα. Θα δημιουργηθεί ένας φάκελος με τα παραπάνω αρχεία.
 
-3. Ανοίξτε το τερματικό μέσα στον φάκελο αυτό.
+* Ανοίξτε το τερματικό μέσα στον φάκελο αυτό.
 
-4. Αντιγράψτε τα αρχεία στον κατάλογο **/usr/bin/** 
+* Αντιγράψτε τα αρχεία στον κατάλογο **/usr/bin/** 
 
 {% highlight ruby %}
 sudo cp live-fat-stick /usr/bin/
@@ -52,11 +52,11 @@ sudo cp live-usb-gui /usr/bin/
 
 Στο openSUSE μπορούν να εγκατασταθούν με την τεχνολογία του 1-click-install.
 
-* [live-fat-stick](http://software.opensuse.org/package/live-fat-stick "live-fat-stick")
-* [live-grub-stick](http://software.opensuse.org/package/live-grub-stick "live-grub-stick")
-* [live-usb-gui](http://software.opensuse.org/package/live-usb-gui "live-usb-gui")
+1. [live-fat-stick](http://software.opensuse.org/package/live-fat-stick "live-fat-stick")
+2. [live-grub-stick](http://software.opensuse.org/package/live-grub-stick "live-grub-stick")
+3. [live-usb-gui](http://software.opensuse.org/package/live-usb-gui "live-usb-gui")
 
-5. Αφού τα αντιγράψετε, χρειάζεται να τα κάνετε εκτελέσιμα.
+* Αφού τα αντιγράψετε, χρειάζεται να τα κάνετε εκτελέσιμα.
 
 {% highlight ruby %}
 sudo chmod +x /usr/bin/live-fat-stick
@@ -66,7 +66,7 @@ sudo chmod +x /usr/bin/live-grub-stick
 sudo chmod +x /usr/bin/live-usb-gui
 {% endhighlight %}
 
-6. Αντιγράψτε το live-usb-gui.desktop στον φάκελο **/usr/share/applications/** και ενημερώστε την βάση δεδομεων:
+* Αντιγράψτε το live-usb-gui.desktop στον φάκελο **/usr/share/applications/** και ενημερώστε την βάση δεδομεων:
 
 {% highlight ruby %}
 sudo cp live-usb.gui.desktop /usr/share/applications/
@@ -129,19 +129,19 @@ $ sudo apt-get install -f
 Εκτελέστε τις εντολές ως root (su -).
 
 {% highlight ruby %}
-**Για openSUSE:** live-grub-stick --suse /path/to/openSUSE-filename.iso /dev/sdXY
-**Για openSUSE με persistence:** live-grub-stick --suse-persistent /path/to/openSUSE-filename.iso /dev/sdXY
+Για openSUSE: live-grub-stick --suse /path/to/openSUSE-filename.iso /dev/sdXY
+Για openSUSE με persistence: live-grub-stick --suse-persistent /path/to/openSUSE-filename.iso /dev/sdXY
 
-**Για Ubuntu-οειδή:** live-grub-stick --ubuntu /path/to/ubuntu-filename.iso /dev/sdXY
-**Για Ubuntu-οειδή με persistence:** live-grub-stick --ubuntu-persistent /path/to/ubuntu-filename.iso /dev/sdXY
+Για Ubuntu-οειδή: live-grub-stick --ubuntu /path/to/ubuntu-filename.iso /dev/sdXY
+Για Ubuntu-οειδή με persistence: live-grub-stick --ubuntu-persistent /path/to/ubuntu-filename.iso /dev/sdXY
 
-**Για Mint:** live-grub-stick --mint /path/to/mint-filename.iso /dev/sdXY
+Για Mint: live-grub-stick --mint /path/to/mint-filename.iso /dev/sdXY
 
-**Για Fedora:** live-grub-stick --fedora /path/to/fedora-filename.iso /dev/sdXY
+Για Fedora: live-grub-stick --fedora /path/to/fedora-filename.iso /dev/sdXY
 
-**Για iPXE:** live-grub-stick --ipxe /path/to/ipxe.iso /dev/sdXY
+Για iPXE: live-grub-stick --ipxe /path/to/ipxe.iso /dev/sdXY
 
-**Για isohybrid:** live-grub-stick --isohybrid /path/to/isohybridimage.iso /dev/sdX
+Για isohybrid: live-grub-stick --isohybrid /path/to/isohybridimage.iso /dev/sdX
 {% endhighlight %}
 
 στις παραπάνω εντολές αλλάζετε το όνομα αρχείου iso (και την τοποθεσία. Αν μετακινηθείτε στον φάκελο με τα iso τότε απλά γράφετε το όνομα αρχείου iso).
