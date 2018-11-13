@@ -256,7 +256,7 @@ $ pacman -S gcc git make
 Then
 
 {% highlight ruby %}
-$ mkdir noip
+$ mkdir noip<br>
 $ cd noip
 {% endhighlight %}
 
@@ -281,7 +281,7 @@ $ cd noip-2.1.9-1
 Compile and install
 
 {% highlight ruby %}
-$ make
+$ make<br>
 $ make install
 {% endhighlight %}
 
@@ -302,14 +302,14 @@ $ /usr/local/bin/noip2 -S
 and the results should be like
 
 {% highlight ruby %}
-1 noip2 process active.
-
-Process 1516, started as noip2, (version 2.1.9)
-Using configuration from /usr/local/etc/no-ip2.conf
-Last IP Address set EXTERNAL IP
-Account USERNAME
-configured for:
-host HOSTNAME
+1 noip2 process active.<br>
+<br>
+Process 1516, started as noip2, (version 2.1.9)<br>
+Using configuration from /usr/local/etc/no-ip2.conf<br>
+Last IP Address set EXTERNAL IP<br>
+Account USERNAME<br>
+configured for:<br>
+host HOSTNAME<br>
 Updating every 30 minutes via /dev/eth0 with NAT enabled.
 {% endhighlight %}
 
@@ -326,15 +326,15 @@ $ nano /usr/lib/systemd/system/noip.service
 Add the following content.
 
 {% highlight ruby %}
-[Unit]
-Description=No-IP Dynamic DNS Update Client
-After=network.target
-
-[Service]
-Type=forking
-ExecStart=/usr/local/bin/noip2
-
-[Install]
+[Unit]<br>
+Description=No-IP Dynamic DNS Update Client<br>
+After=network.target<br>
+<br>
+[Service]<br>
+Type=forking<br>
+ExecStart=/usr/local/bin/noip2<br>
+<br>
+[Install]<br>
 WantedBy=multi-user.target
 {% endhighlight %}
 
@@ -457,7 +457,9 @@ Now create a folder where your user and the transmission group (where the transm
 
 {% highlight ruby %}
 $ mkdir -p /mnt/torrents/{incomplete,complete,torrentfiles}
+<br>
 $ chown -R alarm:transmission /mnt/torrents
+<br>
 $ chmod -R 775 /mnt/torrents
 {% endhighlight %}
 
@@ -505,21 +507,21 @@ If you do not udate the ACL you get a nice error message when connecting:
 
 {% highlight ruby %}
 403: Forbidden
-
+<br><br>
 Unauthorized IP Address.
-
+<br><br>
 Either disable the IP address whitelist or add your address to it.
-
+<br><br>
 If you're editing settings.json, see the 'rpc-whitelist' and 'rpc-whitelist-enabled' entries.
-
+<br><br>
 If you're still using ACLs, use a whitelist instead. See the transmission-daemon manpage for details.
 {% endhighlight %}
 
 If all went well you should be able to connect to `http://YOUR-PI-IP:9091` and see the nice transmission webinterface.
 
-If you want more info on Transmission on Arch Linux, read up on the [arch wiki] (https://wiki.archlinux.org/index.php/Transmission).
+If you want more info on Transmission on Arch Linux, read up on the [arch wiki](https://wiki.archlinux.org/index.php/Transmission).
 
-* Android: Download [Transdrone] (https://play.google.com/store/apps/details?id=org.transdroid.lite) to add new torrents to your server.
+* Android: Download [Transdrone](https://play.google.com/store/apps/details?id=org.transdroid.lite) to add new torrents to your server.
 * Filezilla: To get the downloaded files, use SFTP.
 
 ---
