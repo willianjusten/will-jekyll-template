@@ -54,7 +54,6 @@ $ sudo fdisk /dev/sdX
 At the fdisk prompt, delete old partitions and create a new one:
 
 - Type `o`. This will clear out any partitions on the drive.
-
 - Type `p` to list partitions. There should be no partitions left.
 - Type `n`, then p for primary, `1` for the first partition on the drive, press `ENTER` to accept the default first sector, then type `+100M` for the last sector.
 - Type `t`, then `c` to set the first partition to type W95 FAT32 (LBA).
@@ -173,11 +172,11 @@ After some changes on pacman, there are some workarounds on how to install AUR.
 
 Add users to a group with the gpasswd command as root:
 
-{% highlight ruby %}gpasswd -a alarm wheel```
+{% highlight ruby %}gpasswd -a alarm wheel{% endhighlight %}
 
 Go to sudoers
 
-{% highlight ruby %}nano /etc/sudoers```
+{% highlight ruby %}nano /etc/sudoers{% endhighlight %}
 
 and change the wheel line
 
@@ -190,8 +189,11 @@ Reboot the system and give the follwing commands as user
 
 {% highlight ruby %}
 $ wget https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
+<br>
 $ tar -xvzf package-query.tar.gz
+<br>
 $ cd package-query
+<br>
 $ makepkg -si
 {% endhighlight %}
 
@@ -199,8 +201,11 @@ You can do the same with yaourt
 
 {% highlight ruby %}
 $ wget https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
+<br>
 $ tar -xvzf yaourt.tar.gz
+<br>
 $ cd yaourt
+<br>
 $ makepkg -si
 {% endhighlight %}
 
@@ -214,7 +219,9 @@ And add
 
 {% highlight ruby %}
 [archlinuxfr]
+<br>
 SigLevel = Optional TrustAll
+<br>
 Server = http://repo.archlinux.fr/arm/
 {% endhighlight %}
 
@@ -240,6 +247,7 @@ and change the wheel line (add #)
 {% endhighlight %}
 
 ---
+
 ### 4. Setup no-ip or inadyn client
 
 no-ip is the service I use for DDNS. It can be installed from AUR (`yaourt -S noip`). 
@@ -363,6 +371,7 @@ yaourt -S noip
 *Configure No-IP Back-end*
 
 Create the configuration file.
+
 {% highlight ruby %}
 noip2 -C
 {% endhighlight %}
@@ -370,19 +379,21 @@ noip2 -C
 Enter the relevant details when prompted. All settings can be modified individually later.
  
 Modify the update interval.
+
 {% highlight ruby %}
 noip2 -U 30
 {% endhighlight %}
 
 Interval that the IP will be updated is set with -U option in minutes. Default is 30 minutes.
-
  
 Modify No-IP username.
+
 {% highlight ruby %}
 noip2 -u username
 {% endhighlight %}
 
 Modify No-IP password.
+
 {% highlight ruby %}
 noip2 -p password
 {% endhighlight %}
@@ -394,6 +405,7 @@ systemctl start noip2
 {% endhighlight %}
 
 Enable noip serive.
+
 {% highlight ruby %}
 systemctl enable noip2
 {% endhighlight %}
