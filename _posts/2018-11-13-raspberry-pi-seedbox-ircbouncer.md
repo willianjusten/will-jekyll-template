@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Make your Raspberry Pi a seedbox, an IRC bouncer and ddns"
-date: 2018-11-01 00:50:00
+date: 2018-11-13 00:50:00
 description: How to setup your Raspberry Pi as seedbox, IRC bouncer and ddns
 tags:
 - seedbox
@@ -24,12 +24,12 @@ I use Raspberry Pi B+ as IRC bouncer and seedbox-torrent server. I used Arch Lin
 
 This tutorial has the following sections:
 
-- 1. Create the SD card using Arch Linux
-- 2. Setup static ip
-- 3. Install some extra software
-- 4. Setup no-ip or inadyn client
-- 5. Install and setup ZNC (IRC Bouncer)
-- 6. Install Transmission (seedbox)
+- Create the SD card using Arch Linux
+- Setup static ip
+- Install some extra software
+- Setup no-ip or inadyn client
+- Install and setup ZNC (IRC Bouncer)
+- Install Transmission (seedbox)
 
 ---
 
@@ -63,20 +63,16 @@ At the fdisk prompt, delete old partitions and create a new one:
 Create and mount the FAT filesystem:
 
 {% highlight ruby %}
-$ sudo mkfs.vfat /dev/sdX1
-<br>
+sudo mkfs.vfat /dev/sdX1
 mkdir boot
-<br>
-$ sudo mount /dev/sdX1 boot{% endhighlight %}
+sudo mount /dev/sdX1 boot{% endhighlight %}
 
 Create and mount the ext4 filesystem:
 
 {% highlight ruby %}
-$ sudo mkfs.ext4 /dev/sdX2
-<br>
+sudo mkfs.ext4 /dev/sdX2
 mkdir root
-<br>
-$ sudo mount /dev/sdX2 root
+sudo mount /dev/sdX2 root
 {% endhighlight %}
 
 Download and extract the root filesystem (as root, not via sudo):
@@ -85,30 +81,28 @@ Download and extract the root filesystem (as root, not via sudo):
 
 {% highlight ruby %}
 wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
-<br>
-$ sudo bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
-<br>
-$ sudo sync
+sudo bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
+sudo sync
 {% endhighlight %}
 
 * For Raspberry Pi 2
 
 {% highlight ruby %}
 wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-2-latest.tar.gz
-$ sudo tar -xpf ArchLinuxARM-rpi-2-latest.tar.gz -C root
-$ sudo sync
+sudo tar -xpf ArchLinuxARM-rpi-2-latest.tar.gz -C root
+sudo sync
 {% endhighlight %}
 
 Move boot files to the first partition:
 
 {% highlight ruby %}
-$ sudo mv root/boot/* boot
+sudo mv root/boot/* boot
 {% endhighlight %}
 
 Unmount the two partitions:
 
 {% highlight ruby %}
-$ sudo umount boot root
+sudo umount boot root
 {% endhighlight %}
 
 Insert the SD card into the Raspberry Pi, connect ethernet, and apply 5V power. Use the serial console or SSH to the IP address given to the board by your router.
@@ -130,27 +124,27 @@ $ nano /etc/systemd/network/eth0.network
 paste the following (for static IP `192.168.1.100`)
 
 {% highlight ruby %}
-[Match]<br>
-Name=eth0<br>
-<br><br>
-[Network]<br>
-Address=192.168.1.100/24<br>
-Gateway=192.168.1.1<br>
-DNS=8.8.8.8<br>
+[Match]
+Name=eth0
+
+[Network]
+Address=192.168.1.100/24
+Gateway=192.168.1.1
+DNS=8.8.8.8
 DNS=8.8.4.4
 {% endhighlight %}
 
 You will then need to disable netcl. To find out what is enabled that is netctl related, run this:
 
-{% highlight ruby %}$ systemctl list-unit-files{% endhighlight %}
+{% highlight ruby %}sudo systemctl list-unit-files{% endhighlight %}
 
 Once you identify all netctl related stuff. Go through and disable all netctl related stuff. You may have more to disable than just the below:
 
-{% highlight ruby %}$ systemctl disable netctl@eth0.service{% endhighlight %}
+{% highlight ruby %}sudo systemctl disable netctl@eth0.service{% endhighlight %}
 
 You will then need systemd-networkd enabled:
 
-{% highlight ruby %}$ systemctl enable systemd-networkd{% endhighlight %}
+{% highlight ruby %}sudo systemctl enable systemd-networkd{% endhighlight %}
 
 Login with 
 
@@ -163,7 +157,7 @@ Login with
 The system is fully usable but I prefer to add some extra programs-tools (some might be already installed)
 
 {% highlight ruby %}
-$ pacman -S mc make wget fakeroot sudo packer htop ntfs-3g pkg-config
+sudo pacman -S mc make wget fakeroot sudo packer htop ntfs-3g pkg-config
 {% endhighlight %}
 
 #### AUR
@@ -172,11 +166,11 @@ After some changes on pacman, there are some workarounds on how to install AUR.
 
 Add users to a group with the gpasswd command as root:
 
-{% highlight ruby %}gpasswd -a alarm wheel{% endhighlight %}
+{% highlight ruby %}sudo gpasswd -a alarm wheel{% endhighlight %}
 
 Go to sudoers
 
-{% highlight ruby %}nano /etc/sudoers{% endhighlight %}
+{% highlight ruby %}sudo nano /etc/sudoers{% endhighlight %}
 
 and change the wheel line
 
@@ -188,56 +182,48 @@ and change the wheel line
 Reboot the system and give the follwing commands as user
 
 {% highlight ruby %}
-$ wget https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
-<br>
-$ tar -xvzf package-query.tar.gz
-<br>
-$ cd package-query
-<br>
-$ makepkg -si
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz
+tar -xvzf package-query.tar.gz
+cd package-query
+makepkg -si
 {% endhighlight %}
 
 You can do the same with yaourt
 
 {% highlight ruby %}
-$ wget https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
-<br>
-$ tar -xvzf yaourt.tar.gz
-<br>
-$ cd yaourt
-<br>
-$ makepkg -si
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz
+tar -xvzf yaourt.tar.gz
+cd yaourt
+makepkg -si
 {% endhighlight %}
 
 ALTERNATIVE yaourt installation:
 
 Open the file
 
-{% highlight ruby %}nano /etc/pacman.conf{% endhighlight %}
+{% highlight ruby %}sudo nano /etc/pacman.conf{% endhighlight %}
 
 And add
 
 {% highlight ruby %}
 [archlinuxfr]
-<br>
 SigLevel = Optional TrustAll
-<br>
 Server = http://repo.archlinux.fr/arm/
 {% endhighlight %}
 
 Then install yaourt (as root):
 
-{% highlight ruby %}pacman -Sy yaourt{% endhighlight %}
+{% highlight ruby %}sudo pacman -Sy yaourt{% endhighlight %}
 
 Then delete the archlinuxfr repo.
 
 To delete the user from wheel group, first execute the command as root:
 
-{% highlight ruby %}gpasswd -d alarm wheel{% endhighlight %}
+{% highlight ruby %}sudo gpasswd -d alarm wheel{% endhighlight %}
 
 and then go to sudoers
 
-{% highlight ruby %}nano /etc/sudoers{% endhighlight %}
+{% highlight ruby %}sudo nano /etc/sudoers{% endhighlight %}
 
 and change the wheel line (add #)
 
@@ -258,39 +244,39 @@ Most of the routers support it no-ip. You can use your router's service. But wha
 First of all, install the needed programs to build the service (same as I did with ZNC)
 
 {% highlight ruby %}
-$ pacman -S gcc git make
+sudo pacman -S gcc git make
 {% endhighlight %}
 
 Then
 
 {% highlight ruby %}
-$ mkdir noip<br>
+$ mkdir noip
 $ cd noip
 {% endhighlight %}
 
 Download the program
 
 {% highlight ruby %}
-$ wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
 {% endhighlight %}
 
 and decompress it
 
 {% highlight ruby %}
-$ tar vzxf noip-duc-linux.tar.gz
+tar vzxf noip-duc-linux.tar.gz
 {% endhighlight %}
 
 Go to the directory
 
 {% highlight ruby %}
-$ cd noip-2.1.9-1
+cd noip-2.1.9-1
 {% endhighlight %}
 
 Compile and install
 
 {% highlight ruby %}
-$ make<br>
-$ make install
+make
+make install
 {% endhighlight %}
 
 While it installs the software you will prompted to enter the username & password. Once that is done it will ask you teh refresh interval … leave it.. to have the default value. You are required to answer some more questions … just answer NO and you should be good to go.
@@ -298,26 +284,26 @@ While it installs the software you will prompted to enter the username & passwor
 Start the client
 
 {% highlight ruby %}
-$ /usr/local/bin/noip2
+/usr/local/bin/noip2
 {% endhighlight %}
 
 To check if the service is running, use the command:
 
 {% highlight ruby %}
-$ /usr/local/bin/noip2 -S
+/usr/local/bin/noip2 -S
 {% endhighlight %}
 
 and the results should be like
 
 {% highlight ruby %}
-1 noip2 process active.<br>
-<br>
-Process 1516, started as noip2, (version 2.1.9)<br>
-Using configuration from /usr/local/etc/no-ip2.conf<br>
-Last IP Address set EXTERNAL IP<br>
-Account USERNAME<br>
-configured for:<br>
-host HOSTNAME<br>
+1 noip2 process active.
+
+Process 1516, started as noip2, (version 2.1.9)
+Using configuration from /usr/local/etc/no-ip2.conf
+Last IP Address set EXTERNAL IP
+Account USERNAME
+configured for:
+host HOSTNAME
 Updating every 30 minutes via /dev/eth0 with NAT enabled.
 {% endhighlight %}
 
@@ -328,34 +314,34 @@ But what if you reboot? You want to start the client everytime you reboot. This 
 Create the service file. 
 
 {% highlight ruby %}
-$ nano /usr/lib/systemd/system/noip.service
+sudo nano /usr/lib/systemd/system/noip.service
 {% endhighlight %}
 
 Add the following content.
 
 {% highlight ruby %}
-[Unit]<br>
-Description=No-IP Dynamic DNS Update Client<br>
-After=network.target<br>
-<br>
-[Service]<br>
-Type=forking<br>
-ExecStart=/usr/local/bin/noip2<br>
-<br>
-[Install]<br>
+[Unit]
+Description=No-IP Dynamic DNS Update Client
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/noip2
+
+[Install]
 WantedBy=multi-user.target
 {% endhighlight %}
 
 Start the service
 
 {% highlight ruby %}
-$ systemctl start noip.service
+sudo systemctl start noip.service
 {% endhighlight %}
 
 and enable the service
 
 {% highlight ruby %}
-$ systemctl enable noip.service
+sudo systemctl enable noip.service
 {% endhighlight %}
 
 **ALTERNATIVE**
@@ -401,13 +387,13 @@ noip2 -p password
 Start noip service.
 
 {% highlight ruby %}
-systemctl start noip2
+sudo systemctl start noip2
 {% endhighlight %}
 
 Enable noip serive.
 
 {% highlight ruby %}
-systemctl enable noip2
+sudo systemctl enable noip2
 {% endhighlight %}
 
 ---
@@ -418,13 +404,13 @@ ZNC is the software I use as IRC bouncer. I'm 24/7 online, keep logs of the chan
 Install with the command:
 
 {% highlight ruby %}
-$ pacman -S znc
+sudo pacman -S znc
 {% endhighlight %}
 
 As user (alarm), run the command
 
 {% highlight ruby %}
-$ znc --makeconf
+znc --makeconf
 {% endhighlight %}
 
 and follow step by step the qustions to setup username-pass, port, channels, servers etc.
@@ -450,29 +436,27 @@ I choose Transmission for this, because it is simple, fast and stable. Transmiss
 First install it with pacman:
 
 {% highlight ruby %}
-$ pacman -Syu transmission-cli
+sudo pacman -Syu transmission-cli
 {% endhighlight %}
 
 Enable the service at startup:
 
 {% highlight ruby %}
-$ systemctl enable transmission
+sudo systemctl enable transmission
 {% endhighlight %}
 
 Start the service:
 
 {% highlight ruby %}
-$ systemctl start transmission
+sudo systemctl start transmission
 {% endhighlight %}
 
 Now create a folder where your user and the transmission group (where the transmission user belongs to) can read and write:
 
 {% highlight ruby %}
-$ mkdir -p /mnt/torrents/{incomplete,complete,torrentfiles}
-<br>
-$ chown -R alarm:transmission /mnt/torrents
-<br>
-$ chmod -R 775 /mnt/torrents
+mkdir -p /mnt/torrents/{incomplete,complete,torrentfiles}
+sudo chown -R alarm:transmission /mnt/torrents
+sudo chmod -R 775 /mnt/torrents
 {% endhighlight %}
 
 In my example the folder /mnt/torrents is a folder. You can mount an external USB harddrive which can be mounted via /etc/fstab at boot. Remember to change alarm to your Pi username (if it's different).
@@ -480,13 +464,13 @@ In my example the folder /mnt/torrents is a folder. You can mount an external US
 Stop the daemon to make sure the config file edits stick:
 
 {% highlight ruby %}
-$ systemctl stop transmission
+sudo systemctl stop transmission
 {% endhighlight %}
 
 Edit the default config file to allow remote access to the daemon (or do not do that and use an ssh tunnel every time) and update the downloads path:
 
 {% highlight ruby %}
-$ nano /var/lib/transmission/.config/transmission-daemon/settings.json
+sudo nano /var/lib/transmission/.config/transmission-daemon/settings.json
 {% endhighlight %}
 
 Change the following parameters:
@@ -514,6 +498,20 @@ Change the following parameters:
 {% endhighlight %}
 
 This sets the correct download folders and allows access from everywhere to the transmission webinterface. You can also list a range there (192.168.1.0/24) or just one IP address.
+
+If you do not udate the ACL you get a nice error message when connecting:
+
+```
+403: Forbidden
+
+Unauthorized IP Address.
+
+Either disable the IP address whitelist or add your address to it.
+
+If you're editing settings.json, see the 'rpc-whitelist' and 'rpc-whitelist-enabled' entries.
+
+If you're still using ACLs, use a whitelist instead. See the transmission-daemon manpage for details.
+```
 
 If all went well you should be able to connect to `http://YOUR-PI-IP:9091` and see the nice transmission webinterface.
 
