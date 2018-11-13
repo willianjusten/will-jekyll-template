@@ -42,13 +42,13 @@ Replace sdX in the following instructions with the device name for the SD card a
 You can find the dev name using the command:
 
 {% highlight ruby %}
-$ cat /proc/partitions
+cat /proc/partitions
 {% endhighlight %}
 
 Unmount the SD card and start fdisk to partition the SD card:
 
 {% highlight ruby %}
-$ sudo fdisk /dev/sdX
+sudo fdisk /dev/sdX
 {% endhighlight %}
 
 At the fdisk prompt, delete old partitions and create a new one:
@@ -118,7 +118,7 @@ You can change the default passwrds using the command `passwd`.
 Edit the file eth0.network. Systemd-networkd uses *.network files.
 
 {% highlight ruby %}
-$ nano /etc/systemd/network/eth0.network
+nano /etc/systemd/network/eth0.network
 {% endhighlight %}
 
 paste the following (for static IP `192.168.1.100`)
@@ -250,8 +250,8 @@ sudo pacman -S gcc git make
 Then
 
 {% highlight ruby %}
-$ mkdir noip
-$ cd noip
+mkdir noip
+cd noip
 {% endhighlight %}
 
 Download the program
