@@ -35,7 +35,7 @@ This tutorial has the following sections:
 
 ### 1. Create the SD card
 
-Follow the [official tutorial] (http://archlinuxarm.org/platforms/armv6/raspberry-pi)
+Follow the [official tutorial](http://archlinuxarm.org/platforms/armv6/raspberry-pi)
 
 Replace sdX in the following instructions with the device name for the SD card as it appears on your computer.
 
