@@ -505,13 +505,16 @@ This sets the correct download folders and allows access from everywhere to the 
 
 If you do not udate the ACL you get a nice error message when connecting:
 
-{% highlight ruby %}
+```
 403: Forbidden<br><br>
-Unauthorized IP Address.<br><br>
-Either disable the IP address whitelist or add your address to it.<br><br>
-If you're editing settings.json, see the 'rpc-whitelist' and 'rpc-whitelist-enabled' entries.<br><br>
+Unauthorized IP Address.
+<br><br>
+Either disable the IP address whitelist or add your address to it.
+<br><br>
+If you're editing settings.json, see the 'rpc-whitelist' and 'rpc-whitelist-enabled' entries.
+<br><br>
 If you're still using ACLs, use a whitelist instead. See the transmission-daemon manpage for details.
-{% endhighlight %}
+```
 
 If all went well you should be able to connect to `http://YOUR-PI-IP:9091` and see the nice transmission webinterface.
 
