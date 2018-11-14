@@ -33,10 +33,20 @@ Create a directory in your home directory and download the OpenVPN files from yo
 {% highlight ruby %}
 cd ~/ mkdir vpn cd vpn{% endhighlight %}
 
-We will test with [VPNbook](https://www.vpnbook.com/). But there are plenty of great providers you can choose. _FOR VPNBOOK_ Download the files that doesn't say **web surfing only; no p2p** (for us it's [PL226 Server OpenVPN Certificate Bundle](https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-PL226.zip) and [DE4 Server OpenVPN Certificate Bundle](https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-DE4.zip). But you better check often for changes). Decompress the zip files and you'll have files such as
+We will test with [VPNbook](https://www.vpnbook.com/). But there are plenty of great providers you can choose. 
+
+_FOR VPNBOOK_ 
+Download the files that doesn't say **web surfing only; no p2p** (for us it's [PL226 Server OpenVPN Certificate Bundle](https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-PL226.zip) and [DE4 Server OpenVPN Certificate Bundle](https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-DE4.zip). But you better check often for changes). Decompress the zip files and you'll have files such as
 
 {% highlight ruby %}
-vpnbook-de4-tcp80.ovpn vpnbook-de4-tcp443.ovpn vpnbook-de4-udp53.ovpn vpnbook-de4-udp25000.ovpn vpnbook-pl226-tcp80.ovpn vpnbook-pl226-tcp443.ovpn vpnbook-pl226-udp53.ovpn vpnbook-pl226-udp25000.ovpn{% endhighlight %}
+vpnbook-de4-tcp80.ovpn 
+vpnbook-de4-tcp443.ovpn 
+vpnbook-de4-udp53.ovpn 
+vpnbook-de4-udp25000.ovpn 
+vpnbook-pl226-tcp80.ovpn 
+vpnbook-pl226-tcp443.ovpn 
+vpnbook-pl226-udp53.ovpn 
+vpnbook-pl226-udp25000.ovpn{% endhighlight %}
 
 Make sure that those files are in the directory **vpn** in your home directory. Create a file named password.txt in the same directory.
 
@@ -46,7 +56,8 @@ nano password.txt{% endhighlight %}
 And add the credentials you'll find at vpnbook page.
 
 {% highlight ruby %}
-vpnbook 5bheau6u (that might change){% endhighlight %}
+vpnbook 
+5bheau6u (that might change){% endhighlight %}
 
 Now open one file
 
@@ -64,7 +75,10 @@ That way you don't need to type the username and password every time you run the
 
 Now edit your vpn.sh script to look like this:
 
-{% highlight ruby %}#!/bin/sh sudo openvpn --config /home/USER/vpn/vpnbook-pl226-udp25000.ovpn --script-security 2{% endhighlight %}
+{% highlight ruby %}
+#!/bin/sh 
+
+sudo openvpn --config /home/USER/vpn/vpnbook-pl226-udp25000.ovpn --script-security 2{% endhighlight %}
 
 The name of the ovpn file might be different for you. Now you should be able to execute this script to connect to your vpn:
 
@@ -96,7 +110,12 @@ Open **/etc/transmission-daemon/settings_template.json**:
 
 And change the following value:
 
-{% highlight ruby %}{ ... "bind-address-ipv4": "IP_ADDRESS", ... }{% endhighlight %}
+{% highlight ruby %}
+{ ... 
+
+"bind-address-ipv4": "IP_ADDRESS", 
+
+... }{% endhighlight %}
 
 Now setup a new script that OpenVPN will call when a VPN connection is successfully established.
 
@@ -108,11 +127,19 @@ Open **/etc/openvpn/up.sh** (as superuser):
 
 and set it up like this:
 
-{% highlight ruby %}#!/bin/sh /etc/init.d/transmission-daemon stop sed s/IP_ADDRESS/$4/ /etc/transmission-daemon/settings_template.json > /etc/transmission-daemon/settings.json /etc/init.d/transmission-daemon start{% endhighlight %}
+{% highlight ruby %}
+#!/bin/sh 
+
+/etc/init.d/transmission-daemon stop 
+sed s/IP_ADDRESS/$4/ /etc/transmission-daemon/settings_template.json > /etc/transmission-daemon/settings.json 
+/etc/init.d/transmission-daemon start{% endhighlight %}
 
 Now edit your vpn.sh script from the OpenVPN tutorial and update it to look like this:
 
-{% highlight ruby %}#!/bin/sh sudo openvpn --config /home/USER/vpn/vpnbook-pl226-udp25000.ovpn --script-security 2 --up /etc/openvpn/up.sh{% endhighlight %}
+{% highlight ruby %}
+#!/bin/sh 
+
+sudo openvpn --config /home/USER/vpn/vpnbook-pl226-udp25000.ovpn --script-security 2 --up /etc/openvpn/up.sh{% endhighlight %}
 
 From now on, when you connect to the VPN it will force your torrent traffic to use the VPN connection, and if you get disconnected it should stop torrenting until you reconnect. 
 
