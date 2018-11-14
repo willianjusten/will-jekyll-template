@@ -188,6 +188,4 @@ Login and use Nextloud.
 
 For more information about Nextcloud on openSUSE, check [openSUSE wiki](https://en.opensuse.org/SDB:Nextcloud).
 
-Original post was at [my site](http://eiosifidis.blogspot.gr/2016/10/nextcloud-install-on-opensuse-leap-421.html).
-
 For more configuration, you can follow the [official documentation](https://docs.nextcloud.com/server/10/admin_manual/contents.html). That was the basic installation on openSUSE Leap.
