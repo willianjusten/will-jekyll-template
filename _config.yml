@@ -6,10 +6,13 @@ url: "https://iosifidis.github.io" # the base hostname & protocol for your site 
 
 # User settings
 username: Efstathios Iosifidis
-user_description: openSUSE member, GNOME Foundation member
-user_title: iBlog
+user_description: Veterinarian, openSUSE member, GNOME Foundation member
+user_title: DVM
 email: iefstathios@gmail.com
+linkedin_username: eiosifidis
+facebook_username: eiosifidis
 twitter_username: eiosifidis
+instagram_username: e.iosifidis
 github_username:  iosifidis
 gplus_username:  +EfstathiosIosifidis
 disqus_username: iblog-eiosifidis
