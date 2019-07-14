@@ -16,3 +16,7 @@ footer {
  font-color:#eee;
  margin-top:20px;
 }
+
+.post-item .datetime .day::after {
+  content: " - ";
+}
