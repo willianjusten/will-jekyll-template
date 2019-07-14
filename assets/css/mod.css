@@ -9,3 +9,21 @@
 footer {
  background-color: #ef5100;
 }
+
+.post-item .datetime .day {
+ font-size: 1.125rem;
+ font-weight:normal;
+ color:#a1a1a1;
+ font-family: 'Open Sans',sans-serif;
+}
+
+.post-item .datetime .month-year {
+ font-size: 1.125rem;
+ font-weight:normal;
+ color:#a1a1a1;
+ font-family: 'Open Sans',sans-serif;
+}
+
+.post-item .datetime .day::after {
+  content: " - ";
+}
