@@ -13,15 +13,15 @@ footer {
 .post-item .datetime .day {
  font-size: 1.125rem;
  font-weight:normal;
- color:#585858;
- padding-top:70px;
+ color:#a1a1a1;
+ font-family: 'Open Sans',sans-serif;
 }
 
 .post-item .datetime .month-year {
  font-size: 1.125rem;
  font-weight:normal;
- color:#585858;
- padding-top:70px;
+ color:#a1a1a1;
+ font-family: 'Open Sans',sans-serif;
 }
 
 .post-item .datetime .day::after {
