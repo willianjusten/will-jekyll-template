@@ -10,6 +10,6 @@ footer {
  background-color: #ef5100;
 }
 
-span.day {
+.post-item .datetime .day {
  font-size: 1.125rem;
 }
