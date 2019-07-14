@@ -5,7 +5,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: kyyberi
+username: 100 Days of Developer eXperience
 user_description: Jarkko "APItalist" Moilanen
 user_title: Jarkko Moilanen
 email: anon@anon.com
