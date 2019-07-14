@@ -8,10 +8,10 @@ url: "https://willianjusten.com.br" # the base hostname & protocol for your site
 username: 100 Days of Developer eXperience
 user_description: Jarkko "APItalist" Moilanen
 user_title: Random thoughts on DX for 100 days
-email: anon@anon.com
+email: jarkko@vimo.fi
 twitter_username: Jarkko_Moilanen
 github_username:  kyyberi
-disqus_username: lorem_ipsum
+disqus_username: @jarkkomoilanen
 
 # Build settings
 markdown: kramdown
