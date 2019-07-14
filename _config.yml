@@ -1,5 +1,5 @@
 # Site settings
-title: 100 Days of Developer eXperience
+title: 100 Days of Developer eXperience \#100DaysDX
 description: Random thoughts on DX for 100 days
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
@@ -7,7 +7,7 @@ url: "https://willianjusten.com.br" # the base hostname & protocol for your site
 # User settings
 username: 100 Days of Developer eXperience
 user_description: Jarkko "APItalist" Moilanen
-user_title: Jarkko Moilanen
+user_title: Random thoughts on DX for 100 days
 email: anon@anon.com
 twitter_username: Jarkko_Moilanen
 github_username:  kyyberi
