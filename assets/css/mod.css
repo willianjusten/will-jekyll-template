@@ -13,8 +13,8 @@ footer {
 .post-item .datetime .day {
  font-size: 1.125rem;
  font-weight:normal;
- color:#eee;
- margin-top:70px;
+ color:#ddd;
+ padding-top:70px;
 }
 
 .post-item .datetime .day::after {
