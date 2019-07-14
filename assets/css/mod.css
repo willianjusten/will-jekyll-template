@@ -1,3 +1,11 @@
-.header-site .header.post {
+.header-site {
+ background-color: #ef5100;
+}
+
+.header-post {
+ background-color: #ef5100;
+}
+
+footer {
  background-color: #ef5100;
 }
