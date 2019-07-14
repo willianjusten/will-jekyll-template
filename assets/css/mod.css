@@ -12,8 +12,15 @@ footer {
 
 .post-item .datetime .day {
  font-size: 1.125rem;
- font-weight:bold;
- color:#211f1f;
+ font-weight:normal;
+ color:#585858;
+ padding-top:70px;
+}
+
+.post-item .datetime .month-year {
+ font-size: 1.125rem;
+ font-weight:normal;
+ color:#585858;
  padding-top:70px;
 }
 
