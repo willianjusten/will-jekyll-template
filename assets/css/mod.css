@@ -72,3 +72,7 @@ cite {
 	line-height: 3;
 	text-align: left;
 }
+
+.post-item .content .post-title {
+  margin-top: -8px;
+}
