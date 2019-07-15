@@ -1,6 +1,6 @@
 .header-site {
  background-color: #ef5100;
- background-image: "/assets/img/bg.png"
+ background-image: url("/assets/img/bg.png")
  background-repeat: no-repeat;
 }
 
