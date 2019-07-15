@@ -7,8 +7,10 @@ image: '/assets/img/'
 description: 'Enjoyment and flow are essential to productivity. Great DX acts as enabler.'
 tags:
 - DX 
-- definition 
+- flow 
 - 100DaysDX
+- productive
+- manager damage
 categories:
 - DX
 - 100DaysDX
