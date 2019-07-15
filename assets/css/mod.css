@@ -6,6 +6,8 @@
 
 .header-post {
  background-color: #ef5100;
+ background-image: url("/assets/img/bg.png");
+ background-repeat: no-repeat;
 }
 
 footer {
