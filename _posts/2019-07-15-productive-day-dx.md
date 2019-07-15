@@ -22,6 +22,8 @@ twitter_text: 'Enjoyment and flow are essential to productivity. Great DX acts a
 
 Enjoyment and flow are essential to productivity. According to research, which asked the developers about productivity, the second most mentioned reason for having a productive workday is getting into a “flow” without many “context-switches” and with no or few interruptions and distractions (50.4%). Developer gains flow if the DX of tools and services is great. The most common reason is when developer completes tasks, achieve their planned goals or make progress on their goals (53.2%). 
 
+<img itemprop="image" src="{{site.baseurl}}/assets/img/day2/flow.png" alt="{{site.name}}">
+
 Some managers do say that people will work better if you put them under a lot of pressure. They won’t—they’ll just enjoy it less. You need to provide opportunities to adjust environment to fit their needs, proper tools and freedom to choose tooling, challenges in right size chunks and let them to their work. Primary task of a manager is to reduce friction in the work and remove obstables. Obstacles and friction might appear in plethora of ways, but tools and services (APIs) with poor developer experience consumed by the developers are for sure among those. 
 
 ## Productivity killers
