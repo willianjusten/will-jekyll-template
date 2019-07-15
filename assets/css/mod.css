@@ -37,6 +37,7 @@ blockquote {
 	margin: 0;
   padding: .5rem;
   border-left: none; 
+  font-style: italic;
 }
 
 .post-content blockquote:before,
