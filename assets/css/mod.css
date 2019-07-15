@@ -9,7 +9,10 @@
  background-image: url("/assets/img/bg2.png");
  background-repeat: no-repeat;
 }
+.header-post .subtitle {
+ font-size: 1.5em;
 
+}
 footer {
  background-color: #ef5100;
 }
