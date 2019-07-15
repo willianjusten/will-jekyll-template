@@ -1,5 +1,7 @@
 .header-site {
  background-color: #ef5100;
+ background-image: "/assets/img/bg.png"
+ background-repeat: no-repeat;
 }
 
 .header-post {
