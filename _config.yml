@@ -1,13 +1,13 @@
 # Site settings
 title: 100 Days of Developer eXperience 
-description: Random thoughts on DX for 100 days starting 13th July 2019
+description: Daily unfiltered, opinionated and arrogant post on DX for 100 days starting 13th July 2019
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kyyberi.github.io/100daysofDX" 
 
 # User settings
 username: 100 Days of Developer eXperience
 user_description: Jarkko "APItalist" Moilanen
-user_title: Random thoughts on DX for 100 days
+user_title: Daily unfiltered, opinionated and arrogant post on DX for 100 days starting 13th July 2019
 email: jarkko@vimo.fi
 twitter_username: Jarkko_Moilanen
 github_username:  kyyberi
