@@ -6,6 +6,8 @@ The site is a collection of developer experience posts - short posts. It is host
 
 You can suggest topics for me by raising an issue. I will not promise to write about your suggestion, but I promise to consider it thoroughly. 
 
+[New idea for a post](https://github.com/kyyberi/100daysofDX/issues/new)
+
 
 
 
