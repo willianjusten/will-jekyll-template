@@ -35,11 +35,12 @@ blockquote {
 	line-height: 1.4;
 	position: relative;
 	margin: 0;
-	padding: .5rem;
+  padding: .5rem;
+  border-left: none; 
 }
 
-blockquote:before,
-blockquote:after {
+.post-content blockquote:before,
+.post-content blockquote:after {
 	position: absolute;
 	color: #f1efe6;
 	font-size: 8rem;
@@ -47,13 +48,13 @@ blockquote:after {
 	height: 4rem;
 }
 
-blockquote:before {
+.post-content blockquote:before {
 	content: '“';
 	left: -5rem;
 	top: -2rem;
 }
 
-blockquote:after {
+.post-content blockquote:after {
 	content: '”';
 	right: -5rem;
 	bottom: 1rem;
