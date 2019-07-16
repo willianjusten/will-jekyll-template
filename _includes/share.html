@@ -2,20 +2,6 @@
     <p style="font-size:1.4em;">Did not found what you wanted? Suggest a topic for a post! </p>
     <p style="font-size:1.4em;"> <a href="https://github.com/kyyberi/100daysofDX/issues/new">Raise an issue in Github</a></p>
  
-    <script>
-            var urlToGetAllOpenBugs = "https://api.github.com/repos/kyyberi/100daysofDX/issues?state=open&labels=Topic-idea";
-        
-            $(document).ready(function() {
-              $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
-                $("div").append("<h2>Already suggested topics:</h2>");
-                $.each(allIssues, function(i, issue) {
-                  $("div")
-                    .append("<b>" + issue.title + "</b></br>");
-            
-                });
-              });
-            });
-    </script>
         
     <p style="font-size:1.4em;">See discussion also in Twitter - follow hashtag <a href="https://twitter.com/search?q=%23100daysdx&src=typd">#100DaysDX</a></p>
     <h3>Share</h3>
