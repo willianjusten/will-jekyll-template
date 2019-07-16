@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "#2 - I have a productive day when..."
 date: 2019-07-15 03:32:44
-image: '/assets/img/blog-image.png'
+image: '/assets/img/blog.png'
 description: 'Enjoyment and flow are essential to productivity. Great DX acts as enabler.'
 tags:
 - DX 
