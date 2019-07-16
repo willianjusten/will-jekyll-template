@@ -18,7 +18,7 @@ layout: default
                 </a>
                 <div class="content">
                     <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
-                    <img src="{{ post.image}}" style="width:300px;float:left;margin:30px;margin-left:0px;margin-top:0px;"/>
+                    <a href="{{ post.url | prepend: site.baseurl }}"></a><img src="{{ post.image}}" style="width:300px;float:left;margin:30px;margin-left:0px;margin-top:0px;"/></a>
                     <p class="description">
                         {{ post.content | strip_html | truncatewords:50 }}
                     </p>
