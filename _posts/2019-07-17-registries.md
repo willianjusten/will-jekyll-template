@@ -24,7 +24,7 @@ If you are creating APIs driven tool or service to be used in application develo
 
 Next step is to run for example ``` npm install stripe ```. After that developer can use your service from own code. Of course they need credentials but those are acquired from Stripe's portal, not from API catalogues. Even I can do the above and I'm only "spaghetti code developer" not a proper developer.   
 
-Yes, some developers spend a lot their time in IDEs and even some of those enable package installation with ease and without need to visit any frigging websites. Now think again. Do I expect my consumers to search my libraries or other tools from Google or do I provide methods to achieve developer's goals from within their normal tools and environments? It's not that fucking hard, you know.   
+Yes, some developers spend a lot their time in IDEs and even some of those enable package installation with ease and without need to visit any frigging websites. Now think again. Do I expect my consumers to search my libraries or other tools from Google or do I provide methods to achieve developer's goals from within their normal tools and environments? Considering the fact that quite often developer is given most of the tools and services to use. In those cases they don't browse API catalogues, but install the needed tools with minimal effort. It's not that fucking hard, you know.   
 
 
 ## Package registries 
