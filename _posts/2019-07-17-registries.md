@@ -26,6 +26,14 @@ Next step is to run for example ``` npm install stripe ```. After that developer
 
 Yes, some developers spend a lot their time in IDEs and even some of those enable package installation with ease and without need to visit any frigging websites. Now think again. Do I expect my consumers to search my libraries or other tools from Google or do I provide methods to achieve developer's goals from within their normal tools and environments? Considering the fact that quite often developer is given most of the tools and services to use. In those cases they don't browse API catalogues, but install the needed tools with minimal effort. It's not that fucking hard, you know.   
 
+Of course the above straight forward approach pretty much assumes that the developer expects or hopes to find a library from the registry. If that is not the case, developer seeks for information probably from google and might end up in API catalogue or directly (mostly this is wanted) to your site. Eliminating the extra visit at API catalogue is making the developers life easier. 
+
+The API catalogues were just one passing phase in the growth of API Economy. Those can be used to check if an API exists for some use and possibly get some ideas, but that's about it. No wonder API catalogs have started to include more content and services next to the plain catalogue. Otherwise they would just vanish. 
+
+## Library is needed or not
+
+If your service is simply used via one API which has profound documentation, pricing plans, code examples and it solves a problem you don't need a library. The more complex thing you are trying to solve, the more APIs you most likely need. Then it makes sense to package all API capabilities behind one library. This is the case with Stripe. They have single APIs, but it's just so much easier to take advantage of the offering by using a single library. 
+
 
 ## Package registries 
 
