@@ -37,8 +37,7 @@ links:
     url: /tags
   - title: About Me & site
     url: /about
-  - title: Future topics
-    url: /topics
+
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
