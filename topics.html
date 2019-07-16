@@ -1,0 +1,23 @@
+---
+layout: minimal
+title: "#Topics"
+permalink: /topics/index.html
+description: "100DaysDX topic suggestions"
+
+<div class="tags">
+    <script>
+    var urlToGetAllOpenBugs = "https://api.github.com/repos/kyyberi/100daysofDX/issues?state=open&labels=Topic-idea";
+
+    $(document).ready(function() {
+      $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
+        $("div").append("<h2>Already suggested topics:</h2>");
+        $.each(allIssues, function(i, issue) {
+          $("div")
+            .append("<b>" + issue.title + "</b></br>");
+    
+        });
+      });
+    });
+    </script>
+</div>
+
