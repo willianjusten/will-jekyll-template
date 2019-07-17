@@ -23,11 +23,11 @@ layout: default
                     
                     {% if post.audio %}
                         <p class="description">
-                            {{ post.content | strip_html | truncatewords:65 }}
+                            {{ post.content | strip_html | truncate:370 }}
                         </p>
                     {% else %}
                         <p class="description">
-                            {{ post.content | strip_html | truncatewords:60 }}
+                            {{ post.content | strip_html | truncate:300 }}
                         </p>
                     {% endif %}
                     </div>
