@@ -3,6 +3,15 @@ layout: default
 ---
 
 <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    
+    <div style="margin: auto; text-align: center; width: 30%;padding-top:20px;padding-bottom:20px;">
+        <h2>Progress of 100 Days of DX</h2>
+        <div style="text-align: left; margin: 2px auto; font-size: 0px; line-height: 0px; background: #C6C9C9; overflow: hidden; ">
+            <div style="font-size: 0px; line-height: 0px; height: 15px; min-width: 0%; max-width: {{ site.posts | size }}%; width: {{ site.posts | size }}%; background: #ff5600; "></div>
+        </div>
+        <div style="font-size: 14pt;margin-top:20px;">{{ site.posts | size }}% done</div></div>
+        <div style="width: 100%; height:3px; background-color: #eee;">&nbsp;</div>
+
     {% for post in site.posts %}
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
