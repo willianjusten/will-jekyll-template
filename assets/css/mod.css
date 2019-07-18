@@ -76,3 +76,17 @@ cite {
 .post-item .content .post-title {
   margin-top: -8px;
 }
+
+#speaker {
+
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans',sans-serif;
+	font-family: 'Open Sans',sans-serif;
+
+	font-weight: 300;
+	
+	font-style: normal;
+	
+	font-size: 1.25rem;
+}
