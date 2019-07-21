@@ -18,7 +18,7 @@ description: "100DaysDX topic suggestions"
       $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
         $.each(allIssues, function(i, issue) {
           $("#topic-list")
-            .append("<li style="font-size:1.2em;"><a href=" + issue.html_url + ">" + issue.title + "</a></li>");
+            .append("<li"><a style="font-size:1.2em;" href=" + issue.html_url + ">" + issue.title + "</a></li>");
     
         });
       });
