@@ -101,7 +101,7 @@ ul li {
 }
 
 
-#topic-list ul li a {
+#topic-list li a {
 	background-color: red;
 	box-shadow: 0 5px 0 darkred;
 	color: white;
