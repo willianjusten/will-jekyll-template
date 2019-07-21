@@ -109,6 +109,8 @@ ul li {
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
+	margin-left:0px;
+
 	}
 	
 #topic-list ul li a:hover {
