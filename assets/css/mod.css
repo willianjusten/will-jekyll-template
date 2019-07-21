@@ -95,3 +95,22 @@ ul li {
 
 	margin-left:40px;
 }
+
+#topic-list ul {
+	list-style-type: none;
+}
+
+
+#topic-list ul li a {
+		background-color: red;
+	  box-shadow: 0 5px 0 darkred;
+	  color: white;
+	  padding: 1em 1.5em;
+	  position: relative;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	}
+	
+#topic-list ul li a:hover {
+	  background-color: #ce0606;
+}
