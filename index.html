@@ -20,12 +20,13 @@ layout: default
             <div style="font-size: 0px; line-height: 0px; height: 15px; min-width: 0%; max-width: {{ site.posts | size }}%; width: {{ site.posts | size }}%; background: #ff5600; "></div>
         </div>
         
-        <div style="font-size: 14pt;margin-top:20px;"><h2>
+        <div style="font-size: 14pt;margin-top:20px;line-height: 2.8em;"><h2>
             <span style="font-size: 18px;">{{ "now" | date: "%Y/%m/%d" }} </span> 
             <span style="border: solid 1px #eee;padding:5px;margin:5px; ">{{ site.posts | size }}% </span>
             <span style="font-size: 18px;"> done with </span>
             <span style="border: solid 1px #eee;padding:5px;margin:5px; "> {{ wcount }} </span> 
-            <span style="font-size: 18px;">  words of wisdom. Expected word count</span> {{ totalwords }}
+            <span style="font-size: 18px;">  words of wisdom. Expected word count around </span>
+            <span style="border: solid 1px #eee;padding:5px;margin:5px;">{{ totalwords }}</span>
             </h2></div></div>
         <div style="width: 100%; height:3px; background-color: #eee;">&nbsp;</div>
         
