@@ -17,7 +17,7 @@ description: "100DaysDX topic suggestions"
         $("#topics").append("<h2>Already suggested topics:</h2>");
         $.each(allIssues, function(i, issue) {
           $("#topic-list")
-            .append("<li><a href=" + issue.url + ">" + issue.title + "</a></li>");
+            .append("<li><a href=" + issue.html_url + ">" + issue.title + "</a></li>");
     
         });
       });
