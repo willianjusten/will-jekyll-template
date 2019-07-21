@@ -102,9 +102,8 @@ ul li {
 
 
 #topic-list li a {
-	background-color: red;
+	background-color: #fff;
 	box-shadow: 0 5px 0 darkred;
-	color: white;
 	padding: 1em 1.5em;
 	position: relative;
 	text-decoration: none;
