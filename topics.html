@@ -13,7 +13,7 @@ description: "100DaysDX topic suggestions"
       $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
         $("#topics").append("<h2>Already suggested topics:</h2>");
         $.each(allIssues, function(i, issue) {
-          $("div")
+          $("#topics")
             .append("<b>" + issue.title + "</b></br>");
     
         });
