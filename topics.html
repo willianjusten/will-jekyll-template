@@ -6,6 +6,7 @@ description: "100DaysDX topic suggestions"
 ---
 
 <div class="tags" id="topics">
+        <h2>Already suggested topics:</h2>
     <ul id="topic-list">
 
     </ul>
@@ -14,7 +15,6 @@ description: "100DaysDX topic suggestions"
 
     $(document).ready(function() {
       $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
-        $("#topics").append("<h2>Already suggested topics:</h2>");
         $.each(allIssues, function(i, issue) {
           $("#topic-list")
             .append("<li><a href=" + issue.html_url + ">" + issue.title + "</a></li>");
