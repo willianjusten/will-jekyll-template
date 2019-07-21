@@ -10,12 +10,23 @@ layout: default
         {% for post in site.posts %}
             {% assign article_words = post.content | number_of_words %}
             {% assign wcount = wcount | plus:article_words %}
+
         {% endfor %}
+        {% assign postcount =  site.posts | size %}
+        {% assign perpost =  wcount | divided_by: postcount %}
+        {% assign totalwords =  perpost | times: 100 %}
+
         <div style="text-align: left; margin: 2px auto; font-size: 0px; line-height: 0px; background: #C6C9C9; overflow: hidden; ">
             <div style="font-size: 0px; line-height: 0px; height: 15px; min-width: 0%; max-width: {{ site.posts | size }}%; width: {{ site.posts | size }}%; background: #ff5600; "></div>
         </div>
         
-        <div style="font-size: 14pt;margin-top:20px;"><h2>{{ site.posts | size }}% <span style="font-size: 18px;"> done - {{ wcount }} words of wisdom.</span></h2></div></div>
+        <div style="font-size: 14pt;margin-top:20px;"><h2>
+            <span style="font-size: 18px;">{{ "now" | date: "%Y/%m/%d" }} </span> 
+            <span style="border: solid 1px #eee;padding:5px;margin:5px; ">{{ site.posts | size }}% </span>
+            <span style="font-size: 18px;"> done with </span>
+            <span style="border: solid 1px #eee;padding:5px;margin:5px; "> {{ wcount }} </span> 
+            <span style="font-size: 18px;">  words of wisdom. Expected word count</span> {{ totalwords }}
+            </h2></div></div>
         <div style="width: 100%; height:3px; background-color: #eee;">&nbsp;</div>
         
         
