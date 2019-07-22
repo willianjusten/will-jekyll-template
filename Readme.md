@@ -25,7 +25,7 @@ To contribute a post, do the following:
 - Clone the repository
 - Make a branch and follow naming pattern "feature/dayX" in which the "X" is the number of the post given to you in idea approval. See above. 
 - Add your post to "_posts" folder and follow the naming pattern yyyy-mm-dd-X.md, in which the "X" is the number of the post given to you in idea approval. 
-- Take a screenshot of the post header containing the header and description text, not the date. Make the picture 600px wide. Name that image as "blog.png". Make sure the frontmatter image field points to right folder ```image: '/assets/img/dayX/blog.png```
+- Take a screenshot of the post header containing the header and description text, not the date. Make the picture 600px wide. Name that image as "blog.png". Make sure the frontmatter image field points to right folder ```image: "/assets/img/dayX/blog.png"```
 - Pictures of the post are all added to /assest/img/ folder in which you should create a folder "dayX" in which the "X" is the number of the post given to you in idea approval. Just look at the previous posts and follow the lead. 
 
 ### Make a pull request 
