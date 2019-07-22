@@ -54,9 +54,9 @@ twitter_text: "I'm not going to buy your API product unless I can try it and see
 ```
 - Autogenerate mp3 from the content if you can. I use Polly from Amazon for it. Don't worry if you don't have the time for it. It can be added later too. In that case, just remove the ```audio:``` line. 
 - Pictures of the post are all added to /assest/img/ folder in which you should create a folder "dayX" in which the "X" is the number of the post given to you in idea approval. Just look at the previous posts and follow the lead. 
-
+- Since most of the posts are written by Jarkko Moilanen, but you should get the credit for it, you can add your details (name etc) in the beginning or the end. That way all know you've written it!  
 ### Make a pull request 
 
 - When you are done with the post, add "Ready" label to your issue. Then make a pull request. 
 
-Since most of the posts are written by Jarkko Moilanen, but you should get the credit for it, you can add your details (name etc) in the beginning or the end. That way all know you've written it!  
+
