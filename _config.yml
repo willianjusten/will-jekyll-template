@@ -17,7 +17,7 @@ disqus_username: jarkkomoilanen
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-
+paginate: 5
 
 # html minify
 compress_html:
