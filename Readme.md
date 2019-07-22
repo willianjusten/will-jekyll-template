@@ -26,6 +26,33 @@ To contribute a post, do the following:
 - Make a branch and follow naming pattern "feature/dayX" in which the "X" is the number of the post given to you in idea approval. See above. 
 - Add your post to "_posts" folder and follow the naming pattern yyyy-mm-dd-X.md, in which the "X" is the number of the post given to you in idea approval. 
 - Take a screenshot of the post header containing the header and description text, not the date. Make the picture 600px wide. Name that image as "blog.png". Make sure the frontmatter image field points to right folder ```image: "/assets/img/dayX/blog.png"```
+
+Example frontmatter:
+
+```
+---
+layout: post
+comments: true
+title: "#6 - Show the result I can create with your API as a selling argument"
+date: 2019-07-19 03:32:44
+image: '/assets/img/day6/blog.png'
+audio: "https://s3.us-east-2.amazonaws.com/100daysdx/9c27622d-ed5c-4b30-835c-7e479ac37076.mp3"
+description: "I am not going to buy your API product unless I can try it and see the results if they have any value."
+tags:
+- DX 
+- 100DaysDX
+- value proposition
+- text-to-speech
+- amazon
+- google
+- freemium
+categories:
+- DX
+- 100DaysDX
+twitter_text: "I'm not going to buy your API product unless I can try it and see the results if they have any value."
+---
+```
+
 - Pictures of the post are all added to /assest/img/ folder in which you should create a folder "dayX" in which the "X" is the number of the post given to you in idea approval. Just look at the previous posts and follow the lead. 
 
 ### Make a pull request 
