@@ -52,7 +52,7 @@ categories:
 twitter_text: "I'm not going to buy your API product unless I can try it and see the results if they have any value."
 ---
 ```
-- Autogenerate mp3 from the content if you can. I use Polly from Amazon for it. Don't worry if you don't have the time for it. It can added later too. In that case, just remove the ```audio:``` line. 
+- Autogenerate mp3 from the content if you can. I use Polly from Amazon for it. Don't worry if you don't have the time for it. It can be added later too. In that case, just remove the ```audio:``` line. 
 - Pictures of the post are all added to /assest/img/ folder in which you should create a folder "dayX" in which the "X" is the number of the post given to you in idea approval. Just look at the previous posts and follow the lead. 
 
 ### Make a pull request 
