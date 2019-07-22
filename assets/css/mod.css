@@ -118,3 +118,18 @@ ul li {
 #topic-list ul li a:hover {
 	  background-color: #ce0606;
 }
+
+.pagination {
+
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background-color: #ef5100;
+	min-height: 100px;
+	padding: 1.5em 1.5em;
+	font-weight: 700;
+	
+	font-style: normal;
+	color: #fff;
+	font-size: 1.25rem;
+}
