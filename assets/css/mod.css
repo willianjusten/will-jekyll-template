@@ -143,8 +143,9 @@ ul li {
 	font-family: 'Open Sans',sans-serif;
 
 	font-weight: 500;
-	
+	width: 100%;
 	font-style: normal;
 	
 	font-size: 1.25rem;
+	border-bottom: solid 2px #333;
 }
