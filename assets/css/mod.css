@@ -143,9 +143,15 @@ ul li {
 	font-family: 'Open Sans',sans-serif;
 
 	font-weight: 500;
-	width: 100%;
+	width: 80%;
 	font-style: normal;
 	
 	font-size: 1.25rem;
-	border-bottom: solid 2px #333;
+	
+}
+
+.divider {
+	background-color: #eee;
+	max-height: 3px;
+	width:70%;
 }
