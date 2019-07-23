@@ -163,4 +163,6 @@ ul li {
 	background-color: #eee;
 	max-height: 3px;
 	width:70%;
+	margin: 0 auto;
+	text-align: center;
 }
