@@ -4,7 +4,7 @@ layout: default
 
 <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     
-    <div style="margin: auto; text-align: center; width: 30%;padding-top:20px;padding-bottom:20px;">
+    <div style="margin: auto; text-align: center; width: 50%;padding-top:20px;padding-bottom:20px;">
         <h2>Progress of 100 Days of DX</h2>
         {% assign wcount = 0 %}
         {% for post in site.posts %}
@@ -27,6 +27,7 @@ layout: default
             <span style="border: solid 1px #eee;padding:5px;margin:5px; "> {{ wcount }} </span> 
             <span style="font-size: 18px;">  words of wisdom. Expected word count around </span>
             <span style="border: solid 1px #eee;padding:5px;margin:5px;">{{ totalwords }}</span>
+            <span style="font-size: 18px;">  which is equivalent of a 400 page book.</span>
             </h2></div></div>
         <div style="width: 100%; min-height:50px; background-color: #eee; margin: auto;text-align: center;padding:30px;">
             <p style="font-size: 24px;margin: auto;margin-left:40px; margin-right:40px;">Even if the #100daysdx content would be mediocre, it is the biggest open resource on Developer eXperience so far.</p>
@@ -34,7 +35,7 @@ layout: default
         
         
 
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
@@ -78,4 +79,22 @@ layout: default
                 </div>
         </article>
     {% endfor %}
+    <!-- Pagination links -->
+<div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+        {% else %}
+          <span class="previous"><< Previous </span>
+        {% endif %}
+        <span class="page_number ">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next"> Next >> </a>
+        {% else %}
+          <span class="next ">Next</span>
+        {% endif %}
+      </div>
 </main>
