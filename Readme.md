@@ -11,6 +11,10 @@ You can suggest topics for me by raising an issue. I will not promise to write a
 [New idea for a post - raise an issue!](https://github.com/kyyberi/100daysofDX/issues/new)
 
 
+## Support via Patreon
+
+This is a freetime project and I spend significant amount of my time in it. If you see value in the site, you can support the effort via [Patreon](https://www.patreon.com/100daysdx). 
+
 ## Contribute a post
 
 To contribute a post, do the following:
