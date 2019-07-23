@@ -166,3 +166,8 @@ ul li {
 	text-align: center;
 	margin-bottom:30px;
 }
+
+.testimonial blockquote {
+	border-left: 0px;
+
+}
