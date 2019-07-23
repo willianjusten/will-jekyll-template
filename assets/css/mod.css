@@ -134,3 +134,17 @@ ul li {
 	font-size: 1.25rem;
 	margin-top:-5px;
 }
+
+.testimonial {
+
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans',sans-serif;
+	font-family: 'Open Sans',sans-serif;
+
+	font-weight: 500;
+	
+	font-style: normal;
+	
+	font-size: 1.25rem;
+}
