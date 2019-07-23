@@ -19,6 +19,7 @@ highlighter: rouge
 permalink: /:title/
 paginate: 10
 
+
 # html minify
 compress_html:
   clippings: all
