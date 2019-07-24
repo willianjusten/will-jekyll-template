@@ -19,6 +19,7 @@ highlighter: rouge
 permalink: /:title/
 paginate: 5
 
+
 # html minify
 compress_html:
   clippings: all
@@ -39,6 +40,8 @@ links:
     url: /tags
   - title: About Me & site
     url: /about
+  - title: Testimonials
+    url: /testimonials
 
 
 # exclude my node related stuff

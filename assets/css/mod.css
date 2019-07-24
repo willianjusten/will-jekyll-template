@@ -118,3 +118,56 @@ ul li {
 #topic-list ul li a:hover {
 	  background-color: #ce0606;
 }
+
+.pagination {
+
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	background-color: #eee;
+	min-height: 110px;
+	padding: 1.5em 1.5em;
+	font-weight: 700;
+	
+	font-style: normal;
+	color: #000;
+	font-size: 1.25rem;
+	margin-top:-5px;
+}
+
+.testimonial {
+
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Open Sans',sans-serif;
+	font-family: 'Open Sans',sans-serif;
+
+	font-weight: 500;
+	width: 80%;
+	font-style: normal;
+	
+	font-size: 2.25rem;
+	
+}
+
+.testimonial p{
+
+	width: 90%;
+	font-style: normal;
+	
+	
+}
+
+.divider {
+	background-color: #eee;
+	max-height: 3px;
+	width:90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom:30px;
+}
+
+.testimonial blockquote {
+	border-left: 0px;
+
+}

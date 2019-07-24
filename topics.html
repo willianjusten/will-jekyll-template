@@ -7,26 +7,45 @@ description: "100DaysDX topic suggestions"
 
 <div class="tags" id="topics">
     <p>Future topics planning is handled with Github issues and labels. </p>
-        <h2>Already suggested topics</h2>
-    <ul id="topic-list" style="list-style-type: none;">
+    <h2>Already accepted future topics</h2>
+    <ul id="accepted-list" style="list-style-type: none;">
 
     </ul>
-    <p style="font-size:1em;">Did not found what you wanted? Suggest a topic for a post! </p>
     <script>
-    var urlToGetAllOpenBugs = "https://api.github.com/repos/kyyberi/100daysofDX/issues?state=open&labels=Topic-idea";
+    var urlToGetAllOpenBugs = "https://api.github.com/repos/kyyberi/100daysofDX/issues?state=open&labels=Accepted";
 
     $(document).ready(function() {
       $.getJSON(urlToGetAllOpenBugs, function(allIssues) {
         $.each(allIssues, function(i, issue) {
-          $("#topic-list")
+          $("#accepted-list")
             .append("<li><a style='font-size:1.1em;' href=" + issue.html_url + ">" + issue.title + "</a></li>");
     
         });
       });
     });
     </script>
-    <h2>Suggest your own topic!</h2>
-    
-    <p style="font-size:1.4em;"> <a href="https://github.com/kyyberi/100daysofDX/issues/new">Raise an issue in Github!</a>  I will not promise to write about your suggestion, but I promise to consider it thoroughly.</p>
-</div>
+    </div>
 
+<div class="tags" id="topics">
+        <h2>Suggested future topics</h2>
+        <ul id="topic-list" style="list-style-type: none;">
+    
+        </ul>
+        <p style="font-size:1em;">Did not found what you wanted? Suggest a topic for a post! </p>
+        <script>
+        var urlToGetAllOpenBugs2 = "https://api.github.com/repos/kyyberi/100daysofDX/issues?state=open&labels=Topic-idea";
+    
+        $(document).ready(function() {
+          $.getJSON(urlToGetAllOpenBugs2, function(allIssues) {
+            $.each(allIssues, function(i, issue) {
+              $("#topic-list")
+                .append("<li><a style='font-size:1.1em;' href=" + issue.html_url + ">" + issue.title + "</a></li>");
+        
+            });
+          });
+        });
+        </script>
+        <h2>Suggest your own topic!</h2>
+        
+        <p style="font-size:1.4em;"> <a href="https://github.com/kyyberi/100daysofDX/issues/new">Raise an issue in Github!</a>  I will not promise to write about your suggestion, but I promise to consider it thoroughly.</p>
+    </div>
