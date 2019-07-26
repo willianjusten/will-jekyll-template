@@ -171,3 +171,8 @@ ul li {
 	border-left: 0px;
 
 }
+
+.post-content blockquote {
+
+	border-left: .313rem solid #fd6b10;
+}
