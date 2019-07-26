@@ -2,7 +2,7 @@
 title: 100 Days of Developer eXperience 
 description: Daily unfiltered & opinionated post on DX starting 14th July 2019
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://100daysDX.com" 
+url: "https://100daysDX.com" 
 
 # User settings
 username: 100 Days of Developer eXperience
