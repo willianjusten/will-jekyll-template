@@ -22,13 +22,15 @@ layout: default
         </div>
         
         <div style="font-size: 14pt;margin-top:20px;line-height: 2.8em;"><h2>
-            <span style="font-size: 18px;">{{ "now" | date: "%Y/%m/%d" }} </span> 
-            <span style="border: solid 1px #eee;padding:5px;margin:5px; ">{{ site.posts | size }}% </span>
+            <!-- <span style="font-size: 18px;">{{ "now" | date: "%Y/%m/%d" }} </span> -->
+            <span style="border: solid 1px #eee;padding:5px;margin:5px; background-color: #f6f6f6;">{{ site.posts | size }}% </span>
             <span style="font-size: 18px;"> done with </span>
-            <span style="border: solid 1px #eee;padding:5px;margin:5px; "> {{ wcount }} </span> 
+            <span style="border: solid 1px #eee;padding:5px;margin:5px;  background-color: #f6f6f6;"> {{ wcount }} </span> 
             <span style="font-size: 18px;">  words of wisdom. Expected word count around </span>
-            <span style="border: solid 1px #eee;padding:5px;margin:5px;">{{ totalwords }}</span>
-            <span style="font-size: 18px;">  which is equivalent of a {{ pages }} page book.</span>
+            <span style="border: solid 1px #eee;padding:5px;margin:5px;  background-color: #f6f6f6;">{{ totalwords }}</span>
+            <span style="font-size: 18px;">  which is equivalent of a </span>
+            <span style="border: solid 1px #eee;padding:5px;margin:5px;  background-color: #f6f6f6;"> {{ pages }} </span> 
+            <span style="font-size: 18px;"> page book.</span>
             </h2></div></div>
         <div style="width: 100%; min-height:50px; background-color: #eee; margin: auto;text-align: center;padding:30px;">
             <p style="font-size: 24px;margin: auto;margin-left:40px; margin-right:40px;margin-bottom:30px;">Even if the #100daysdx content would be mediocre, it is the biggest open resource on Developer eXperience so far.</p>
