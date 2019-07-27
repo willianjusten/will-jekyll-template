@@ -15,6 +15,7 @@ layout: default
         {% assign postcount =  site.posts | size %}
         {% assign perpost =  wcount | divided_by: postcount %}
         {% assign totalwords =  perpost | times: 100 %}
+        {% assign pages =  totalwords | divided_by: 300 %}
 
         <div style="text-align: left; margin: 2px auto; font-size: 0px; line-height: 0px; background: #C6C9C9; overflow: hidden; ">
             <div style="font-size: 0px; line-height: 0px; height: 15px; min-width: 0%; max-width: {{ site.posts | size }}%; width: {{ site.posts | size }}%; background: #ff5600; "></div>
@@ -27,7 +28,7 @@ layout: default
             <span style="border: solid 1px #eee;padding:5px;margin:5px; "> {{ wcount }} </span> 
             <span style="font-size: 18px;">  words of wisdom. Expected word count around </span>
             <span style="border: solid 1px #eee;padding:5px;margin:5px;">{{ totalwords }}</span>
-            <span style="font-size: 18px;">  which is equivalent of a 400 page book.</span>
+            <span style="font-size: 18px;">  which is equivalent of a {{ pages }} page book.</span>
             </h2></div></div>
         <div style="width: 100%; min-height:50px; background-color: #eee; margin: auto;text-align: center;padding:30px;">
             <p style="font-size: 24px;margin: auto;margin-left:40px; margin-right:40px;margin-bottom:30px;">Even if the #100daysdx content would be mediocre, it is the biggest open resource on Developer eXperience so far.</p>
