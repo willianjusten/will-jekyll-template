@@ -4,7 +4,7 @@ layout: default
 
 <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     
-    <div style="margin: auto; text-align: center; width: 50%;padding-top:20px;padding-bottom:20px;">
+    <div style="margin: auto; text-align: center; width: 80%;padding-top:20px;padding-bottom:20px;">
         <h2>Progress of 100 Days of DX</h2>
         {% assign wcount = 0 %}
         {% for post in site.posts %}
@@ -17,7 +17,7 @@ layout: default
         {% assign totalwords =  perpost | times: 100 %}
         {% assign pages =  totalwords | divided_by: 300 %}
 
-        <div style="text-align: left; margin: 2px auto; font-size: 0px; line-height: 0px; background: #C6C9C9; overflow: hidden; ">
+        <div style="text-align: left; margin: 2px auto; font-size: 0px; width:50%; line-height: 0px; background: #C6C9C9; overflow: hidden; ">
             <div style="font-size: 0px; line-height: 0px; height: 15px; min-width: 0%; max-width: {{ site.posts | size }}%; width: {{ site.posts | size }}%; background: #ff5600; "></div>
         </div>
         
