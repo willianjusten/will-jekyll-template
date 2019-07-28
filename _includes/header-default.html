@@ -2,8 +2,18 @@
     <div class="content">
         <h1>
             <span class="site-title">{{site.username}}</span>
-            <span class="site-description">{{site.user_title}} <br/>Follow #100DaysDX</span>
+            <span class="site-description">{{site.user_title}} <br/><br/>Follow #100DaysDX or subscribe to email updates</span>
         </h1>
+        <div id="mc_embed_signup" style="padding-bottom: 40px">
+            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=f69368b147f04f53d92882f62&amp;id=ac24cdde13" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f69368b147f04f53d92882f62_ac24cdde13" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
         <div class="icons-home">
             <a aria-label="Send email" href="mailto:{{site.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
             <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
