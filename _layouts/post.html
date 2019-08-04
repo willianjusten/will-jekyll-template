@@ -8,6 +8,11 @@
 
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 {{ content }}
+                <hr/>
+                <h2>Some more to read from 100 Days DX</h2>
+                <ul>
+                {% include related.html %}
+                </ul>
             </article>
             
             {% include share.html %}
