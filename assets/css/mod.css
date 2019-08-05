@@ -77,6 +77,10 @@ cite {
   margin-top: -8px;
 }
 
+.post-item .content .description {
+	padding-bottom: 50px;
+
+}
 #speaker {
 
 	margin: 0 auto;
