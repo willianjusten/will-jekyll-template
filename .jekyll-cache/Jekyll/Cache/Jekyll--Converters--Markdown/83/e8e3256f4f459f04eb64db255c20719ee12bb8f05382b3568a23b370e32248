@@ -1,0 +1,102 @@
+I"�<p>This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don’t want to care about frontend stuff.</p>
+
+<p>The Theme features:</p>
+
+<ul>
+  <li>Gulp</li>
+  <li>Stylus (Jeet, Rupture, Kouto Swiss)</li>
+  <li>Smoothscroll</li>
+  <li>Live Search</li>
+  <li>Offcanvas Menu</li>
+  <li>SVG icons</li>
+  <li>Shell Script to create posts</li>
+  <li>Tags page</li>
+  <li>Series page</li>
+  <li>About Me page</li>
+  <li>Feed RSS</li>
+  <li>Sitemap.xml</li>
+  <li>Color Customization</li>
+  <li>Info Customization</li>
+</ul>
+
+<h2 id="basic-setup">Basic Setup</h2>
+
+<ol>
+  <li><a href="http://jekyllrb.com">Install Jekyll</a></li>
+  <li>Fork the <a href="https://github.com/willianjusten/will-jekyll-template/fork">Will Jekyll Template</a></li>
+  <li>Clone the repo you just forked.</li>
+  <li>Edit <code class="highlighter-rouge">_config.yml</code> to personalize your site.</li>
+  <li>Check out the sample posts in <code class="highlighter-rouge">_posts</code> to see examples for assigning categories and tags, and other YAML data.</li>
+  <li>Read the documentation below for further customization pointers and documentation.</li>
+</ol>
+
+<h2 id="site-and-user-settings">Site and User Settings</h2>
+
+<p>You have to fill some informations on <code class="highlighter-rouge">_config.yml</code> to customize your site.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Site settings</span>
+<span class="ss">description: </span><span class="no">A</span> <span class="n">blog</span> <span class="n">about</span> <span class="n">lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
+<span class="ss">baseurl: </span><span class="s2">""</span> <span class="c1"># the subpath of your site, e.g. /blog/</span>
+<span class="ss">url: </span><span class="s2">"http://localhost:3000"</span> <span class="c1"># the base hostname &amp; protocol for your site </span>
+
+<span class="c1"># User settings</span>
+<span class="ss">username: </span><span class="no">Lorem</span> <span class="no">Ipsum</span>
+<span class="ss">user_description: </span><span class="no">Anon</span> <span class="no">Developer</span> <span class="n">at</span> <span class="no">Lorem</span> <span class="no">Ipsum</span> <span class="no">Dolor</span>
+<span class="ss">user_title: </span><span class="no">Anon</span> <span class="no">Developer</span>
+<span class="ss">email: </span><span class="n">anon</span><span class="vi">@anon</span><span class="p">.</span><span class="nf">com</span>
+<span class="ss">twitter_username: </span><span class="n">lorem_ipsum</span>
+<span class="ss">github_username:  </span><span class="n">lorem_ipsum</span>
+<span class="ss">gplus_username:  </span><span class="n">lorem_ipsum</span>
+<span class="ss">disqus_username: </span><span class="n">lorem_ipsum</span></code></pre></figure>
+
+<h2 id="color-customization">Color customization</h2>
+
+<p>All color variables are in <code class="highlighter-rouge">src/styl/variable</code>. To change the main color, just set the new value at <code class="highlighter-rouge">main</code> assignment. Another colors are for texts and the code background color.</p>
+
+<h2 id="creating-posts">Creating posts</h2>
+
+<p>You can use the <code class="highlighter-rouge">initpost.sh</code> to create your new posts. Just follow the command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./initpost.sh <span class="nt">-c</span> Post Title</code></pre></figure>
+
+<p>The new file will be created at <code class="highlighter-rouge">_posts</code> with this format <code class="highlighter-rouge">date-title.md</code>.</p>
+
+<h2 id="front-matter">Front-matter</h2>
+
+<p>When you create a new post, you need to fill the post information in the front-matter, follow this example:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">layout: </span><span class="n">post</span>
+<span class="ss">title: </span><span class="s2">"How to use"</span>
+<span class="ss">date: </span><span class="mi">2015</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mo">03</span> <span class="mo">03</span><span class="p">:</span><span class="mi">32</span><span class="p">:</span><span class="mi">44</span>
+<span class="ss">image: </span><span class="s1">'/assets/img/post-image.png'</span>
+<span class="ss">description: </span><span class="s1">'First steps to use this template'</span>
+<span class="ss">tags:
+</span><span class="o">-</span> <span class="n">jekyll</span> 
+<span class="o">-</span> <span class="n">template</span> 
+<span class="ss">categories:
+</span><span class="o">-</span> <span class="no">I</span> <span class="n">love</span> <span class="no">Jekyll</span>
+<span class="ss">twitter_text: </span><span class="s1">'How to install and use this template'</span>
+<span class="o">---</span></code></pre></figure>
+
+<h2 id="running-the-blog-in-local">Running the blog in local</h2>
+
+<p>In order to compile the assets and run Jekyll on local you need to follow those steps:</p>
+
+<ul>
+  <li>Install <a href="https://nodejs.org/">NodeJS</a></li>
+  <li>Run <code class="highlighter-rouge">npm install</code></li>
+  <li>Run <code class="highlighter-rouge">gulp</code></li>
+</ul>
+
+<h2 id="questions">Questions</h2>
+
+<p>Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter <a href="https://twitter.com/willian_justen">@willian_justen</a> or file a <a href="https://github.com/willianjusten/will-jekyll-template/issues/new">GitHub Issue</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p>This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.</p>
+
+<p>If you’d like to give me credit somewhere on your blog or tweet a shout out to <a href="https://twitter.com/willian_justen">@willian_justen</a>, that would be pretty sweet.</p>
+
+:ET

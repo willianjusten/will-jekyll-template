@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "jeet": "^6.1.4",
+    "jekyll": "^3.0.0-beta1",
     "kouto-swiss": "^0.11.14",
     "rupture": "^0.6.1"
   }
