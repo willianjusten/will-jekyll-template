@@ -1,6 +1,6 @@
 # Site settings
-title: iBlog Efstathios Iosifidis
-description: iBlog Efstathios Iosifidis on github
+title: Εγχειρίδια iBlog
+description: Διάφορα εγχειρίδια εγκατάστασης για Nextcloud, openSUSE, ownCloud, GNU Health
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -32,13 +32,13 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: Αρχική
     url: /
-  - title: Series
+  - title: Σειρές
     url: /series
-  - title: Tags
+  - title: Ετικέτες
     url: /tags
-  - title: About Me
+  - title: Περί
     url: /about
 
 # exclude my node related stuff
