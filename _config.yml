@@ -1,18 +1,16 @@
 # Site settings
-title: Εγχειρίδια iBlog
-description: Διάφορα εγχειρίδια εγκατάστασης για Nextcloud, openSUSE, ownCloud, GNU Health
+title: Τα εγχειρίδιά μου
+description: Διάφορα εγχειρίδια για Nextcloud, openSUSE, ownCloud, GNU Health
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Εγχειρίδια Nextcloud, openSUSE, GNU Health, ownCloud
+username: MyHowTo
 user_description: Veterinarian, openSUSE member, GNOME Foundation member
-user_title: και άλλα πολλά!!!
+user_title: Nextcloud, openSUSE, GNU Health, ownCloud και άλλα πολλά!!!
 email: iefstathios@gmail.com
-#linkedin_username: eiosifidis
 facebook_username: eiosifidis
 twitter_username: eiosifidis
-#instagram_username: e.iosifidis
 github_username:  iosifidis
 disqus_username: iblog-eiosifidis
 
