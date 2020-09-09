@@ -1,5 +1,5 @@
 <section class="share">
-    <h3>Share</h3>
+    <h3>Πείτε το και σε άλλους</h3>
     <a aria-label="Διαμοιρασμός στο Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Διαμοιρασμός στο Twitter">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
@@ -10,6 +10,6 @@
     </a>
     <a aria-label="Διαμοιρασμός στο LinkedIn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;" title="Διαμοιρασμός στο LinkedIn">
-        <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+        <svg class="icon icon-facebook"><use href="{{site.baseurl}}/assets/img/social/linkedin-icon"></use></svg>
     </a>
 </section>

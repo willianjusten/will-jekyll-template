@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://iosifidis.gr
 
 # User settings
-username: Ευστάθιος Ιωσηφίδης, DVM
+username: Ευστάθιος Ιωσηφίδης
 user_description: Veterinarian, openSUSE member, GNOME Foundation member
 user_title: Εγχειρίδια για Nextcloud, openSUSE, GNU Health, ONLYOFFICE, ownCloud και άλλα πολλά!!!
 email: iefstathios@gmail.com
