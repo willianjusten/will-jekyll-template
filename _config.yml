@@ -1,15 +1,17 @@
 # Site settings
 title: Τα εγχειρίδιά μου
-description: Διάφορα εγχειρίδια για Nextcloud, openSUSE, ownCloud, GNU Health
+description: Διάφορα εγχειρίδια για Nextcloud, openSUSE, ONLYOFFICE, ownCloud, GNU Health
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://iosifidis.github.io" # the base hostname & protocol for your site e.g. http://iosifidis.gr
 
 # User settings
-username: MyHowTo
+username: Ευστάθιος Ιωσηφίδης, DVM
 user_description: Veterinarian, openSUSE member, GNOME Foundation member
-user_title: Nextcloud, openSUSE, GNU Health, ownCloud και άλλα πολλά!!!
+user_title: Εγχειρίδια για Nextcloud, openSUSE, GNU Health, ONLYOFFICE, ownCloud και άλλα πολλά!!!
 email: iefstathios@gmail.com
+linkedin_username: eiosifidis
 facebook_username: eiosifidis
+instagram_username: e.iosifidis
 twitter_username: eiosifidis
 github_username:  iosifidis
 disqus_username: iblog-eiosifidis

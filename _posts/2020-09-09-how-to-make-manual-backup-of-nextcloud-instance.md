@@ -7,12 +7,14 @@ tags:
 - nextcloud
 - backup
 - αντίγραφο ασφαλείας
+- cloud
 categories:
 - Nextcloud
+- Nextcloud tips and tricks
 twitter_text: 'Πως να κάνετε χειροκίνητα ένα αντίγραφο ασφαλείας του #Nextcloud'
 ---
 
-![Nextcloud Logo 3D](/post_images/nextcloud/Nextcloud_3D "Awesome Nextcloud")
+![Nextcloud Logo 3D](/post_images/nextcloud/Nextcloud_3D.jpg "Awesome Nextcloud")
 
 # Για ποιο λόγο να κάνουμε αντίγραφο ασφαλείας;
 
