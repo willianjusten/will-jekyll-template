@@ -9,9 +9,9 @@ tags:
 - leap
 - cloud
 categories:
-- Nextcloud tips and tricks
-- openSUSE tips and tricks
-- Cloud solutions
+- Nextcloud
+- openSUSE
+- Cloud
 twitter_text: 'Tutorial how to install Nextcloud on openSUSE Leap'
 ---
 

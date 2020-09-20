@@ -10,7 +10,7 @@ tags:
 - cloud
 categories:
 - Nextcloud
-- Nextcloud tips and tricks
+- Cloud
 twitter_text: 'Πως να κάνετε χειροκίνητα ένα αντίγραφο ασφαλείας του #Nextcloud'
 ---
 
