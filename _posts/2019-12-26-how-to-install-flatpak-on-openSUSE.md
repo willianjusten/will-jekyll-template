@@ -24,19 +24,19 @@ twitter_text: 'Πως να κάνετε εγκατάσταση του #flatpak �
 
 # ΕΓΚΑΤΑΣΤΑΣΗ
 
-1. Εγκατάσταση του flatpak.
+* Εγκατάσταση του flatpak.
 
 {% highlight ruby %}
   sudo zypper install flatpak
 {% endhighlight %}
 
-2. Εισαγωγή του αποθετηρίου flatpak.
+* Εισαγωγή του αποθετηρίου flatpak.
 
 {% highlight ruby %}
   sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 {% endhighlight %}
 
-3. Επανεκκίνηση του συστήματος
+* Επανεκκίνηση του συστήματος
 
 Εναλλακτικά του αποθετηρίου, μπορείτε να κάνετε την εγκατάσταση από την ιστοσελίδα
 
@@ -80,7 +80,7 @@ twitter_text: 'Πως να κάνετε εγκατάσταση του #flatpak �
 
 **Εγκατάσταση από ένα αρχείο flatpakref**
 
-Εάν κατεβάσατε το αρχείο *.flatpakref* από το Flathub ή από αποθετήριο προγραμματιστή, μπορείτε να εγκαταστήσετε την εφαρμογή με την ακόλουθη εντολή:
+Εάν κατεβάσατε το αρχείο *file.flatpakref* από το Flathub ή από αποθετήριο προγραμματιστή, μπορείτε να εγκαταστήσετε την εφαρμογή με την ακόλουθη εντολή:
 
 {% highlight ruby %}
   sudo flatpak install file.flatpakref
