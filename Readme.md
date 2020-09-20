@@ -1,5 +1,7 @@
 ## Will Jekyll Template - [Demo](http://willianjusten.com.br/will-jekyll-template)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a02f19e9-a55c-48cb-b3e0-867c9651aebb/deploy-status)](https://app.netlify.com/sites/iblog-iosifidis/deploys)
+
 ![Screenshot](screenshot.png)
 
 Αυτό είναι ένα απλό και μινιμαλιστικό πρότυπο για Jekyll που σχεδιάστηκε για προγραμματιστές που θέλουν να δημοσιεύουν σε blog αλλά δεν τους ενδιαφέρει και πολύ το frontend.
