@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Εγκατάσταση και χρήση flatpak στο openSUSE"
-date: 2020-09-09 12:30:00
+date: 2019-12-26 12:30:00
 description: Τελευταία εμφανίστηκαν πακέτα flatpak, snap, appimage. Εδώ θα δούμε πως γίνεται η εγκατάσταση του flatpak και βασική χρήση.
 tags:
 - openSUSE
