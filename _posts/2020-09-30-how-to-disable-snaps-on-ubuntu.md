@@ -52,7 +52,7 @@ snap-store         20200415.e028804  394   latest/stable/…  canonical✓  -
 sudo snap remove package
 {% endhighlight %}
 
-Εκτελέστε τις παρακάτω εντολής για να αφαιρέσετε όλα:
+Εκτελέστε τις παρακάτω εντολές για να αφαιρέσετε όλα:
 
 {% highlight ruby %}
 sudo snap remove snap-store
