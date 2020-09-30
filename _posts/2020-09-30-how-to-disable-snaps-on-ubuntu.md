@@ -91,5 +91,6 @@ sudo rm -rf /var/lib/snapd
 {% endhighlight %}
 
 Τα καταφέρατε. Το σύστημά σας δεν εχει snap.
-Εάν θέλετε να εγκαταστήσετε τα flatpak τότε δείτε εδώ πως μπορείτε...
+Εάν θέλετε να εγκαταστήσετε τα flatpak τότε δείτε εδώ πως μπορείτε να το κάνετε...
+
 [Εγκατάσταση και χρήση flatpak στο openSUSE](https://eiosifidis.blogspot.com/2019/12/opensuse-flatpak.html)
