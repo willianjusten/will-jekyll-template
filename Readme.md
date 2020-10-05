@@ -1,3 +1,5 @@
+⚠️⚠️ This project is not maintained anymore ⚠️⚠️
+
 ## Will Jekyll Template - [Demo](https://willianjusten.github.io/will-jekyll-template)
 
 ![Screenshot](screenshot.png)
@@ -22,6 +24,10 @@ The Theme features:
 - Color Customization
 - Info Customization
 
+## Requirements
+
+- This project only works until Node v11-
+
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
@@ -31,7 +37,7 @@ The Theme features:
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
 6. Edit [this line in the search component](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/src/js/simpleJekyllSearch.js#L4) to point to your own url.
 7. Read the documentation below for further customization pointers and documentation.
-8. **Remember to compile your assets files with Gulp.**
+8. **Remember to compile your assets files using Gulp!**
 
 ## Site and User Settings
 
@@ -41,7 +47,7 @@ You have to fill some informations on `_config.yml` to customize your site.
 # Site settings
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site 
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
 # User settings
 username: Lorem Ipsum
@@ -70,7 +76,7 @@ You can use the `initpost.sh` to create your new posts. Just follow the command:
 
 The new file will be created at `_posts` with this format `date-title.md`.
 
-## Front-matter 
+## Front-matter
 
 When you create a new post, you need to fill the post information in the front-matter, follow this example:
 
@@ -82,8 +88,8 @@ date: 2015-08-03 03:32:44
 image: '/assets/img/post-image.png'
 description: 'First steps to use this template'
 tags:
-- jekyll 
-- template 
+- jekyll
+- template
 categories:
 - I love Jekyll
 twitter_text: 'How to install and use this template'
@@ -95,7 +101,7 @@ twitter_text: 'How to install and use this template'
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
 - Install [NodeJS](https://nodejs.org/)
-- Run `npm install` 
+- Run `npm install`
 - Run `gulp`
 
 ## Questions
