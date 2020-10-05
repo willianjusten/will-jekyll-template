@@ -29,8 +29,9 @@ The Theme features:
 3. Clone the repo you just forked.
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-7. **Remember to compile your assets files with Gulp.**
+6. Edit [this line in the search component](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/src/js/simpleJekyllSearch.js#L4) to point to your own url.
+7. Read the documentation below for further customization pointers and documentation.
+8. **Remember to compile your assets files with Gulp.**
 
 ## Site and User Settings
 
@@ -112,7 +113,3 @@ If you liked my work, buy me a coffee <3
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
 
 If you’d like to give me credit somewhere on your blog or tweet a shout out to [@willian_justen](https://twitter.com/willian_justen), that would be pretty sweet.
-
-
-
-
