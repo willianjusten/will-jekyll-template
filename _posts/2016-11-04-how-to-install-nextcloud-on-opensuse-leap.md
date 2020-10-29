@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "How to install Nextcloud on openSUSE Leap"
+title: "How to install Nextcloud Hub on openSUSE Leap"
 date: 2016-11-04 23:33:17
 description: Official documentation describes installation on Red Hat/CentOS and Ubuntu but not openSUSE Leap. Here's a tutorial...
 tags:
 - nextcloud
+- nextcloud hub
 - openSUSE
 - leap
 - cloud
