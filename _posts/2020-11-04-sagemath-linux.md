@@ -180,7 +180,7 @@ sudo docker container stop 3b40632adb78
 
 {% highlight ruby %}
 sudo flatpack install org.cvfosammmm.Porto
-% endhighlight %}
+{% endhighlight %}
 
 [Δείτε πως μπορείτε να κάνετε εγκατάσταση από το πηγαίο αρχείο.](https://doc.sagemath.org/html/en/installation/source.html)
 
