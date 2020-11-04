@@ -57,18 +57,18 @@ sudo apt install sagemath sagemath-jupyter sagemath-doc-en
 
 ## Εγκατάσταση σε Debian/Ubuntu από συμπιεσμένο αρχείο
 
-1. Μεταβείτε στην [ιστοσελίδα των λήψεων](http://ftp.ntua.gr/pub/sagemath/linux/index.html) και κατεβάστε την έκδοση που αντιστοιχεί στο λειτουργικό σας.
+* Μεταβείτε στην [ιστοσελίδα των λήψεων](http://ftp.ntua.gr/pub/sagemath/linux/index.html) και κατεβάστε την έκδοση που αντιστοιχεί στο λειτουργικό σας.
 
-2. Στη συνέχεια αποσιμπιέστε το αρχείο **.tar.bz2** που κατεβάσατε. 
+* Στη συνέχεια αποσιμπιέστε το αρχείο **.tar.bz2** που κατεβάσατε. 
 **ΣΥΜΒΟΥΛΗ:** Φτιάξτε ένα κατάλογο **bin** μέσα στον προσωπικό σας φάκελο. Εκεί να αποθηκεύετε τα προγράμματα που θέλετε να εγκαταστήσετε (όπως το SageMath). Με αυτό τον τρόπο θα γνωρίζετε ότι πρόκειται για προγράμματα και δεν θα τον πειράζετε. Επίσης δεν θα είστε σίγουροι ότι δεν υπάρχει κάποιος Ελληνικός χαρακτήρας στο path που μπορεί να προκαλέσει κάποιο πρόβλημα.<br /><br />
 
-3. Αφού το συμπιέσατε, μεταβείτε στον κατάλογο *SageMath* και εκτελέστε το πρόγραμμα *sage*
+* Αφού το συμπιέσατε, μεταβείτε στον κατάλογο *SageMath* και εκτελέστε το πρόγραμμα *sage*
 
 {% highlight ruby %}
 ./sage
 {% endhighlight %}
 
-4. Την πρώτη φορά που θα εκτελεστεί το Sage θα σας δώσει μια εικόνα όπως το παρακάτω μήνυμα:
+* Την πρώτη φορά που θα εκτελεστεί το Sage θα σας δώσει μια εικόνα όπως το παρακάτω μήνυμα:
 
 {% highlight ruby %}
 Rewriting paths for your new installation directory
@@ -81,7 +81,7 @@ patching ...  (long list of files)
 
 Από εδώ και πέρα, δεν μπορείτε να μετακινήσετε το Sage.
 
-5. Τελευταία κίνηση είναι η δημιουργία συντόμευσης ώστε να μπορείτε να εκτελέσετε το Sage από το τερματικό. Τώρα μπορείτε να δημιουργήσετε την συντόμευση με την εντολή: 
+* Τελευταία κίνηση είναι η δημιουργία συντόμευσης ώστε να μπορείτε να εκτελέσετε το Sage από το τερματικό. Τώρα μπορείτε να δημιουργήσετε την συντόμευση με την εντολή: 
 
 {% highlight ruby %}
 $ sudo ln -s /path/to/SageMath/sage /usr/local/bin/sage
@@ -93,13 +93,13 @@ $ sudo ln -s /path/to/SageMath/sage /usr/local/bin/sage
 
 # Εγκατάσταση σε Arch Linux
 
-1. Εγκατάσταση με την εντολή:
+* Εγκατάσταση με την εντολή:
 
 {% highlight ruby %}
 sudo packam -S sagemath sagemath-jupyter sagemath-doc
 {% endhighlight %}
 
-2. Το SageMath παρέχει και το Jupyter Notebook. Εκτελέστε την εντολή:
+* Το SageMath παρέχει και το Jupyter Notebook. Εκτελέστε την εντολή:
 
 {% highlight ruby %}
 $ jupyter notebook
@@ -128,19 +128,19 @@ $ sage -c "notebook(automatic_login=True)"
 
 Οπότε εδώ θα δούμε πως θα κάνουμε λήψη, ενεργοποίηση και χρήση του SageMath.
 
-1. Λήψη του θα την κάνετε με την εντολή:
+* Λήψη του θα την κάνετε με την εντολή:
 
 {% highlight ruby %}
 sudo docker pull sagemath/sagemath
 {% endhighlight %}
 
-2. Αφού κατέβει, μπορείτε να δείτε την λίστα με τα images με την εντολή:
+* Αφού κατέβει, μπορείτε να δείτε την λίστα με τα images με την εντολή:
 
 {% highlight ruby %}
 sudo docker images
 {% endhighlight %}
 
-3. Εκκίνηση του SageMath μαζί με το Jupyter Notebook.
+* Εκκίνηση του SageMath μαζί με το Jupyter Notebook.
 
 {% highlight ruby %}
 sudo docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter
@@ -151,7 +151,7 @@ sudo docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter
 
 ![SageMath Window](/post_images/sagemath/sagemath.jpg "SageMath window")
 
-4. Αφού τελειώσετε, πρέπει να τερματίσετε τον server και να τερματίσετε το docker. Θα βρείτε το CONTAINER_ID με την εντολή:
+* Αφού τελειώσετε, πρέπει να τερματίσετε τον server και να τερματίσετε το docker. Θα βρείτε το CONTAINER_ID με την εντολή:
 
 {% highlight ruby %}
 sudo docker container ps
@@ -166,9 +166,9 @@ sudo docker container stop 3b40632adb78
 
 Υπάρχει και η δυνατότητα να μην εγκαταστήσετε τιποτα. Μπορείτε να βρείτε online τις εξής λύσεις:
 
-1. [https://cocalc.com/](https://cocalc.com/): Η λύση αυτή είναι επι πληρωμή. Υπάρχει το δωρεάν πλάνο αλλά δεν είναι και τόσο γρήγορο. Μπορεί να περιμένετε αρκετή ώρα μέχρι να έχετε αποτέλεσμα.
+* [https://cocalc.com/](https://cocalc.com/): Η λύση αυτή είναι επι πληρωμή. Υπάρχει το δωρεάν πλάνο αλλά δεν είναι και τόσο γρήγορο. Μπορεί να περιμένετε αρκετή ώρα μέχρι να έχετε αποτέλεσμα.
 
-2. [https://sagecell.sagemath.org/](https://sagecell.sagemath.org/): Ακόμα μια λύση, καλύτερη από το cocalc.
+* [https://sagecell.sagemath.org/](https://sagecell.sagemath.org/): Ακόμα μια λύση, καλύτερη από το cocalc.
 
 # Σημειωματάριο PORTO
 
