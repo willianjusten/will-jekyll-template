@@ -146,8 +146,8 @@ sudo docker images
 sudo docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter
 {% endhighlight %}
 
-Αφού εκτελεστεί, δείτε λίγο τα μηνύματα που θα βγάλει. Θα σας εμφανίσει ένα token. Αυτό θα το χρειαστείτε για να κάνετε είσοδο από την διεύθυνση <a href="http://localhost:8888" target="_blank">http://localhost:8888</a> ή την τύπου http://IP:8888.
-<br />
+Αφού εκτελεστεί, δείτε λίγο τα μηνύματα που θα βγάλει. Θα σας εμφανίσει ένα token. Αυτό θα το χρειαστείτε για να κάνετε είσοδο από την διεύθυνση [http://localhost:8888](http://localhost:8888) ή την τύπου http://IP:8888.
+
 
 ![SageMath Window](/post_images/sagemath/sagemath.jpg "SageMath window")
 
