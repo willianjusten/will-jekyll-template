@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Εγκατάσταση SageMath σε διανομές GNU/Linux"
+title: "Εγκατάσταση Μαθηματικού Λογισμικού SageMath σε διανομές GNU/Linux"
 date: 2020-11-04 12:30:00
 description: Το SageMath είναι ένα ελεύθερο (δωρεάν) λογισμικό μαθηματικών ανοιχτού κώδικα. Πως γίνεται η εγκατάσταση σε Linux;
 tags:
@@ -16,7 +16,7 @@ tags:
 - porto
 - notebook
 - python
-- math
+- μαθηματικά
 categories:
 - SageMath
 - openSUSE
@@ -24,7 +24,7 @@ categories:
 - Linux Mint
 - Arch Linux
 - Debian
-twitter_text: 'Πως να κάνετε εγκατάσταση #SageMath σε διανομές #GNU / #Linux'
+twitter_text: 'Πως να κάνετε εγκατάσταση του #μαθηματικού λογισμικού #SageMath σε διανομές #GNU / #Linux'
 ---
 
 ![SageMath Logo](/post_images/sagemath/sagemath_logo.png "SageMath.org")
@@ -184,3 +184,5 @@ sudo flatpack install org.cvfosammmm.Porto
 
 [Δείτε πως μπορείτε να κάνετε εγκατάσταση από το πηγαίο αρχείο.](https://doc.sagemath.org/html/en/installation/source.html)
 
+Αρχικό post:  
+[https://eiosifidis.blogspot.com/2020/10/sagemath-linux.html](https://eiosifidis.blogspot.com/2020/10/sagemath-linux.html)
