@@ -62,7 +62,7 @@ sudo apt install sagemath sagemath-jupyter sagemath-doc-en
 * Στη συνέχεια αποσιμπιέστε το αρχείο **.tar.bz2** που κατεβάσατε. 
 **ΣΥΜΒΟΥΛΗ:** Φτιάξτε ένα κατάλογο **bin** μέσα στον προσωπικό σας φάκελο. Εκεί να αποθηκεύετε τα προγράμματα που θέλετε να εγκαταστήσετε (όπως το SageMath). Με αυτό τον τρόπο θα γνωρίζετε ότι πρόκειται για προγράμματα και δεν θα τον πειράζετε. Επίσης δεν θα είστε σίγουροι ότι δεν υπάρχει κάποιος Ελληνικός χαρακτήρας στο path που μπορεί να προκαλέσει κάποιο πρόβλημα.<br /><br />
 
-* Αφού το συμπιέσατε, μεταβείτε στον κατάλογο *SageMath* και εκτελέστε το πρόγραμμα *sage*
+* Αφού το αποσυμπιέσατε, μεταβείτε στον κατάλογο *SageMath* και εκτελέστε το πρόγραμμα *sage*
 
 {% highlight ruby %}
 ./sage
@@ -181,6 +181,8 @@ sudo docker container stop 3b40632adb78
 {% highlight ruby %}
 sudo flatpack install org.cvfosammmm.Porto
 {% endhighlight %}
+
+![Porto Notebook](/post_images/sagemath/porto.jpg "Porto Notebook")
 
 [Δείτε πως μπορείτε να κάνετε εγκατάσταση από το πηγαίο αρχείο.](https://doc.sagemath.org/html/en/installation/source.html)
 
