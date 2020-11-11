@@ -64,7 +64,7 @@ zypper ar http://download.opensuse.org/repositories/devel:/tools:/ide/openSUSE_L
 zypper in codeblocks
 {% endhighlight %}
 
-# Εγκατάσταση σε Arch Linux</h3>
+# Εγκατάσταση σε Arch Linux
 
 Ανοίξτε το τερματικό και πληκτρολογήστε:
 
@@ -86,5 +86,7 @@ sudo apt-get install codeblocks codeblocks-contrib
 
 Ελπίζουμε να μην βρήκατε ιδιαίτερα δύσκολη την εγκατάσταση του Code::Blocks.
 
+![Code:Blocks Logo](/post_images/codeblocks/codeblocks.png "codeblocks.org")
+
 Αρχικό post:  
-[https://eiosifidis.blogspot.com/2020/11/codeblocks-linux.html](https://eiosifidis.blogspot.com/2020/11/codeblocks-linux.html)
+[https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html](https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html)
