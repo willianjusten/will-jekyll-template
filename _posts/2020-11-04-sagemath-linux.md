@@ -179,7 +179,7 @@ sudo docker container stop 3b40632adb78
 Ή εκτελέστε την εντολή
 
 {% highlight ruby %}
-sudo flatpack install org.cvfosammmm.Porto
+sudo flatpak install org.cvfosammmm.Porto
 {% endhighlight %}
 
 ![Porto Notebook](/post_images/sagemath/porto.jpg "Porto Notebook")
