@@ -17,6 +17,7 @@ tags:
 - notebook
 - python
 - μαθηματικά
+- ipynb
 categories:
 - SageMath
 - openSUSE
