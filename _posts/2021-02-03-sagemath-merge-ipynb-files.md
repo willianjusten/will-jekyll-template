@@ -2,7 +2,7 @@
 layout: post
 title: "Συγχώνευση .ipynb αρχείων και χρήση στο SageMath"
 date: 2021-02-03 12:30:00
-description: Πως μπορείτε να κάνετε συγχώνευση αρχείων .ipynb σε ένα.;
+description: Πως μπορείτε να κάνετε συγχώνευση αρχείων .ipynb σε ένα;
 tags:
 - sagemath
 - jupyter
