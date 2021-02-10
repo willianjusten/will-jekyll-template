@@ -40,7 +40,7 @@ sudo apt install poppler-utils
 sudo pacman -S poppler  
 {% endhighlight %}
 
-τη συνέχεια, στον κατάλογο με τα pdf, εκτελέστε την εντολή:
+Στη συνέχεια, στον κατάλογο με τα pdf, εκτελέστε την εντολή:
 
 {% highlight ruby %}
 pdfunite *.pdf out.pdf
@@ -84,7 +84,7 @@ sudo apt install texlive-latex-base
 sudo pacman -S texlive-latexextra
 {% endhighlight %}
 
-Εστω ότι έχετε τα αρχεία file1.pdf και file2.pdf στον ίδιο φάκελο. Φτιάξτε το αρχείο output.tex με το περιεχόμενο:
+Εστω ότι έχετε τα αρχεία file1.pdf και file2.pdf στον ίδιο φάκελο. Φτιάξτε το αρχείο **output.tex** με το περιεχόμενο:
 
 {% highlight ruby %}
 \documentclass{article}
@@ -137,7 +137,7 @@ echo $CLEANED_FILE_PATHS | bash -c 'IFS=$'"'"'\n'"'"' read -d "" -ra x;pdfunite 
 chmod +x ~/.local/share/nautilus/scripts/merge_pdfs.sh
 {% endhighlight %}
 
-Τώρα για να ενώσετε τα αρχεία, φωτίστε τα στον φάκελο στο Nautilus, πατήστε *δεξί πλήκτρο > Δέσμες ενεργειών (scripts)* και επιλέξτε το merge_pdfs.sh για να σας εξάγει ένα αρχείο pdf.
+Τώρα για να ενώσετε τα αρχεία, φωτίστε τα στον φάκελο στο Nautilus, πατήστε **δεξί πλήκτρο > Δέσμες ενεργειών (scripts)** και επιλέξτε το merge_pdfs.sh για να σας εξάγει ένα αρχείο pdf.
 
 Εάν βρήκατε κάποιον τρόπο εύκολο στην χρήση, ενημερώστε και τους φίλους σας ώστε να μην παιδεύονται.
 
