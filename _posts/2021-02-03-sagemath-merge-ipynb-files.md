@@ -10,6 +10,7 @@ tags:
 - python
 - μαθηματικά
 - ipynb
+- tip
 categories:
 - SageMath
 twitter_text: 'Πως να κάνετε ενώσετε αρχεία του #SageMath σε ένα με την χρήση τερματικού'
