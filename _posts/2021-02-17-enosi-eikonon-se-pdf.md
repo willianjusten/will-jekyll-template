@@ -33,6 +33,7 @@ twitter_text: 'Ένωση πολλών εικόνων σε ένα #pdf'
 
 {% highlight ruby %}
 convert *.png out.pdf
+{% endhighlight %}
 
 Αυτό που κάνει η παραπάνω εντολή είναι να πάρει όλα τα αρχεία με κατάληξη .png και τα προσθέτε σε ένα αρχείο .pdf. Όμως με την εκτέλεση αυτής της εντολής, λάμβανα ένα μήνημα σφάλματος:
 
@@ -55,14 +56,14 @@ sudo nano /etc/ImageMagick-6/policy.xml
 Ουσιαστικά πρέπει να σβήσετε ένα κομμάτι και να προσθέσετε μια γραμμή. Προσωπικά κράτησα με σχόλιο όπως βλέπετε παρακάτω:
 
 {% highlight ruby %}
-
+<!--
 <policy domain="coder" rights="none" pattern="PS" />
 <policy domain="coder" rights="none" pattern="PS2" />
 <policy domain="coder" rights="none" pattern="PS3" />
 <policy domain="coder" rights="none" pattern="EPS" />
 <policy domain="coder" rights="none" pattern="PDF" />
 <policy domain="coder" rights="none" pattern="XPS" />
-
+-->
 {% endhighlight %}
 
 Και μετά πρόσθεσα την παρακάτω γραμμή:  
