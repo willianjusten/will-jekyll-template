@@ -88,5 +88,31 @@ sudo apt-get install codeblocks codeblocks-contrib
 
 ![Code:Blocks Logo](/post_images/codeblocks/codeblocks.png "codeblocks.org")
 
+Αφού εγκαταστήσαμε το Code::Blocks και γράψαμε τους πρώτους κώδικες σε C, επόμενη κίνηση ήταν να βρούμε ένα όμορφο χρώμα για τα παράθυρά μας, που να ταιριάζει και να μην κουράζει το μάτι. Δυστυχώς από τα υπάρχοντα, δεν μου άρεσε κάποιο, οπότε ξεκίνησε το ψάξιμο για αλλαγή του θέματος.
+
+Στο αρχείο [default.conf](/post_images/codeblocks/default.conf), έχει πολλά θέματα, όμως που έπρεπε νααποθηκευτούν; Όπως είδατε, υπάρχουν δυο τρόποι.
+
+1. Εάν το εγκαταστήσετε από το πακέτο ή αποθετήριο της διανομής σας, τότε μπορείτε να αποθηκεύσετε το αρχείο **default.conf** στον φάκελο όπως βλέπετε παρακάτω:  
+  
+{% highlight ruby %}
+# Κρατήστε αντίγραφο ασφαλείας  
+cp ~/.codeblocks/default.conf ~/.codeblocks/default.conf.bak  
+  
+# Αντιγράψτε το αρχείο default.conf από τον φάκελο που το κατεβάσατε, στον παρακάτω φάκελο  
+cp default.conf ~/.codeblocks/
+{% endhighlight %}
+  
+2. Εάν το εγκαταστήσετε από το αποθετήριο flatpak, τότε ο φάκελος είναι διαφορετικός. Αποθηκεύστε το αρχείο default.conf στον φάκελο όπως βλέπετε παρακάτω:  
+  
+{% highlight ruby %}
+# Κρατήστε αντίγραφο ασφαλείας  
+cp ~/.var/app/org.codeblocks.codeblocks/config/codeblocks/default.conf ~/.var/app/org.codeblocks.codeblocks/config/codeblocks/default.conf.bak  
+  
+# Αντιγράψτε το αρχείο default.conf από τον φάκελο που το κατεβάσατε, στον παρακάτω φάκελο  
+cp default.conf ~/.var/app/org.codeblocks.codeblocks/config/codeblocks/
+{% endhighlight %}
+
+Τέλος, μετακινηθείτε στο **Settings->Editor->Syntax highlighting->Colour theme**. Ορίστε το στο επιθυμητό θέμα.  
+
 Αρχικό post:  
 [https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html](https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html)

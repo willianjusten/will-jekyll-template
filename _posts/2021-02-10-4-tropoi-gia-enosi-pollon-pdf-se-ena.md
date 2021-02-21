@@ -6,7 +6,7 @@ description: Έχετε συγκεντρώσει πολλά pdf και θέλε�
 tags:
 - pdf
 - merge
-- tip
+- tips
 categories:
 - PDF
 twitter_text: '4 τρόποι για να ενώσετε πολλά #pdf σε ένα μεγάλο'

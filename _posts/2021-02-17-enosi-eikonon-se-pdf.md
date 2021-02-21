@@ -9,7 +9,7 @@ tags:
 - εικόνα
 - συνένωση
 - merge
-- tip
+- tips
 categories:
 - PDF
 twitter_text: 'Ένωση πολλών εικόνων σε ένα #pdf'
