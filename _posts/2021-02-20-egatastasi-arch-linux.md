@@ -22,9 +22,9 @@ twitter_text: 'Εγκατάσταση και ρυθμίσεις Arch Linux'
   
 # ΕΓΚΑΤΑΣΤΑΣΗ ΣΥΣΤΗΜΑΤΟΣ  
   
-1. Καταρχήν, κατεβάστε το ISO από την ιστοσελίδα [https://www.archlinux.org/download/](https://www.archlinux.org/download/). Γράψτε το στο USB σας και κάντε boot με αυτό.  
+* Καταρχήν, κατεβάστε το ISO από την ιστοσελίδα [https://www.archlinux.org/download/](https://www.archlinux.org/download/). Γράψτε το στο USB σας και κάντε boot με αυτό.  
   
-2. Τώρα, πρέπει να κάνετε τα partition. Με την εντολή **cfdisk** κάνουμε partions στον δίσκο όπου θα εγκαταστήσουμε το Arch. Εάν δεν καταλαβαίνετε τι πρέπει να κάνετε, μπορείτε να πάρετε ένα δισκάκι Manjaro ή openSUSE ή Ubuntu κλπ να ανοίξετε το gparted και να κάνετε τις κατατμήσεις στον δίσκο σας (εάν είναι καινούργιος).  
+* Τώρα, πρέπει να κάνετε τα partition. Με την εντολή **cfdisk** κάνουμε partions στον δίσκο όπου θα εγκαταστήσουμε το Arch. Εάν δεν καταλαβαίνετε τι πρέπει να κάνετε, μπορείτε να πάρετε ένα δισκάκι Manjaro ή openSUSE ή Ubuntu κλπ να ανοίξετε το gparted και να κάνετε τις κατατμήσεις στον δίσκο σας (εάν είναι καινούργιος).  
   
 Ποια είναι τα προτεινόμενο σχήμα; Η λογική που ακολουθείται είναι σε περίπτωση ανάγκης επανεγκατάστασης, θα εγκαταστήσουμε ΜΟΝΟ το λειτουργικό σύστημα στην κατάτμηση **/** και το **/home** με τα αρχεία μας, ΔΕΝ θα το διαμορφώσουμε.  
   
@@ -49,7 +49,8 @@ twitter_text: 'Εγκατάσταση και ρυθμίσεις Arch Linux'
 
 
 {% highlight ruby %}
-mkfs.fat -F32 /dev/sda1 (είναι το /boot/efi) mkfs.ext4 /dev/sda2 (είναι το /)  
+mkfs.fat -F32 /dev/sda1 (είναι το /boot/efi) 
+mkfs.ext4 /dev/sda2 (είναι το /)  
 mkswap /dev/sda3  
 mkfs.ext4 /dev/sda4 (είναι το /home)  
 
@@ -61,7 +62,7 @@ mount /dev/sda4 /mnt/home
 
 Αν υποθέσουμε ότι δεν θέλετε να κάνετε format το /home σας (ή αν έχετε έναν άλλο δίσκο) και έστω ότι είναι το **/dev/sda4**, τότε **ΠΑΡΑΛΕΙΠΕΤΕ** την εντολή *mkfs.ext4 /dev/sda4*. Να έχετε υπόψιν σας ότι πρέπει να χρησιμοποιήσετε τον ίδιο χρήστη και συνθηματικό (θα δείτε παρακάτω πως δημιουργείται).
 
-3. Επιλέξτε μόνο τα κοντινά mirrors μπαίνοντας στο αρχείο mirrorlist, διαγράφοντας τα υπόλοιπα (γρήγορη διαγραφή ολόκληρης σειράς με Ctrl+K). Αυτό θα επιταχύνει την διαδικασία της εγκατάστασης.
+* Επιλέξτε μόνο τα κοντινά mirrors μπαίνοντας στο αρχείο mirrorlist, διαγράφοντας τα υπόλοιπα (γρήγορη διαγραφή ολόκληρης σειράς με Ctrl+K). Αυτό θα επιταχύνει την διαδικασία της εγκατάστασης.
 
 {% highlight ruby %}
 nano /etc/pacman.d/mirrorlist
@@ -97,18 +98,18 @@ pacman -S reflector
 Και δώστε την παρακάτω εντολή ώστε να αποθηκευτεί η σειρά με τα πιο γρήγορα mirrors.
 
 {% highlight ruby %}
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak #Δημιουργία αντιγράφου ασφαλείας
-
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak #Δημιουργία αντιγράφου ασφαλείας  
+  
 reflector --verbose -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
 {% endhighlight %}
 
-4. Εγκατασταση βασικού συστήματος.
+* Εγκατασταση βασικού συστήματος.
 
 {% highlight ruby %}
 pacstrap /mnt base base-devel linux linux-firmware nano dialog wpa_supplicant sudo reflector wget curl
 {% endhighlight %}
 
-5. Δημιουργία του fstab.
+* Δημιουργία του fstab.
 
 {% highlight ruby %}
 genfstab -U -p /mnt >> /mnt/etc/fstab
@@ -120,13 +121,13 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
 {% endhighlight %}
 
-6. Μπείτε ως chroot για ρυθμίσεις συστήματος.
+* Μπείτε ως chroot για ρυθμίσεις συστήματος.
 
 {% highlight ruby %}
 arch-chroot /mnt
 {% endhighlight %}
 
-7. Μέσα στο hostname γράφουμε το όνομα που θέλουμε να έχει ο υπολογιστής μας.
+* Μέσα στο hostname γράφουμε το όνομα που θέλουμε να έχει ο υπολογιστής μας.
 
 {% highlight ruby %}
 nano /etc/hostname
@@ -138,7 +139,7 @@ nano /etc/hostname
 echo "mypc" > /etc/hostname
 {% endhighlight %}
 
-8. Καθορίζουμε το timezone.
+* Καθορίζουμε το timezone.
 
 {% highlight ruby %}
 ln -s /usr/share/zoneinfo/Europe/Athens /etc/localtime
@@ -150,7 +151,7 @@ ln -s /usr/share/zoneinfo/Europe/Athens /etc/localtime
 hwclock --systohc --utc
 {% endhighlight %}
 
-9. Εδώ αν το σύστημα θέλουμε να ειναι GR διάγραφουμε το # μπροστά απο το **el_GR.UTF-8**. Προτιμήστε και την **en_US.UTF-8**.
+* Εδώ αν το σύστημα θέλουμε να ειναι GR διάγραφουμε το # μπροστά απο το **el_GR.UTF-8**. Προτιμήστε και την **en_US.UTF-8**.
 
 {% highlight ruby %}
 nano /etc/locale.gen
@@ -162,7 +163,7 @@ nano /etc/locale.gen
 echo -e "en_US.UTF-8 UTF-8\nel_GR.UTF-8 UTF-8" >> /etc/locale.gen
 {% endhighlight %}
 
-10. Μέσα στον παρακάτω προορισμό γράφουμε τη γλώσσα που επιλέξαμε και το localtime.
+* Μέσα στον παρακάτω προορισμό γράφουμε τη γλώσσα που επιλέξαμε και το localtime.
 
 {% highlight ruby %}
 nano /etc/locale.conf
@@ -182,13 +183,13 @@ LC_TIME="el_GR.UTF-8"
 echo -e 'LANG="en_US.UTF-8"\nLC_MESSAGES="C"\nLC_TIME="el_GR.UTF-8"' >> /etc/locale.conf
 {% endhighlight %}
 
-11. Δημιουργούμε το locale.
+* Δημιουργούμε το locale.
 
 {% highlight ruby %}
 locale-gen
 {% endhighlight %}
 
-12. Αν και το προσθέσαμε νωρίτερα, ήταν για την live εγκατάσταση. Τώρα πρέπει να το ενεργοποιήσουμε και στο εγκατεστημένο σύστημα. Επομένως ανοίξτε το αρχείο **pacman.conf** (*nano /etc/pacman.conf*) και αφαιρέστε τα σχόλια:
+* Αν και το προσθέσαμε νωρίτερα, ήταν για την live εγκατάσταση. Τώρα πρέπει να το ενεργοποιήσουμε και στο εγκατεστημένο σύστημα. Επομένως ανοίξτε το αρχείο **pacman.conf** (*nano /etc/pacman.conf*) και αφαιρέστε τα σχόλια:
 
 {% highlight ruby %}
 [multilib]
@@ -201,13 +202,13 @@ Include = /etc/pacman.d/mirrorlist
 pacman -Syu
 {% endhighlight %}
 
-13. Ρύθμιση Initramfs με την εντολή.
+* Ρύθμιση Initramfs με την εντολή.
 
 {% highlight ruby %}
 mkinitcpio -P
 {% endhighlight %}
 
-14. Ρυθμίζουμε το Grub bootloader.
+* Ρυθμίζουμε το Grub bootloader.
 
 {% highlight ruby %}
 pacman -S grub efibootmgr dosfstools os-prober mtools
@@ -235,13 +236,13 @@ grub-install /dev/sda --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 {% endhighlight %}
 
-15. Αλλάζουμε το συνθηματικό του root.
+* Αλλάζουμε το συνθηματικό του root.
 
 {% highlight ruby %}
 passwd root
 {% endhighlight %}
 
-16. Δημιουργήστε χρήστη (statharas) με δικαιώματα διαχειριστή και να αλλάξει τον κωδικό με την πρώτη είσοδο.
+* Δημιουργήστε χρήστη (statharas) με δικαιώματα διαχειριστή και να αλλάξει τον κωδικό με την πρώτη είσοδο.
 
 {% highlight ruby %}
 useradd -m -g users -G wheel,audio,video,optical,storage,lp,network,uucp -s /bin/bash statharas
@@ -268,7 +269,7 @@ perl -i -pe 's/# (%wheel ALL=\(ALL\) ALL)/$1/' /etc/sudoers
 
 # ΠΡΩΤΕΣ ΡΥΘΜΙΣΕΙΣ-ΕΓΚΑΤΑΣΤΑΣΗ ΓΡΑΦΙΚΟΥ
 
-1. Εγκατάσταση γραφικών-κάρτας γραφικών.
+* Εγκατάσταση γραφικών-κάρτας γραφικών.
 
 **X install**
 
@@ -316,19 +317,19 @@ pacman -S xf86-video-intel
 
 Σημείωση: Το πακέτο **xf86-video-intel** είναι για chipsets *i810/i830/i9xx* για το 740 υπάρχει το **xf86-video-i740**.
 
-2. Εγκατάσταση ήχου.
+* Εγκατάσταση ήχου.
 
 {% highlight ruby %}
 pacman -S alsa-utils alsa-oss pulseaudio pulseaudio-alsa
 {% endhighlight %}
 
-3. Εγκατάσταση ποντικιού κλπ.
+* Εγκατάσταση ποντικιού κλπ.
 
 {% highlight ruby %}
 pacman -S xf86-input-synaptics xf86-input-evdev
 {% endhighlight %}
 
-4. Εγκατάσταση Gnome desktop:
+* Εγκατάσταση Gnome desktop:
 
 {% highlight ruby %}
 pacman -S gdm gnome gnome-extra
@@ -347,13 +348,13 @@ systemctl enable NetworkManager.service
 systemctl enable sshd
 {% endhighlight %}
 
-5. Εγκατάσταση headers.
+* Εγκατάσταση headers.
 
 {% highlight ruby %}
 pacman -S linux-headers
 {% endhighlight %}
 
-6. Αποθήκευση του .bashrc από το github.
+* Αποθήκευση του .bashrc από το github.
 
 {% highlight ruby %}
 wget https://raw.githubusercontent.com/iosifidis/dot-files/master/Arch/.bashrc -O .bachrc
@@ -369,7 +370,7 @@ shutdown now
 
 # ΡΥΘΜΙΣΕΙΣ-ΕΓΚΑΤΑΣΤΑΣΗ ΠΡΟΓΡΑΜΜΑΤΩΝ
 
-1. Εγκατάσταση yay για το AUR.
+* Εγκατάσταση yay για το AUR.
 
 Στον κατάλογό σας, εκτελέστε τις εντολές:
 
@@ -379,13 +380,13 @@ cd yay
 makepkg -si
 {% endhighlight %}
 
-2. Εγκατάσταση fonts κλπ.
+* Εγκατάσταση fonts κλπ.
 
 {% highlight ruby %}
 pacman -S font-bh-ttf ttf-dejavu ttf-bitstream-vera
 {% endhighlight %}
 
-3. Εγκατάσταση [LibreOffice](https://wiki.archlinux.org/index.php/LibreOffice).
+* Εγκατάσταση [LibreOffice](https://wiki.archlinux.org/index.php/LibreOffice).
 
 {% highlight ruby %}
 pacman -S libreoffice-still libreoffice-still-sdk libreoffice-still-el jdk7-openjdk jre7-openjdk
@@ -397,20 +398,29 @@ pacman -S libreoffice-still libreoffice-still-sdk libreoffice-still-el jdk7-open
 pacman -S libreoffice-fresh libreoffice-fresh-sdk libreoffice-fresh-el jdk7-openjdk jre7-openjdk
 {% endhighlight %}
 
-4. Εγκατάσταση διαφόρων προγραμμάτων που χρησιμοποιώ προσωπικά. Σβήστε ότι δεν χρειάζεστε.
+* Εγκατάσταση διαφόρων προγραμμάτων που χρησιμοποιώ προσωπικά. Σβήστε ότι δεν χρειάζεστε.
 
 {% highlight ruby %}
-pacman -S cups transmission-gtk subdownloader subtitleeditor gnome-subtitles audacity audacious audacious-plugins smplayer smtube mplayer asunder openshot devede mencoder sound-juicer youtube-dl easytag inkscape gimp gimp-help-el aspell-el gutenprint gphoto2 numlockx mc davfs2 aria2 filezilla firefox firefox-i18n-el thunderbird thunderbird-i18n-el sox subversion meld poedit gtranslator acpid htop glances lsof powertop testdisk deja-dup libdvdcss ogmtools xchm gparted stardict gnome-common alacarte seahorse virtualbox virtualbox-host-dkms net-tools bchunk gst-libav simplescreenrecorder docker docker-compose hplip pdfcrack pkgfile telegram-desktop poppler pdftk texlive-latexextra
+pacman -S cups transmission-gtk subdownloader subtitleeditor gnome-subtitles audacity audacious \
+audacious-plugins smplayer smtube mplayer asunder openshot devede mencoder sound-juicer youtube-dl \
+easytag inkscape gimp gimp-help-el aspell-el gutenprint gphoto2 numlockx mc davfs2 aria2 filezilla \
+firefox firefox-i18n-el thunderbird thunderbird-i18n-el sox subversion meld poedit gtranslator acpid \
+htop glances lsof powertop testdisk deja-dup libdvdcss ogmtools xchm gparted stardict gnome-common \
+alacarte seahorse virtualbox virtualbox-host-dkms net-tools bchunk gst-libav simplescreenrecorder \
+docker docker-compose hplip pdfcrack pkgfile telegram-desktop poppler pdftk texlive-latexextra
 {% endhighlight %}
 
-5. Προγράμματα από το AUR.
+* Προγράμματα από το AUR.
 Εγκαταστήσαμε το yay για το AUR (εσείς επιλέξτε όποιον AUR helper θέλετε από [εδώ](https://wiki.archlinux.org/index.php/AUR_helpers)) και στη συνέχεια εγκαταστήστε τα παρακάτω:
 
 {% highlight ruby %}
-**AUR HELPER** -S viber smartgit onlyoffice-bin signal-desktop-bin brave-bin skypeforlinux-stable-bin teamviewer dropbox nautilus-dropbox menulibre pdfsam luckybackup imagewriter multisystem ubuntu-themes virtualbox-ext-oracle humanity-icon-theme yandex-disk unetbootin repacman gconf-editor hplip megatools megasync gtk-theme-adwaita-tweaks pacaur google-chrome --noconfirm
+**AUR HELPER** -S viber smartgit onlyoffice-bin signal-desktop-bin brave-bin skypeforlinux-stable-bin \
+teamviewer dropbox nautilus-dropbox menulibre pdfsam luckybackup imagewriter multisystem ubuntu-themes \
+virtualbox-ext-oracle humanity-icon-theme yandex-disk unetbootin repacman gconf-editor megatools megasync \
+gtk-theme-adwaita-tweaks pacaur google-chrome --noconfirm
 {% endhighlight %}
 
-* Το --noconfirm το χρησιμοποιείτε για να μην σας ρωτάει συνέχεια.
+- Το --noconfirm το χρησιμοποιείτε για να μην σας ρωτάει συνέχεια.
 
 Όταν τελειώσει η εγκατάσταση των παραπάνω, όσον αφορά το teamviewer, πρέπει να δώσετε τις εντολές:
 
