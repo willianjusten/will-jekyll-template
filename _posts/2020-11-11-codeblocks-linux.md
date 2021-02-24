@@ -11,6 +11,7 @@ tags:
 - arch linux
 - linux mint
 - εγκατάσταση
+- ρυθμίσεις
 - γλώσσα προγραμματισμού C
 categories:
 - Code::Blocks
@@ -117,7 +118,7 @@ Mετακινηθείτε στο **Settings->Editor->Syntax highlighting->Colour
 Τέλος, για να φαίνονται λίγο μεταλύτερα τα γράμματα στο τερματικό, μετακινηθείτε το **Settings>Environment** και στο *Terminal to launch console programs* και αλλάξτε το στο παρακάτω:  
 
 {% highlight ruby %}
-xterm -fa 'Monospace' -fs 12 -geometry 132x50 -T $TITLE -e
+xterm -fa 'Monospace' -fs 12 -bg black -fg white -geometry 132x50 -T $TITLE -e
 {% endhighlight %}
   
 Θα μεγαλώσουν τα γράμματα (αλλάξτε το μέγεθος 12) αλλά και το παράθυρο.
