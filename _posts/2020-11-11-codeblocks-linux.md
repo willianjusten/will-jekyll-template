@@ -112,7 +112,15 @@ cp ~/.var/app/org.codeblocks.codeblocks/config/codeblocks/default.conf ~/.var/ap
 cp default.conf ~/.var/app/org.codeblocks.codeblocks/config/codeblocks/
 {% endhighlight %}
 
-Τέλος, μετακινηθείτε στο **Settings->Editor->Syntax highlighting->Colour theme**. Ορίστε το στο επιθυμητό θέμα.  
+Mετακινηθείτε στο **Settings->Editor->Syntax highlighting->Colour theme**. Ορίστε το στο επιθυμητό θέμα.  
 
+Τέλος, για να φαίνονται λίγο μεταλύτερα τα γράμματα στο τερματικό, μετακινηθείτε το **Settings>Environment** και στο *Terminal to launch console programs* και αλλάξτε το στο παρακάτω:  
+
+{% highlight ruby %}
+xterm -fa 'Monospace' -fs 12 -geometry 132x50 -T $TITLE -e
+{% endhighlight %}
+  
+Θα μεγαλώσουν τα γράμματα (αλλάξτε το μέγεθος 12) αλλά και το παράθυρο.
+  
 Αρχικό post:  
 [https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html](https://eiosifidis.blogspot.com/2020/11/codeblocks-gnulinux.html)
