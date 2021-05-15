@@ -25,7 +25,7 @@ categories:
 twitter_text: 'Πλήρης οδηγός εγκατάστασης και χρήσης #XAMPP σε #Linux'
 ---
 
-![XAMPP logo](/post_images/xampp/XAMPP_logo.png "XAMPP logo")
+![XAMPP logo](/post_images/xampp/XAMPP_logo.png "XAMPP logo"){:height="100px" width="100px"}
 
 
 ## Τι είναι το XAMPP  
@@ -60,30 +60,30 @@ sudo ./xampp-linux-x64-8.0.5-0-installer.run
 
 * Πατήστε **Next** και περιμένετε:  
 
-![Εγκατάσταση XAMPP](/post_images/xampp/2015-05-15/xampp-install-1.png "Εγκατάσταση XAMPP")
+![Εγκατάσταση XAMPP](/post_images/xampp/2021-05-15/xampp-install-1.png "Εγκατάσταση XAMPP")
 
-![Εγκατάσταση XAMPP](/post_images/xampp/2015-05-15/xampp-install-2.png "Εγκατάσταση XAMPP")
+![Εγκατάσταση XAMPP](/post_images/xampp/2021-05-15/xampp-install-2.png "Εγκατάσταση XAMPP")
 
 * Όταν τελειώσει η εγκατάσταση, πατήστε το κουμπί **Finish**.  
 
-![Τερματισμός εγκατάστασης XAMPP](/post_images/xampp/2015-05-15/xampp-install-finish.png "Τερματισμός εγκατάστασης XAMPP")
+![Τερματισμός εγκατάστασης XAMPP](/post_images/xampp/2021-05-15/xampp-install-finish.png "Τερματισμός εγκατάστασης XAMPP")
 
 
 Αυτό θα έχει ως αποτέλεσμα να ανοίξει το xampp. Αν βλεπετε την παρακάτω εικόνα, έχει ολοκηρωθεί επιτυχώς η εγκατάσταση.  
 
-![XAMPP Manager](/post_images/xampp/2015-05-15/xampp-manager.png "XAMPP Manager")
+![XAMPP Manager](/post_images/xampp/2021-05-15/xampp-manager.png "XAMPP Manager")
 
 * Αφού ανοίξει το xampp, καλό είναι να δοκιμάσετε εάν δουλεύει. Πως θα το κάνετε αυτό; Μετακινηθείτε στην καρτέλα **Manage Servers** όπου θα σας εμφανίσει τους servers που πρέπει να ενεργοποιήσετε.
 
-![Διακομιστές XAMPP απενεργοποιημένοι](/post_images/xampp/2015-05-15/xampp-servers-disabled.png "Διακομιστές XAMPP απενεργοποιημένοι")
+![Διακομιστές XAMPP απενεργοποιημένοι](/post_images/xampp/2021-05-15/xampp-servers-disabled.png "Διακομιστές XAMPP απενεργοποιημένοι")
 
 Επιλέξτε **Apache Web Server** και **MySQL Database** και πατήστε το **Start**. Θα πρέπει να βλέπετε την παρακάτω εικόνα: 
 
-![Διακομιστές XAMPP απενεργοποιημένοι](/post_images/xampp/2015-05-15/xampp-servers-enabled.png "Διακομιστές XAMPP απενεργοποιημένοι")
+![Διακομιστές XAMPP απενεργοποιημένοι](/post_images/xampp/2021-05-15/xampp-servers-enabled.png "Διακομιστές XAMPP απενεργοποιημένοι")
 
 * Αφού είναι ενεργά, ανοίξτε τον browser και γράψτε **localhost**. Θα πρέπει να βλέπετε την παρακάτω σελίδα: 
 
-![XAMPP localhost](/post_images/xampp/2015-05-15/xampp-localhost.png "XAMPP localhost")
+![XAMPP localhost](/post_images/xampp/2021-05-15/xampp-localhost.png "XAMPP localhost")
 
 Για να κλείσετε το xampp, πρέπει να κλείσετε τους servers (επιλέξτε τους **Apache Web Server** και **MySQL Database** και πατήστε το Stop). 
 
@@ -94,9 +94,9 @@ sudo ./xampp-linux-x64-8.0.5-0-installer.run
 **1. Τερματικό:** Μπορείτε να εκτελείτε τις εντολές κάθε φορά που ανοίγετε το xampp ή απλά να τις προσθέσετε ως alias στο .bashrc.  
 
 {% highlight ruby %}
-**ΕΚΚΙΝΗΣΗ:** sudo /opt/lampp/xampp start  
+ΕΚΚΙΝΗΣΗ: sudo /opt/lampp/xampp start  
 
-**ΤΕΡΜΑΤΙΣΜΟΣ:** sudo /opt/lampp/xampp stop
+ΤΕΡΜΑΤΙΣΜΟΣ: sudo /opt/lampp/xampp stop
 {% endhighlight %}
 
 **2. Τερματικό + Γραφικό:** Εδώ ανοίγετε το τερματικό και γράφετε την παρακάτω εντολή:
@@ -155,17 +155,17 @@ sudo chown -R daemon /opt/lampp/htdocs/wordpress
 
 * Δημιουργήστε μια βάση δεδομένων. Αφού έχετε εκκινήσει το XAMPP, πρέπει να μετακινηθείτε στην διεύθυνση **http://localhost/phpmyadmin** και πατήστε στην καρτέλα **Βάσεις δεδομένων**. Πχ ονομάστε την wordpress (τι πρωτότυπο) και ως κωδικοποίηση (το ονομάζει Σύνθεση ή Coalition) επιλέξτε είτε **utf8_general_ci** είτε **utf8_unicode_ci**, όπως φαίνεται στην εικόνα.  
 
-![XAMPP δημιουργία βάσης δεδομένων](/post_images/xampp/2015-05-15/xampp-database.png "XAMPP δημιουργία βάσης δεδομένων")
+![XAMPP δημιουργία βάσης δεδομένων](/post_images/xampp/2021-05-15/xampp-database.png "XAMPP δημιουργία βάσης δεδομένων")
 
 * Εγκαταστήστε το wordpress (http://localhost/wordpress). Στο σημείο που θα χρειαστεί να εισάγετε τα δεδομένα της βάσης, θα χρησιμοποιήσετε τα παρακάτω.  
 
 {% highlight ruby %}
-**Database** – wordpress  
-**Username** – root  
-**Password** – (αφήστε το κενό)
+Database – wordpress  
+Username – root  
+Password – (αφήστε το κενό)
 {% endhighlight %}
 
-![Εγκατάσταση wordpress, βάση δεδομένων](/post_images/xampp/2015-05-15/editing-database.jpg "Εγκατάσταση wordpress, βάση δεδομένων")
+![Εγκατάσταση wordpress, βάση δεδομένων](/post_images/xampp/2021-05-15/editing-database.jpg "Εγκατάσταση wordpress, βάση δεδομένων")
 
 Στις τελευταίες εκδόσεις, προτού ξεκινήσετε την εγκατάσταση του wordpress, πρέπει να επεξεργαστείτε ένα αρχείο. Αυτό είναι το **wp-config.php** στο οποίο εισάγετε το όνομα της βάσης, τον χρήστη και το συνθηματικό. Οπότε δεν θα χρειαστεί να δείτε την παραπάνω οθόνη.  
 
