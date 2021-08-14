@@ -38,7 +38,7 @@ twitter_text: 'Εγκατάσταση @GitKraken, ότι πιο εύκολο γ�
 
 Για Ubuntu LTS 16.04+, Debian 9+
 
-[![Download](/post_images/download.png "Download"){:height="70px" width="120px"}](https://www.gitkraken.com/download/linux-deb)
+[![Download](/post_images/download.png "Download"){:height="70px" width="150px"}](https://www.gitkraken.com/download/linux-deb)
 
 
 Για RHEL 7+, CentOS 7+, Fedora 31+
