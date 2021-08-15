@@ -151,7 +151,8 @@ de.haeckerfelix.Fragments im.riot.Riot org.codeblocks.codeblocks org.gtk.Gtk3the
 org.kde.KStyle.Adwaita org.kde.kdenlive org.onlyoffice.desktopeditors org.signal.Signal \
 org.telegram.desktop org.x.Warpinator us.zoom.Zoom com.github.xournalpp.xournalpp com.obsproject.Studio \
 com.uploadedlobster.peek org.wireshark.Wireshark com.stremio.Stremio dev.alextren.Spot \
-com.spotify.Client org.flameshot.Flameshot io.github.seadve.Kooha org.shotcut.Shotcut \ org.olivevideoeditor.Olive com.getferdi.Ferdi io.dbeaver.DBeaverCommunity \
+com.spotify.Client org.flameshot.Flameshot io.github.seadve.Kooha org.shotcut.Shotcut \ 
+org.olivevideoeditor.Olive com.getferdi.Ferdi io.dbeaver.DBeaverCommunity \
 net.codeindustry.MasterPDFEditor org.openshot.OpenShot org.raspberrypi.rpi-imager org.eclipse.Java
 {% endhighlight %}
 
