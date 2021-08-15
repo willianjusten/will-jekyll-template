@@ -146,7 +146,8 @@ Eφαρμογές που εγκαθιστώ:
 
 {% highlight ruby %}
 flatpak install com.viber.Viber chat.rocket.RocketChat com.anydesk.Anydesk com.axosoft.GitKraken \
-com.github.junrrein.PDFSlicer com.jetbrains.IntelliJ-IDEA-Community com.microsoft.Teams com.slack.Slack \ de.haeckerfelix.Fragments im.riot.Riot org.codeblocks.codeblocks org.gtk.Gtk3theme.Yaru-dark \
+com.github.junrrein.PDFSlicer com.jetbrains.IntelliJ-IDEA-Community com.microsoft.Teams com.slack.Slack \
+de.haeckerfelix.Fragments im.riot.Riot org.codeblocks.codeblocks org.gtk.Gtk3theme.Yaru-dark \
 org.kde.KStyle.Adwaita org.kde.kdenlive org.onlyoffice.desktopeditors org.signal.Signal \
 org.telegram.desktop org.x.Warpinator us.zoom.Zoom com.github.xournalpp.xournalpp com.obsproject.Studio \
 com.uploadedlobster.peek org.wireshark.Wireshark com.stremio.Stremio dev.alextren.Spot \
@@ -173,7 +174,9 @@ sudo systemctl disable teamviewerd
 
 * [SmartGithg](https://www.syntevo.com/smartgit/download/):   
 
-εναλλακτικά εγκατάσταση από το flatpak με την εντολή **flatpak install com.syntevo.SmartGit**. Όμως αντί αυτού, χρησιμοποιώ το GitKraken.  
+εναλλακτικά εγκατάσταση από το flatpak με την εντολή 
+**flatpak install com.syntevo.SmartGit**.  
+Όμως αντί αυτού, χρησιμοποιώ το GitKraken.  
  
 * [Virtualbox](https://www.virtualbox.org/wiki/Linux_Downloads):   
 
@@ -181,7 +184,9 @@ sudo systemctl disable teamviewerd
 
 * [Chromimum](http://software.opensuse.org/package/chromium):   
 
-εναλλακτικά εγκατάσταση από το flatpak με την εντολή **flatpak install org.chromium.Chromium** ή εγκατάσταση του [Chrome](https://tools.google.com/chrome)  
+εναλλακτικά εγκατάσταση από το flatpak με την εντολή 
+**flatpak install org.chromium.Chromium** 
+ή εγκατάσταση του [Chrome](https://tools.google.com/chrome)  
 
 * [Yandex.disk](https://disk.yandex.com/download/?referer=webinterface):  
 
