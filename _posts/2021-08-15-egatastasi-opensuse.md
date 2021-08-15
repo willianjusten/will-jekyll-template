@@ -146,12 +146,11 @@ Eφαρμογές που εγκαθιστώ:
 
 {% highlight ruby %}
 flatpak install com.viber.Viber chat.rocket.RocketChat com.anydesk.Anydesk com.axosoft.GitKraken \
-com.github.junrrein.PDFSlicer com.jetbrains.IntelliJ-IDEA-Community com.microsoft.Teams \
-com.slack.Slack de.haeckerfelix.Fragments im.riot.Riot org.codeblocks.codeblocks org.gtk.Gtk3theme.Yaru-dark \
-org.kde.KStyle.Adwaita org.kde.kdenlive org.onlyoffice.desktopeditors org.signal.Signal org.telegram.desktop \
-org.x.Warpinator us.zoom.Zoom com.github.xournalpp.xournalpp com.obsproject.Studio com.uploadedlobster.peek \
-org.wireshark.Wireshark com.stremio.Stremio dev.alextren.Spot com.spotify.Client org.flameshot.Flameshot \
-io.github.seadve.Kooha org.shotcut.Shotcut org.olivevideoeditor.Olive com.getferdi.Ferdi io.dbeaver.DBeaverCommunity \
+com.github.junrrein.PDFSlicer com.jetbrains.IntelliJ-IDEA-Community com.microsoft.Teams com.slack.Slack \ de.haeckerfelix.Fragments im.riot.Riot org.codeblocks.codeblocks org.gtk.Gtk3theme.Yaru-dark \
+org.kde.KStyle.Adwaita org.kde.kdenlive org.onlyoffice.desktopeditors org.signal.Signal \
+org.telegram.desktop org.x.Warpinator us.zoom.Zoom com.github.xournalpp.xournalpp com.obsproject.Studio \
+com.uploadedlobster.peek org.wireshark.Wireshark com.stremio.Stremio dev.alextren.Spot \
+com.spotify.Client org.flameshot.Flameshot io.github.seadve.Kooha org.shotcut.Shotcut \ org.olivevideoeditor.Olive com.getferdi.Ferdi io.dbeaver.DBeaverCommunity \
 net.codeindustry.MasterPDFEditor org.openshot.OpenShot org.raspberrypi.rpi-imager org.eclipse.Java
 {% endhighlight %}
 
@@ -194,8 +193,8 @@ sudo systemctl disable teamviewerd
 sudo zypper install audacity mc gtranslator poedit gnome-subtitles gparted meld git hplip \
 youtube-dl smplayer easytag gnome-common dconf-editor gcc aria2 imagewriter gnome-boxes make \
 sox htop megatools filezilla gnome-gmail-notifier photorec testdisk powertop typelib-1_0-Vte-2.91 \
-alacare nano hexchat libfuse2 simplescreenrecorder epiphany vlc alpine menulibre live-fat-stick live-grub-stick \
-live-usb-gui openjpeg openjpeg2 gimp-save-for-web aspell-el python3-tk
+alacare nano hexchat libfuse2 simplescreenrecorder epiphany vlc alpine menulibre live-fat-stick \
+live-grub-stick live-usb-gui openjpeg openjpeg2 gimp-save-for-web aspell-el python3-tk
 {% endhighlight %}
 
 
