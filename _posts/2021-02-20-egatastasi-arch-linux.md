@@ -34,9 +34,11 @@ twitter_text: 'Εγκατάσταση και ρυθμίσεις Arch Linux'
 * **/home** : ο υπόλοιπος χώρος  
 
 **- Εαν έχετε UEFI με GPT τότε:**  
-* **/boot/efi** : η κατάτμηση αυτή θα έχει μέγεθος 512ΜΒ και ουσιαστικά δεν χρειάζετε να θέσετε εσείς το σημείο προσάρτησης.  
+* **/boot/efi** : η κατάτμηση αυτή θα έχει μέγεθος 512ΜΒ και ουσιαστικά δεν χρειάζετε να θέσετε εσείς το σημείο προσάρτησης.   
   
 ![EFI system](/post_images/arch_linux/arch-linux-EFI-system.png  "EFI system")
+
+* Εάν κάνετε εγκατάσταση **dual boot** με windows, καλό είναι να έχετε εγκατεστημένα πρώτα τα windows. Δημιουργήσετε ένα partition (μέσα από τα windows με το εργαλείο **Disk Management** (Shrink the volume)). Κατά την εγκατάσταση, θα έχετε 4 partition από τα windows και ένα άδειο. ΣΗΜΑΝΤΙΚΟ ότι θα χρησιμοποιήσετε το EFI SYSTEM partition των windows κατά την εγκατάσταση του Arch Linux. Δημιουργήστε ένα partition (**mkdir /mnt/efi**) και στη συνέχεια προσαρτήστε το partition, έστω /dev/sda2 (**mount /dev/sda2 /mnt/efi**). ΠΡΟΣΟΧΗ στην ρύθμιση του GRUB, να δώσετε σωστή διαδρομή του EFI System partition (--efi-directory=/efi).
   
 * **/** : το οποίο θα είναι περίπου 40GB
 * **swap** : το οποίο πρέπει να είναι διπλάσιο της φυσικής μνήμης (εάν έχετε από 16GB και πάνω, τότε 8GB swap είναι μια χαρά)
@@ -443,4 +445,21 @@ xdg-mime default org.gnome.Nautilus.desktop inode/directory
 {% endhighlight %}
 
 Μπορείτε να ρίξετε μια ματιά στις γενικές συστάσεις καθώς και την λίστα προγραμμάτων.
-Εναλλακτικά μπορείτε να χρησιμοποιήσετε και liveDVD άλλης διανομής και να εγκαταστήσετε Arch Linux. Δείτε πως γίνεται κάτι τέτοιο στην ανάρτηση: [Εγκατάσταση Arch Linux με την χρήση liveDVD άλλης διανομής (με χρήση του bootstrap)](http://eiosifidis.blogspot.gr/2015/05/arch-linux-bootstrap.html)
+
+* Εναλλακτικά μπορείτε να χρησιμοποιήσετε και liveDVD άλλης διανομής και να εγκαταστήσετε Arch Linux. Δείτε πως γίνεται κάτι τέτοιο στην ανάρτηση: [Εγκατάσταση Arch Linux με την χρήση liveDVD άλλης διανομής (με χρήση του bootstrap)](http://eiosifidis.blogspot.gr/2015/05/arch-linux-bootstrap.html)  
+
+* Τέλος μπορείτε να χρησιμοποιήσετε ένα σκριπτάκι [Archon](https://github.com/CerebruxCode/Archon) που φτιάχτηκε από Έλληνες. Αφού έχετε ανοίξει με το liveISO τον υπολογιστή σας, δώστε την εντολή:
+
+{% highlight ruby %}
+curl -sL https://git.io/archon | tar xz && cd Archon-master
+{% endhighlight %}
+
+και για να το εκτελέσετε και να ξεκινήσει η εγκατάσταση:
+
+{% highlight ruby %}
+sh archon.sh
+{% endhighlight %}
+
+και ακολουθείτε τις οδηγίες.
+
+Εάν έχετε απορίες, μπορείτε να δείτε το βίντεο [Archon: Arch Linux KISS greek installer](https://youtu.be/xzsF8TsHejc)
