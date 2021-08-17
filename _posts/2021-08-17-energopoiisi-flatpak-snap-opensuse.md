@@ -16,7 +16,7 @@ categories:
 twitter_text: 'Εγκατάσταση και ενεργοποίηση του flatpak και snap σε openSUSE Leap/Tumbleweed'
 ---
 
-![openSUSE](/post_images/opensuse/small-lamp.png "openSUSE"){:height="200px" width="200px"}
+![openSUSE](/post_images/opensuse/small-lamp.jpg "openSUSE"){:height="200px" width="200px"}
 
 Στο παρόν άρθρο θα δούμε πως μπορεί κάποιος να εγκαταστήσει το [flatpak](https://flatpak.org/) και το [snap](https://snapcraft.io/) έτσι ώστε να κάνει εγκατάσταση προγραμμάτων από αυτά τα αποθετήρια. Προσωπικά προτιμώ το flatpak.
 
