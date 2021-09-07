@@ -15,7 +15,7 @@ categories:
 twitter_text: 'Ένωση πολλών εικόνων σε ένα #pdf'
 ---
 
-![ImageMagic](/post_images/imagemagic/imagemagic.png "ImageMagic")
+![ImageMagic](/post_images/misc/imagemagic.png "ImageMagic")
 
 # Η ΑΝΑΓΚΗ
 

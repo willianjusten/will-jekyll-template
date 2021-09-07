@@ -12,7 +12,7 @@ categories:
 twitter_text: '4 τρόποι για να ενώσετε πολλά #pdf σε ένα μεγάλο'
 ---
 
-![PDF](/post_images/pdf/pdf.png "PDF")
+![PDF](/post_images/misc/pdf.png "PDF")
 
 # ΤΟ ΠΡΟΒΛΗΜΑ  
 
