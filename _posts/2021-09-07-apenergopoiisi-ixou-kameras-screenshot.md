@@ -16,7 +16,7 @@ categories:
 twitter_text: 'Απενεργοποίηση ήχου κάμερας κατά την λήψη screenshot'
 ---
 
-![Camera](/post_images/misc/camera.png "Camera"){:height="200px" width="200px"}
+![Camera](/post_images/misc/camera.png "Camera"){:height="200px" width="330px"}
 
 
 # ΠΡΟΒΛΗΜΑ 
