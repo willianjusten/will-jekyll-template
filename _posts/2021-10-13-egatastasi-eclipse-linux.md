@@ -205,5 +205,5 @@ sudo apt install oracle-java16-set-default
 
 Μοιράσου την γνώση με κάποιον που δυσκολεύεται να εγκαταστήσει το **Eclipse**.
 
-Αρχική δημοσίευση:
+Αρχική δημοσίευση:  
 [https://eiosifidis.blogspot.com/2021/09/egatastasi-eclipse-linux.html](https://eiosifidis.blogspot.com/2021/09/egatastasi-eclipse-linux.html)
