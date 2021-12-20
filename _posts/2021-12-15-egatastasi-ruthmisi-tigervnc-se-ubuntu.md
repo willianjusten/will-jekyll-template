@@ -24,7 +24,7 @@ categories:
 twitter_text: 'Εγκατάσταση και ρύθμιση διακομιστή TigerVNC σε Ubuntu'
 ---
 
-![TigerVNC logo](/post_images/tigervnc/TigerVNC_logo.png "TigerVNC logo")
+![TigerVNC logo](/post_images/tigervnc/TigerVNC_logo.png "TigerVNC logo"){:height="200px" width="200px"}
 
 
 # ΠΡΟΒΛΗΜΑ
