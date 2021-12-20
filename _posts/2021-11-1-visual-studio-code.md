@@ -1,26 +1,30 @@
 ---
 layout: post
 title: "ΠΛΗΡΗΣ ΟΔΗΓΟΣ εγκατάστασης και ρυθμίσεων του Visual Studio Code σε Linux, για τις γλώσσες python, C και java"
-date: 2021-12-15 12:00:00
-description: Πως να εγκαταστήσετε και να ρυθμίσετε το TigerVNC. Μόλις το κάνετε, συνδεθείτε απομακρυσμένα με το GNOME Boxes ή το Remmina και ρυθμίστε απομακρυσμένα
+date: 2021-11-1 12:00:00
+description: ΣΧΕΔΟΝ ΠΛΗΡΗΣ ΟΔΗΓΟΣ, εγκατάστασης και ρύθμισης του Visual Studio Code σε Linux για python, C και java.
 tags:
-- speedtest-cli
-- tigerVNC
-- Remmina
+- visual studio code
+- vscode
+- openSUSE
 - ubuntu
 - linux mint
-- VNC
-- GNOME Boxes
-- GNOME
+- arch linux
+- java
+- python
+- C
+- jupyter
 categories:
-- speedtest-cli
-- tigerVNC
-- Remmina
+- Visual Studio Code
+- vscode
+- Arch Linux
 - Ubuntu
 - Linux Mint
-- VNC
-- GNOME Boxes
-- GNOME
+- openSUSE
+- Java
+- Python
+- C
+- Jupyter
 twitter_text: 'ΠΛΗΡΗΣ ΟΔΗΓΟΣ εγκατάστασης και ρυθμίσεων του Visual Studio Code σε Linux, για τις γλώσσες python, C και java'
 ---
 

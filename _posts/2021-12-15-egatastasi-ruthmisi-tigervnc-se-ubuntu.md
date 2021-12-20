@@ -176,7 +176,8 @@ vnc://192.168.1.100:5901
 # ΠΛΗΡΟΦΟΡΙΕΣ
 
 1. [TigerVNC](https://github.com/TigerVNC/tigervnc)   
-2. [VNC/Servers](https://help.ubuntu.com/community/VNC/Servers#TigerVNC) 3\. [Connect to another computer](https://help.gnome.org/users/gnome-boxes/stable/connect.html.en)  
+2. [VNC/Servers](https://help.ubuntu.com/community/VNC/Servers#TigerVNC)   
+3. [Connect to another computer](https://help.gnome.org/users/gnome-boxes/stable/connect.html.en)  
 
 Αρχική δημοσίευση:  
 [https://eiosifidis.blogspot.com/2021/09/egatastasi-ruthmisi-tigervnc-se-ubuntu.html](https://eiosifidis.blogspot.com/2021/09/egatastasi-ruthmisi-tigervnc-se-ubuntu.html)
