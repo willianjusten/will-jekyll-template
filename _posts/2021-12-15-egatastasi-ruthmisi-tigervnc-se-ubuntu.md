@@ -65,7 +65,7 @@ nano ~/.vnc/xstartup
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources  
 vncconfig -iconic &  
 dbus-launch --exit-with-session gnome-session &
-{% highlight ruby %}
+{% endhighlight %} 
 
 ## Έναρξη TigerVNC
 
@@ -73,7 +73,7 @@ dbus-launch --exit-with-session gnome-session &
 
 {% highlight ruby %}
 vncserver
-{% highlight ruby %}
+{% endhighlight %} 
 
 Αλλά μπορείτε να ρυθμίσετε το βάθος bit επιφάνειας εργασίας, όπως 8, 16, 24, 32 και γεωμετρία επιφάνειας εργασίας σε {width} x {height} ως εξής:  
 
@@ -83,7 +83,7 @@ vncserver -depth {8|16|24|32} -geometry {width}x{height}
 
 **ΠΑΡΑΔΕΙΓΜΑ**  
 vncserver -depth 32 -geometry 1680x1050
-{% highlight ruby %}
+{% endhighlight %} 
 
 Εάν θέλετε να εκτελείται πάντα κατά την εκκίνηση, επεξεργαστείτε το αρχείο **/etc/default/vncserver** και προσθέστε τον αριθμό εμφάνισης και τον χρήστη για να ξεκινήσετε ως εξής:  
 
@@ -91,13 +91,13 @@ vncserver -depth 32 -geometry 1680x1050
 sudo nano /etc/default/vncserver  
 
 VNCSERVERS="1:myusername"
-{% highlight ruby %}
+{% endhighlight %} 
 
 Στη συνέχεια, ενεργοποιήστε την υπηρεσία κατά την εκκίνηση με την εντολή:  
 
 {% highlight ruby %}
 sudo update-rc.d vncserver defaults
-{% highlight ruby %}
+{% endhighlight %} 
 
 Επαληθεύστε ότι εκτελούνται με την εντολή ss και την εντολή pgrep:  
 
@@ -105,7 +105,7 @@ sudo update-rc.d vncserver defaults
 pgrep Xtigervnc  
 
 ss -tulpn | egrep -i 'vnc|590'
-{% highlight ruby %}
+{% endhighlight %} 
 
 ## Διακοπή TigerVNC
 
@@ -113,19 +113,19 @@ ss -tulpn | egrep -i 'vnc|590'
 
 {% highlight ruby %}
 vncserver -kill :1
-{% highlight ruby %}
+{% endhighlight %} 
 
 Συνήθως θα είναι στη διεύθυνση :1 αλλά καλού-κακού πιάνει και η εντολή:  
 
 {% highlight ruby %}
 vncserver -kill :*
-{% highlight ruby %}
+{% endhighlight %} 
 
 Και θα δείτε ένα αποτέλεσμα του στυλ:  
 
 {% highlight ruby %}
 Killing Xtigervnc process ID 7543... success!
-{% highlight ruby %}
+{% endhighlight %} 
 
 ## Πως να εμφανίζετε συνεδρίες του TigerVNC
 
@@ -133,7 +133,7 @@ Killing Xtigervnc process ID 7543... success!
 
 {% highlight ruby %}
 vncserver -list
-{% highlight ruby %}
+{% endhighlight %} 
 
 Θα εμφανιστεί ένα αποτέλεσμα του τύπου:  
 
@@ -142,7 +142,7 @@ TigerVNC server sessions:
 
 X DISPLAY #	RFB PORT #	PROCESS ID
 :1		5901		7543
-{% highlight ruby %}
+{% endhighlight %} 
 
 Εδώ το **5901** είναι η πόρτα που μπορούμε να χρησιμοποιήσουμε με την εντολή ssh.  
 
@@ -152,7 +152,7 @@ X DISPLAY #	RFB PORT #	PROCESS ID
 
 {% highlight ruby %}
 gvncviewer 192.168.1.100:5901
-{% highlight ruby %}
+{% endhighlight %} 
 
 θα ανοίξει ένα παράθυρο προτροπής να εισάγετε το συνθηματικό που εισάγατε στις ρυθμίσεις.  
 
@@ -160,7 +160,7 @@ gvncviewer 192.168.1.100:5901
 
 {% highlight ruby %}
 vnc://192.168.1.100:5901
-{% highlight ruby %}
+{% endhighlight %} 
 
 ![GNOME Boxes σύνδεση με VNC](/post_images/tigervnc/vnc-gnome-boxes.jpg "GNOME Boxes σύνδεση με VNC")
 
