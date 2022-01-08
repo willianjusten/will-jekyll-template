@@ -4,7 +4,6 @@ title: "Εγκατάσταση και ρύθμιση διακομιστή TigerV
 date: 2021-12-15 12:00:00
 description: Πως να εγκαταστήσετε και να ρυθμίσετε το TigerVNC. Μόλις το κάνετε, συνδεθείτε απομακρυσμένα με το GNOME Boxes ή το Remmina και ρυθμίστε απομακρυσμένα
 tags:
-- speedtest-cli
 - tigerVNC
 - Remmina
 - ubuntu
@@ -13,7 +12,6 @@ tags:
 - GNOME Boxes
 - GNOME
 categories:
-- speedtest-cli
 - tigerVNC
 - Remmina
 - Ubuntu
