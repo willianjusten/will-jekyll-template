@@ -60,7 +60,7 @@ sudo yast2 clone_system
 
 Θα σας ανοίξει το γραφικό YaST για να κάνετε τις ρυθμίσεις και μετά να αποθηκεύσετε.  
 
-[![YaST δημιουργία του αρχείου autoinst.xml](/post_images/opensuse/autoyast/autoyast-gui.png)]
+![YaST δημιουργία του αρχείου autoinst.xml](/post_images/opensuse/autoyast/autoyast-gui.png)
 
 Επειδή κατά την εγκατάσταση, μπορεί να σας ρωτήσει (δείτε παρακάτω φωτογραφία) για κάποια GPG κλειδιά πχ από το Packman ή άλλα αποθετήρια, μπορείτε να ρυθμίσετε εδώ να τα αποδέχεστε. Μπορείτε να πάρετε και να επεξεργαστείτε το αρχείο, σύμφωνα με τα δεδομένα σας και με ένα απλό επεξεργαστή κειμένου. Απλά δείτε στην τεκμηρίωση που είναι αυτό που θέλετε να αλλάξετε. Υπάρχουν κάποια σημεία που πρέπει να δούμε πιο προσεκτικά, αλλά θα τα εξηγηθούν προς το τέλος.  
   
@@ -73,7 +73,7 @@ sudo yast2 clone_system
 netsetup=1 autoyast=https://raw.githubusercontent.com/iosifidis/dot-files/master/openSUSE/autoinst-t.xml
 {% endhighlight %}
  
-[![Εγκατάσταση με autoyast](/post_images/opensuse/autoyast/autoyast-install.png)]
+![Εγκατάσταση με autoyast](/post_images/opensuse/autoyast/autoyast-install.png)
 
 Στην παραπάνω εικόνα, να σημειώσουμε τα εξής:  
   
@@ -86,7 +86,7 @@ netsetup=1 autoyast=https://raw.githubusercontent.com/iosifidis/dot-files/master
   
 Περιμένετε λοιπόν να τελειώσει. Θα κάνει και επανεκκίνηση να ξέρετε. Και είστε έτοιμοι.  
 
-[![Autoyast κατά την εγκατάσταση](/post_images/opensuse/autoyast/autoyast-installing.png)]
+![Autoyast κατά την εγκατάσταση](/post_images/opensuse/autoyast/autoyast-installing.png)
 
 ## ΠΙΘΑΝΑ ΠΡΟΒΛΗΜΑΤΑ
 
@@ -94,7 +94,7 @@ netsetup=1 autoyast=https://raw.githubusercontent.com/iosifidis/dot-files/master
   
 Όπως ειπώθηκε, αν έχετε προσθέσει και αποθετήρια που είναι εκτός openSUSE, θα ερωτηθείτε εάν αποδέχεστε το κλειδί. Οπότε έτσι "διακόπτεται" η εγκατάσταση χωρίς χέρια.  
 
-[![Αποδοχή Untrusted GnuPG key](/post_images/opensuse/autoyast/autoyast-untrusted.png)]
+![Αποδοχή Untrusted GnuPG key](/post_images/opensuse/autoyast/autoyast-untrusted.png)
 
 Μπορείτε όμως να τα αλλάξετε, όπως είπαμε παραπάνω.  
   
@@ -104,7 +104,7 @@ netsetup=1 autoyast=https://raw.githubusercontent.com/iosifidis/dot-files/master
   
 Στο παραπάνω [αρχείο](https://github.com/iosifidis/dot-files/blob/master/openSUSE/autoinst-t.xml), βλέπουμε την γραμμή:  
 
-[![Χρήστης autoyast](/post_images/opensuse/autoyast/autoyast-user.png)]
+![Χρήστης autoyast](/post_images/opensuse/autoyast/autoyast-user.png)
 
 Εδώ βλέπουμε τον χρήστη yolo και ως κωδικό βλέπουμε να είναι κρυπτογραφημένο το **suserocks** (πράγματι, το openSUSE rocks). Από την τεκμηρίωση βλέπουμε ότι μπορεί να μπει και χωρίς encryption.  
   
@@ -116,8 +116,7 @@ netsetup=1 autoyast=https://raw.githubusercontent.com/iosifidis/dot-files/master
   
 Στο αρχείο που βρήκατε παραπάνω, οι κατατμήσεις παρουσιάζονται παρακάτω:  
 
-[![Κατατμήσεις autoyast](/post_images/opensuse/autoyast/autoyast-partitions.png)]
-
+![Κατατμήσεις autoyast](/post_images/opensuse/autoyast/autoyast-partitions.png)
   
 Να τα δούμε λίγο αναλυτικά:  
 * Κατάτμηση root (/): με σύστημα αρχείων ext4 και χωρητικότητα 30GB.  
