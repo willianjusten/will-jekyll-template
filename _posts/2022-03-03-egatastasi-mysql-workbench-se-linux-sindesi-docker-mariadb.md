@@ -42,11 +42,13 @@ twitter_text: 'Εγκατάσταση MySQL Workbench σε Linux και σύνδ
 
 {% highlight ruby %}
 sudo snap install mysql-workbench-community
+{% endhighlight %}
 
 Μετά πρέπει να εκτελέσετε την παρακάτω εντολή για να επιτρέψετε στο πακέτο να έχει πρόσβαση στην υπηρεσία.  
 
 {% highlight ruby %}
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
+{% endhighlight %}
 
 Επειδή δεν το έχω δοκιμάσει προσωπικά με την συγκεκριμένο τρόπο, πιστεύω δεν θα κάνει εγκατάσταση και την MySQL οπότε θα πρέπει να εγκαταστήσετε τον διακομιστή MySQL για να έχετε ολοκληρωμένο το πρόγραμμα.  
   
