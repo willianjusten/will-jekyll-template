@@ -18,7 +18,7 @@ categories:
 twitter_text: 'Εγκατάσταση MySQL Workbench σε Linux και σύνδεση με docker MariaDB'
 ---
 
-![MySQL Workbench](/post_images/workbench/workbench-logo.png "MySQL Workbench"){:height="201px" width="320px"}
+![MySQL Workbench](/post_images/workbench/workbench-logo.png "MySQL Workbench"){:height="400px" width="400px"}
 
 # ΒΑΣΕΙΣ ΔΕΔΟΜΕΝΩΝ
 
