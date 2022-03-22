@@ -6,12 +6,15 @@ description: Πως εγκαθιστούμε το MySQL Workbench σε διαν�
 tags:
 - MySQL
 - workbench
-
+- εγκατάσταση
+- MariaDB
+- Docker
 categories:
 - MySQL
 - Εγκατάσταση
 - Workbench
-
+- MariaDB
+- Docker
 twitter_text: 'Εγκατάσταση MySQL Workbench σε Linux και σύνδεση με docker MariaDB'
 ---
 
