@@ -4,17 +4,20 @@ title: "Τρόποι σύνδεσης από Linux, σε εικονική μηχ
 date: 2022-03-10 12:00:00
 description: Η υπηρεσία ~okeanos παρέχει εικονικούς server στην πανεπιστημιακή κοινότητα. Εδώ θα δούμε πως συνδεόμαστε σε Windows server από υπολογιστή με Linux
 tags:
-- MySQL
-- workbench
-- εγκατάσταση
-- MariaDB
-- Docker
+- ~okeanos
+- flatpak
+- GNOME connections
+- vinagre
+- rdesktop
+- remina
+- rdp
 categories:
-- MySQL
-- Εγκατάσταση
-- Workbench
-- MariaDB
-- Docker
+- ~okeanos
+- Flatpak
+- Vinagre
+- Remina
+- rdesktop
+- rdp
 twitter_text: 'Τρόποι σύνδεσης από Linux, σε εικονική μηχανή Windows στην υπηρεσία ~okeanos'
 ---
 
@@ -37,11 +40,11 @@ twitter_text: 'Τρόποι σύνδεσης από Linux, σε εικονική
 **ΕΓΚΑΤΑΣΤΑΣΗ** Η εγκατάσταση, ανάλογα με τη διανομή που έχετε, γίνεται με τον παρακάτω τρόπο:  
 
 {% highlight ruby %}
-# zypper install rdesktop \[σε openSUSE\]   
-# pacman -S rdesktop \[σε Arch Linux\]   
-# yum install rdesktop \[σε Fedora\]  
-# dnf install rdesktop \[σε Fedora\]  
-# apt install rdesktop \[σε Debian/Ubuntu\]
+# zypper install rdesktop [σε openSUSE]   
+# pacman -S rdesktop [σε Arch Linux]   
+# yum install rdesktop [σε Fedora]  
+# dnf install rdesktop [σε Fedora]  
+# apt install rdesktop [σε Debian/Ubuntu]
 {% endhighlight %}
   
 Στη συνέχεια, το μόνο που έχετε να κάνετε είναι να δώστε την εντολή:  
