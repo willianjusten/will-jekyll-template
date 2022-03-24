@@ -9,12 +9,14 @@ tags:
 - remote
 - απομακρυσμένη
 - εγκατάσταση
+- ssh
 categories:
 - Arch Linux
 - ArchLinux
 - Remote
 - Απομακρυσμένη
 - Εγκατάσταση
+- SSH
 twitter_text: 'Απομακρυσμένη εγκατάσταση Arch Linux'
 ---
 
