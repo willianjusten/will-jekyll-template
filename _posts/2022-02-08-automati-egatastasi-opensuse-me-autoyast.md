@@ -46,11 +46,11 @@ sudo yast2 clone_system
 
 Όπως λέει και η οθόνη, το αποτέλεσμα, θα βρεθεί στον κατάλογο **/root/autoinst.xml**.  
 
-[![Δημιουργία autoinst.xml](/post_images/opensuse/autoyast/autoinstall-initial.png)]
+![Δημιουργία autoinst.xml](/post_images/opensuse/autoyast/autoinstall-initial.png)
 
 Πρέπει να περιμένετε λίγο γιατί κλωνοποιεί όλο το σύστημά σας.  
 
-[![Αναμονή για δημιουργία του aytoinst.xml](/post_images/opensuse/autoyast/autoinstall-wait.png)]
+![Αναμονή για δημιουργία του aytoinst.xml](/post_images/opensuse/autoyast/autoinstall-wait.png)
 
 Μια εναλλακτική λύση είναι η εντολή:  
 
